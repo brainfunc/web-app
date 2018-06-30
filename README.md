@@ -2,7 +2,8 @@
 Web application for Brainfunc Blockchain based game.
 
 # Contents
-- Docs
+- (Docs)[https://github.com/brainfunc/web-app/tree/master/docs]
+  
   Documents related to the team, faq, and proposals to competitions/challenges.
 
 # Copyright
