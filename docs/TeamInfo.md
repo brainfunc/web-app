@@ -4,9 +4,9 @@
 The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are given a 5 year UK Genius Visa (Exceptional Talent) every year,  but had to let it go due to medical reasons.
 
 ### Tejas Nikumbh
-  
-  Innovator (Ideation, Design and Development). 
-  
+
+  Innovator (Ideation, Design and Development).
+
   Fullstack and Blockchain Developer, Lead Designer for Project.
   - Linkedin:- https://www.linkedin.com/in/tejas-nikumbh-19826061/
   - Github:- https://github.com/tejasnikumbh
@@ -17,7 +17,7 @@ The team has advisors across three verticals, viz Medicine, Design and Business,
 ### Abhinav Sonawane
 
   **Medical Advisor** 
-  
+
   Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
@@ -26,15 +26,15 @@ The team has advisors across three verticals, viz Medicine, Design and Business,
 ### Abhinav Chhikara
 
   **Design Advisor**  
-  
-  Lead Designer at Unacademy. 
+
+  Lead Designer at Unacademy.
   Co-founder @lisn.xyz. Product Designer.
   - Linkedin:- https://www.linkedin.com/in/abhinavchhikara/
 
 ### Abhishek Sen
 
-  **Business Advisor** 
-  
+  **Business Advisor**
+
   Co-founder and CEO @numbereight.me (Funded, Inc. in London, UK)
   - Linkedin:- https://www.linkedin.com/in/abhisheksen/
 
