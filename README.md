@@ -1,9 +1,7 @@
-Web-App for Brainfunc Game
-==========================
-Web application for Brainfunc Blockchain based game written in React + Redux and Solidity.
+# Brainfunc Game Web Application
+Web application for Brainfunc Blockchain based game.
 
-Author
-======
-Tejas Nikumbh
-  - Email: tejnikumbh@gmail.com
-  - Skype: tjnikumbh
+
+# Copyright
+- © 2018 The Brainfunc Team.
+- Contact: tejnikumbh@gmail.com
