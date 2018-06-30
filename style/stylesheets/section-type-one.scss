@@ -1,0 +1,17 @@
+@import "../constants/constants.scss";
+
+@media (max-width: 512px) {
+	.aae-section__container.type-one {
+		>div.wrapper {
+			display: block;
+			padding: 32px;
+			height: 100%;
+			text-align: center;
+			>img.feature__image {
+				width: 80%;
+				margin-left: 10%;
+				margin-bottom: 0%;
+			}
+		}
+	}
+}

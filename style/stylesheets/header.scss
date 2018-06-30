@@ -1,0 +1,145 @@
+@import "../constants/constants.scss";
+
+.aae-section__container.header {
+	padding-top: 32px;
+	padding-bottom: 96px;
+	border-bottom: 2px solid #eeeeee;
+	background-color: $background_color_header;
+	background-repeat: repeat;
+	background-size:auto;
+	background-image:
+	url('../images/template/neural-network-light.svg');
+
+		>div.wrapper {
+			>img.feature__image {
+				width:80%;
+				margin-top: 0%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			>div.title {
+				font-family: $font_family_1;
+				font-size: 75px;
+				font-weight: 700;
+				color: $header_title_color;
+				text-align: left;
+				margin-top: 80px;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-bottom: 20px;
+				line-height: 1.0;
+			}
+			>div.sub-title {
+				font-family: $font_family_1;
+				font-size: 40px;
+				font-weight: 400;
+				color: $header_content_color;
+				text-align: left;
+				margin-top: 40px;
+				margin-left: 10%;
+				margin-right: 15%;
+				margin-bottom: 20px;
+				line-height: 1.25;
+			}
+      >.signup-button {
+        margin-left: 10%;
+        border: 2px solid #d14d5d;
+        border-radius: 25px;
+        height: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+				background-color: transparent;
+        color: #d14d5d;
+				font-weight: 300;
+				font-family: $font_family_2;
+				opacity: 0.75;
+				width: 70%;
+				margin-top: 5%;
+				outline: none;
+      }
+      >.signup-button:hover {
+				background-color: rgba(209, 77, 93, 0.3);
+      }
+		}
+}
+
+@media (max-width: 1024px) {
+	.aae-section__container.header {
+		>div.wrapper {
+			>img.feature__image {
+				width:80%;
+				margin-top: 15%;
+			}
+			>div.title {
+				font-size: 4em;
+				margin-left: 5%;
+			}
+			>div.sub-title {
+				font-size: 2em;
+				margin-left: 5%;
+			}
+      >.signup-button {
+        margin-left: 5%;
+      }
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.aae-section__container.header {
+		>div.wrapper {
+			>img.feature__image {
+				width: 70%;
+				margin-bottom: 0%;
+			}
+			>div.title {
+				font-size: 4em;
+				text-align: center;
+				margin-left: 10%;
+			}
+			>div.sub-title {
+				font-size: 2em;
+				text-align: center;
+				margin-left: 10%;
+			}
+			.signup-button {
+				text-align: center;
+				margin-left: 0%;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 512px) {
+	.aae-section__container.header {
+		background-image:
+		url('../images/template/neural-network-light.svg');
+		>div.wrapper {
+			display: block;
+			padding: 32px;
+			height: 100%;
+			text-align: center;
+			>img.feature__image {
+				width: 80%;
+				margin-left: 10%;
+				margin-bottom: -10%;
+			}
+			>div.title {
+				font-size: 50px;
+			}
+			>div.sub-title {
+				font-size: 24px;
+				margin-left: 8%;
+				margin-right: 8%;
+				margin-bottom: 0%;
+				margin-top: 0%;
+			}
+      >.signup-button {
+				margin-top: 10%;
+        margin-left: 0%;
+				width: 80%;
+      }
+		}
+	}
+}

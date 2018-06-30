@@ -1,0 +1,76 @@
+.aae-section__container.footer {
+  background-color: #f3f1ee;
+  background-image: url("../images/template/neural-network-light.svg");
+  padding: 32px; }
+
+.signup-form__content > div.title {
+  font-family: "Avenir next", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 32px; }
+
+.signup-form__content > div.notice {
+  color: #7c7c7c;
+  opacity: 0.4;
+  font-size: 14px;
+  font-family: "Avenir next", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 32px; }
+
+.signup-form__content > form {
+  font-family: "Moderneratrial", sans-serif;
+  font-size: 18px;
+  font-weight: 300; }
+  .signup-form__content > form > input.email {
+    border-radius: 8px;
+    border: 1px solid #fff;
+    margin-left: 30%;
+    width: 40%;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: block;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .signup-form__content > form > button.submit-button {
+    border-radius: 8px;
+    border: 1px solid #fdcd18;
+    margin-top: 16px;
+    margin-left: 30%;
+    width: 40%;
+    height: 48px;
+    color: #fff;
+    background-color: #fdcd18;
+    display: block;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .signup-form__content > form > button.submit-button:hover {
+      opacity: 0.75;
+      cursor: pointer; }
+
+@media (max-width: 1024px) {
+  .signup-form__content > form > input.email {
+    width: 70%;
+    margin-left: 15%; }
+  .signup-form__content > form > button.submit-button {
+    width: 70%;
+    margin-left: 15%; } }
+
+@media (max-width: 768px) {
+  .signup-form__content > form > input.email {
+    width: 60%;
+    margin-left: 20%; }
+  .signup-form__content > form > button.submit-button {
+    width: 60%;
+    margin-left: 20%; } }
+
+@media (max-width: 512px) {
+  .signup-form__content > form > input.email {
+    width: 80%;
+    margin-left: 10%; }
+  .signup-form__content > form > button.submit-button {
+    width: 80%;
+    margin-left: 10%; } }
