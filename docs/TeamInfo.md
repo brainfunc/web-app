@@ -1,7 +1,7 @@
 # Brainfunc Team
 
 ## Founder
-The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are give a UK visa every year with a genius status,  but had to let it go due to medical reasons.
+The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are given a 5 year UK Genius Visa (Exceptional Talent) every year,  but had to let it go due to medical reasons.
 
 ### Tejas Nikumbh
   
