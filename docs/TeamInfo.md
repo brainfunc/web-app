@@ -15,23 +15,30 @@ Advisors across medicine, design and business operations give the team a strong 
 
 ### Abhinav Sonawane
 
-  **Medical Advisor** - Helps in Content Development and guidance in biology based aspects of game.
+  **Medical Advisor** 
+  
+  Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
     - Masters in Surgery
 
 ### Abhinav Chhikara
 
-  **Design Advisor** - Lead Designer at Unacademy. Co-founder @lisn.xyz. Product Designer.
+  **Design Advisor**  
+  
+  Design based guidance.Lead Designer at Unacademy. 
+  Co-founder @lisn.xyz. Product Designer.
   - Linkedin:- https://www.linkedin.com/in/abhinavchhikara/
 
 ### Abhishek Sen
 
-  **Business Advisor** - Co-founder and CEO @numbereight.me (Funded Company, was also a part of Reid Hoffman backed accelerator - EF London).
+  **Business Advisor** 
+  
+  Co-founder and CEO @numbereight.me (Funded, Inc. in London, UK)
   - Linkedin:- https://www.linkedin.com/in/abhisheksen/
 
 ## Interns
-The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well.
+The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. We intend to keep the interns and take them along as full time hires as the project develops.
 
 ### Prasanna Dhavale (PR and Marketing Intern)
 
