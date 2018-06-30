@@ -1,7 +1,7 @@
 # Challenge Loot Utilization
-Following is the item exchange mapping from the thirteen(13) brain parts to the Challenge Loot Items. Each Mapping is based on logic. The items that are exchangeable are related to the function that the corresponding brain part performs. In cases where multiple items are mapped, any **ONE** item can be traded in exchange of concerned brain part.
+Following is the item exchange mapping from the thirteen(13) brain parts to the Challenge Loot Items. The Mapping is based on common sense and brain part function. Items that are mapped are related in some way or the other to the function that the corresponding brain part performs. In cases where multiple items are mapped, any **ONE** item can be traded in exchange of concerned brain part. 
 
-We have provided a summarized view of the **brain part function**, the **Mapped Item(s)** and **Why the mapping makes sense?** below.
+Given below is a summary of the **brain part function**, the **Mapped Item(s)** and **Why the mapping makes sense?**
 
 ## Frontal Lobe
 **Performs core cognition function** - Most important part, that controls important cognitive skills in humans, such as emotional expression, problem solving, memory, language, judgment, and sexual behaviors.
