@@ -1,0 +1,19 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "Web-App for Brainfunc Game ========================== Web application for Brainfunc Blockchain based game written in React + Redux and Solidity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainfunc/web-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainfunc/web-app/issues"
+  },
+  "homepage": "https://github.com/brainfunc/web-app#readme"
+}
