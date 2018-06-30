@@ -1,27 +1,17 @@
-Brainfunc Team
-==============
+# Brainfunc Team
 
-# Founder
+## Founder
+
 ### Tejas Nikumbh
 
   Innovator (Ideation, Design and Development). 
   
-  **Fullstack** and **Blockchain Developer**, **Lead Designer** for Project.
+  Fullstack and Blockchain Developer, Lead Designer for Project.
   - Linkedin:- https://www.linkedin.com/in/tejas-nikumbh-19826061/
   - Github:- https://github.com/tejasnikumbh
 
-# Interns
-### Prasanna Dhavale
-
-  PR and Marketing Intern. Handles Social Media, Content, Digital Marketing and SEO.
-  - Linkedin:- https://www.linkedin.com/in/prasanna-dhavale-758987165/
-
-
-### Hrushikesh Bhamre
-
-  Fullstack Developer Intern, works on Javascript and Blockchain development modules
-
-# Advisors
+## Advisors
+Advisors across medicine, design and business operations give the team a strong anchor.
 
 ### Abhinav Sonawane
 
@@ -40,6 +30,18 @@ Brainfunc Team
   **Business Advisor** - Co-founder and CEO @numbereight.me (Funded Company, was also a part of Reid Hoffman backed accelerator - EF London).
   - Linkedin:- https://www.linkedin.com/in/abhisheksen/
 
+## Interns
+The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well.
+
+### Prasanna Dhavale (PR and Marketing Intern)
+
+  Handles Social Media, Content, Digital Marketing and SEO.
+  - Linkedin:- https://www.linkedin.com/in/prasanna-dhavale-758987165/
+
+
+### Hrushikesh Bhamre (Development Intern)
+
+  Works on Javascript and Blockchain development modules
 
 
 # Copyright
