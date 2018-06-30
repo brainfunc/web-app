@@ -1,9 +1,10 @@
 # Brainfunc Team
 
 ## Founder
+The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are give a UK visa every year with a genius status,  but had to let it go due to medical reasons.
 
 ### Tejas Nikumbh
-
+  
   Innovator (Ideation, Design and Development). 
   
   Fullstack and Blockchain Developer, Lead Designer for Project.
@@ -11,13 +12,13 @@
   - Github:- https://github.com/tejasnikumbh
 
 ## Advisors
-Advisors across medicine, design and business operations give the team a strong anchor.
+The team has advisors across three verticals, viz Medicine, Design and Business, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as wel go along as well.
 
 ### Abhinav Sonawane
 
   **Medical Advisor** 
   
-  Content Development for biology based aspects.
+  Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
     - Masters in Surgery
@@ -26,7 +27,7 @@ Advisors across medicine, design and business operations give the team a strong 
 
   **Design Advisor**  
   
-  Design based guidance.Lead Designer at Unacademy. 
+  Lead Designer at Unacademy. 
   Co-founder @lisn.xyz. Product Designer.
   - Linkedin:- https://www.linkedin.com/in/abhinavchhikara/
 
