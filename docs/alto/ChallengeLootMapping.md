@@ -89,7 +89,7 @@ Longsword of the Onyx Pack, Twilight Scimitar, Taleweaver's Shortsword, Stalker'
 Because weapon usage is based on Dexterity and Balance and Muscle control.
 
 # Footnotes
-[1] A brain part of strength 1 is formed out of a single neuron of that particular type
+[1] A brain part of strength one is formed out of a single neuron of that particular type
 
 # Copyright
 - © 2018 The Brainfunc Team.
