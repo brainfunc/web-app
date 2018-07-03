@@ -47,11 +47,6 @@ The team has had previous development and marketing experience as a team. They a
   - Linkedin:- https://www.linkedin.com/in/prasanna-dhavale-758987165/
 
 
-### Hrushikesh Bhamre (Development Intern)
-
-  Works on Javascript and Blockchain development modules
-
-
 # Copyright
 - © 2018 The Brainfunc Team.
 - Contact: tejnikumbh@gmail.com
