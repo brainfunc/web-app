@@ -1,7 +1,7 @@
 ![Logo](https://github.com/brainfunc/web-app/blob/master/style/images/custom/header/logo.svg)
 
 # Brainfunc Game Web Application
-BrainFunc is a learning adventure where you can apply your knowledge of neuroscience to compete and win in battles. This repository is the core web app for the same.
+BrainFunc is a learning adventure where you can apply your knowledge of neuroscience to compete and win in battles. This repository is the core web app for the same. Currently under active development and being built on the Ethereum blockchain making use of ERC 721 protocol for Non fungible assets.
 
 # Contents
 - [docs](https://github.com/brainfunc/web-app/tree/master/docs)
