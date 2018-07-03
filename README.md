@@ -1,6 +1,7 @@
+![Logo](https://github.com/brainfunc/web-app/blob/master/style/images/custom/header/logo.svg)
+
 # Brainfunc Game Web Application
 Web application for Brainfunc Blockchain based game.
-![Logo](https://github.com/brainfunc/web-app/blob/master/style/images/custom/header/logo.svg)
 
 # Contents
 - [docs](https://github.com/brainfunc/web-app/tree/master/docs)
