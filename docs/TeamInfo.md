@@ -12,7 +12,7 @@ The founder has had a very successful track record being both an Entrepreneur in
   - Github:- https://github.com/tejasnikumbh
 
 ## Advisors
-The team has advisors across three verticals, viz Medicine, Design and Business, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as wel go along as well.
+The team has advisors across three verticals, viz Medicine, Design and Business, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as we go along as well.
 
 ### Abhinav Sonawane
 
