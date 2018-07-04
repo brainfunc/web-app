@@ -3,7 +3,7 @@ Following is the item exchange mapping from the thirteen(13) brain parts to the 
 
 Given below is a summary of the **brain part function**, the **Mapped Item(s)** and **Why the mapping makes sense?**
 
-## Frontal Lobe
+## Frontal Lobe (Left and Right)
 **Performs core cognition function** - Most important part, that controls important cognitive skills in humans, such as emotional expression, problem solving, memory, language, judgment, and sexual behaviors.
 ### Mapped Items
 Arcanist's Tome of Spells, Lamp of Wonder , Cards of Fate, Quill of Binding
