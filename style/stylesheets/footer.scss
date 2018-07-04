@@ -23,7 +23,7 @@
 	}
 	>div.notice {
 		color: $notice_content_color;
-    opacity: 0.4;
+    opacity: 0.8;
 		font-size: 14px;
 		font-family: $font_family_2;
 		font-weight: 400;
@@ -35,8 +35,10 @@
 		font-size: 18px;
 		font-weight: 300;
 		>input.email {
-			border-radius: 8px;
-			border: 1px solid #fff;
+			background-color: #fff;
+			color: $background_color_input;
+			border-radius: 32px;
+			border: 2px solid $button_color_border;
 			margin-left: 30%;
 			width: 40%;
 			height: 50px;
@@ -45,11 +47,12 @@
 			display: block;
 			text-align: center;
       outline: none;
-			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
+
 		>button.submit-button {
-			border-radius: 8px;
-			border: 1px solid $background_color_submit;
+			border-radius: 32px;
+			border: 0px solid $background_color_submit;
 			margin-top: 16px;
 			margin-left: 30%;
 			width: 40%;
@@ -57,7 +60,8 @@
 			color: #fff;
 			background-color: $background_color_submit;
 			display: block;
-			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			outline: none;
+			//box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			&:hover {
 				opacity: 0.75;
 				cursor: pointer;

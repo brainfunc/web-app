@@ -16,7 +16,7 @@ class Header extends Component {
           <button
           className='signup-button'
           onClick = {this.props.navigateFunction}>
-            Get Started
+            Sign up!
           </button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 export const headerData = {
-  logoImage: 'custom/header/logo.svg',
+  logoImage: 'custom/header/logov3.svg',
   title: 'BrainFunc',
   subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate Brain on the Blockchain!`
 }
@@ -11,16 +11,16 @@ export const footerData = {
 
 export const sectionData = [
     {
-      image: 'custom/sections/network3.svg',
+      image: 'custom/sections/networkv3.svg',
       titles: ['Collect.', ' Construct.', 'Battle.'],
       description: `BrainFunc is a learning adventure where you can apply your
         knowledge of neuroscience to compete and win in battles.`
     },
     {
       images: [
-        'custom/sections/neurons.svg',
-        'custom/sections/brain-parts.svg',
-        'custom/sections/battle.svg'],
+        'custom/sections/collectNeuronsv3.svg',
+        'custom/sections/brainPartsv3.svg',
+        'custom/sections/battlev3.svg'],
       titles: ['Collect Neurons', 'Construct Parts', 'Fight Epic Battles'],
       descriptions: [
         `Start by buying neurons on the marketplace. Neurons available are of
