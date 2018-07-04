@@ -1,7 +1,6 @@
-![Logo](https://brainfunc.herokuapp.com/style/images/custom/header/logov3.svg)
-
 # Brainfunc Game Web Application
 BrainFunc is a learning adventure where you can apply your knowledge of neuroscience to compete and win in battles. This repository is the core web app for the same. Currently under active development and being built on the Ethereum blockchain making use of ERC 721 protocol for non fungible assets.
+![Logo](https://brainfunc.herokuapp.com/style/images/custom/header/logov3.svg)
 
 # Contents
 - [docs](https://github.com/brainfunc/web-app/tree/master/docs)
