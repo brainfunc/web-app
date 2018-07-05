@@ -46,8 +46,8 @@ class Footer extends Component {
             </div>
             <div className='tech-image-wrapper'>
               <img className='tech-image' src={`../../style/images/template/react_gray.svg`}/>
-              <img className='tech-image' src={`../../style/images/template/node.svg`}/>
-              <img className='tech-image' src={`../../style/images/template/solidity.svg`}/>
+              <img className='tech-image' src={`../../style/images/template/node_gray.svg`}/>
+              <img className='tech-image' src={`../../style/images/template/solidity_gray.svg`}/>
             </div>
           </div>
         </div>
