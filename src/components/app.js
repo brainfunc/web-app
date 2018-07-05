@@ -6,8 +6,7 @@ import SectionTypeTwo from '../components/section-type-two';
 import SectionTypeOne from '../components/section-type-one';
 import SectionTypeZero from '../components/section-type-zero';
 import Header from '../components/header';
-
-import Footer from '../containers/footer';
+import Footer from '../components/footer';
 
 import * as Constants from '../utils/data';
 
