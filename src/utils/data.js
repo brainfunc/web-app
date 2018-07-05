@@ -1,8 +1,4 @@
-export const headerData = {
-  logoImage: 'custom/header/logov3.svg',
-  title: 'BrainFunc',
-  subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate Brain on the Blockchain!`
-}
+
 export const footerData = {
   title: 'Thanks for submitting your response',
   leadCaptureMessage: 'Sign up for the Beta here!',
@@ -10,6 +6,11 @@ export const footerData = {
 }
 
 export const sectionData = [
+    {
+      logoImage: 'template/logov3.svg',
+      title: 'BrainFunc',
+      subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate Brain on the Blockchain!`
+    },
     {
       image: 'custom/sections/networkv3.svg',
       titles: ['Collect.', ' Construct.', 'Battle.'],

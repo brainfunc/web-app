@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import SectionTypeOne from '../components/section-type-one';
-import SectionTypeTwo from '../components/section-type-two';
 
-import Header from '../components/header';
+import SectionTypeTwo from '../components/section-type-two';
+import SectionTypeOne from '../components/section-type-one';
+import SectionTypeZero from '../components/section-type-zero';
 import Footer from '../containers/footer';
 
 import * as Constants from '../utils/data';
@@ -27,19 +27,19 @@ export default class App extends Component {
   render() {
     return (
       <div className="aae__container">
-        <Header
-          logoImage={Constants.headerData.logoImage}
-          title={Constants.headerData.title}
-          subTitle={Constants.headerData.subTitle}
+        <SectionTypeZero
+          logoImage={Constants.sectionData[0].logoImage}
+          title={Constants.sectionData[0].title}
+          subTitle={Constants.sectionData[0].subTitle}
           navigateFunction = {this.handleScrollToElement.bind(this)}/>
         <SectionTypeOne
-          image={Constants.sectionData[0].image}
-          titles={Constants.sectionData[0].titles}
-          description={Constants.sectionData[0].description}/>
-        <SectionTypeTwo
-          images={Constants.sectionData[1].images}
+          image={Constants.sectionData[1].image}
           titles={Constants.sectionData[1].titles}
-          descriptions={Constants.sectionData[1].descriptions}/>
+          description={Constants.sectionData[1].description}/>
+        <SectionTypeTwo
+          images={Constants.sectionData[2].images}
+          titles={Constants.sectionData[2].titles}
+          descriptions={Constants.sectionData[2].descriptions}/>
         <Footer
           ref= 'footer'
           title={Constants.footerData.title}
