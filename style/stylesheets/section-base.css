@@ -36,12 +36,12 @@
     margin-bottom: 10%;
     margin-top: 64px; }
 
-.aae-section__container:nth-child(2n) {
+.aae-section__container:nth-child(2n + 1) {
   background-color: #fff; }
-  .aae-section__container:nth-child(2n) > div.wrapper {
+  .aae-section__container:nth-child(2n + 1) > div.wrapper {
     float: right; }
 
-.aae-section__container:nth-child(2n+1) {
+.aae-section__container:nth-child(2n) {
   background-color: #fff; }
 
 @media (max-width: 1024px) {

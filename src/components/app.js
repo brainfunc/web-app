@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom';
 import SectionTypeTwo from '../components/section-type-two';
 import SectionTypeOne from '../components/section-type-one';
 import SectionTypeZero from '../components/section-type-zero';
+import Header from '../components/header';
+
 import Footer from '../containers/footer';
 
 import * as Constants from '../utils/data';
@@ -27,6 +29,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="aae__container">
+        <Header/>
         <SectionTypeZero
           logoImage={Constants.sectionData[0].logoImage}
           title={Constants.sectionData[0].title}
