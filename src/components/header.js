@@ -8,7 +8,7 @@ class Header extends Component {
           <div className='brand'>
             <img className='logo-image' src= {`../../style/images/template/brand_image.svg` }/>
             <img className='logo-text' src={`../../style/images/template/brand_text.svg`} />
-            <div className='menu-item'>
+            <div className='menu-item more'>
               <img
                 className='image-more'
                 src={`../../style/images/template/more.svg`}

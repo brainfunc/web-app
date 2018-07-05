@@ -40,12 +40,13 @@
       display: inline;
       float: left;
       width: 33%;
-      margin-right: 10%;
+      margin-right: 8%;
       margin-top: 0%;
-      margin-bottom: 7.5%;
+      margin-bottom: 4%;
       margin-left: 10%; }
     .aae-section__container.type-two > div.wrapper div.feature__title {
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 4%; }
     .aae-section__container.type-two > div.wrapper div.feature__description {
       text-align: left;
       font-size: 1.15em; } }

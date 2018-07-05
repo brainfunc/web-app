@@ -19,3 +19,7 @@
     .aae-section__container.header > div.wrapper > div.brand > div.menu-item:hover {
       cursor: pointer;
       color: #d34a5b; }
+
+@media (max-width: 768px) {
+  .aae-section__container.header > div.wrapper {
+    text-align: left; } }

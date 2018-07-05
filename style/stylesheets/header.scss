@@ -34,4 +34,18 @@
   }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .aae-section__container.header {
+    >div.wrapper {
+      text-align: left;
+      >div.brand {
+        >div.menu-item {
+
+        }
+        >div.menu-item.more{
+
+        }
+      }
+    }
+  }
+}
