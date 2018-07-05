@@ -17,7 +17,7 @@ class Header extends Component {
             </div>
             <div className='menu-item'> FAQs </div>
             <div className='menu-item'> Team </div>
-            <div className='menu-item'> Gameplay </div>
+            <div className='menu-item'> Marketplace </div>
 
           </div>
         </div>

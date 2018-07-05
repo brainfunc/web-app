@@ -1,9 +1,9 @@
 @import "../constants/constants.scss";
 
 .aae-section__container.footer {
-	background-color: $background_color_header;
-  background-image: url('../images/template/neural-network-light.svg');
-
+	//background-color: $background_color_cream;
+	background-color: transparent;
+	border-top: 2px solid $background_color_cream;
 	//background-image: linear-gradient(
 	//	to bottom,
 	//	$linear_gradient_color_1,

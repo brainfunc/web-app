@@ -1,57 +1,60 @@
 .aae-section__container.section-type-zero {
-  padding-bottom: 32px;
   padding: 10%;
   padding-top: 0%;
   padding-bottom: 5%;
   background-color: #fff;
   background-repeat: repeat;
   background-size: auto; }
-  .aae-section__container.section-type-zero > div.wrapper > img.feature__image {
-    width: 80%;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-right: 10%; }
-  .aae-section__container.section-type-zero > div.wrapper > div.title {
-    font-family: "Avenir", sans-serif;
-    font-size: 4em;
-    font-weight: 700;
-    color: #212121;
-    text-align: left;
-    margin-top: 80px;
-    margin-left: 0%;
-    margin-right: 10%;
-    margin-bottom: 20px;
-    line-height: 1.0; }
-  .aae-section__container.section-type-zero > div.wrapper > div.sub-title {
-    font-family: "Avenir", sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    color: #7c7c7c;
-    text-align: left;
-    margin-top: 40px;
-    margin-left: 0%;
-    margin-right: 15%;
-    margin-bottom: 20px;
-    line-height: 1.25; }
-  .aae-section__container.section-type-zero > div.wrapper > .signup-button {
-    margin-left: 0%;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    height: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #d34a5b;
-    color: #fff;
-    font-weight: 400;
-    font-family: "Avenir next", sans-serif;
-    opacity: 1;
-    width: 80%;
-    margin-top: 5%;
-    outline: none; }
-  .aae-section__container.section-type-zero > div.wrapper > .signup-button:hover {
-    opacity: 0.8; }
-  .aae-section__container.section-type-zero > div.wrapper > .signup-button:focus {
-    opacity: 1.0; }
+  .aae-section__container.section-type-zero > div.wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    .aae-section__container.section-type-zero > div.wrapper > img.feature__image {
+      width: 80%;
+      margin-top: 20%;
+      margin-left: 10%;
+      margin-right: 10%; }
+    .aae-section__container.section-type-zero > div.wrapper > div.title {
+      font-family: "Avenir", sans-serif;
+      font-size: 4em;
+      font-weight: 700;
+      color: #212121;
+      text-align: left;
+      margin-top: 80px;
+      margin-left: 0%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+      line-height: 1.0; }
+    .aae-section__container.section-type-zero > div.wrapper > div.sub-title {
+      font-family: "Avenir", sans-serif;
+      font-size: 2em;
+      font-weight: 400;
+      color: #7c7c7c;
+      text-align: left;
+      margin-top: 40px;
+      margin-left: 0%;
+      margin-right: 15%;
+      margin-bottom: 20px;
+      line-height: 1.25; }
+    .aae-section__container.section-type-zero > div.wrapper > .signup-button {
+      margin-left: 0%;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      height: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
+      background-color: #d34a5b;
+      color: #fff;
+      font-weight: 400;
+      font-family: "Avenir next", sans-serif;
+      font-size: 1.1em;
+      opacity: 1;
+      width: 80%;
+      margin-top: 5%;
+      outline: none; }
+    .aae-section__container.section-type-zero > div.wrapper > .signup-button:hover {
+      opacity: 0.8; }
+    .aae-section__container.section-type-zero > div.wrapper > .signup-button:focus {
+      opacity: 1.0; }
 
 @media (max-width: 1024px) {
   .aae-section__container.section-type-zero > div.wrapper > img.feature__image {

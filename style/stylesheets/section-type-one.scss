@@ -1,6 +1,6 @@
 @import "../constants/constants.scss";
 .aae-section__container.type-one {
-	border-top: 2px solid #eeeeee;
+	border-top: 2px solid $background_color_cream;
 }
 
 @media (max-width: 512px) {

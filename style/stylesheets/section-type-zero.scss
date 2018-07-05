@@ -1,8 +1,6 @@
 @import "../constants/constants.scss";
 
 .aae-section__container.section-type-zero {
-	//padding-top: 32px;
-	padding-bottom: 32px;
 	//margin:10%;
 	padding: 10%;
 	padding-top:0%;
@@ -12,6 +10,8 @@
 	background-size:auto;
 
 		>div.wrapper {
+			padding-top:0px;
+			padding-bottom: 0px;
 			>img.feature__image {
 				width:80%;
 				margin-top: 20%;
@@ -53,6 +53,7 @@
         color: #fff;
 				font-weight: 400;
 				font-family: $font_family_2;
+				font-size:1.1em;
 				opacity: 1;
 				width: 80%;
 				margin-top: 5%;
