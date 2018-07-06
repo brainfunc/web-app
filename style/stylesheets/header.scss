@@ -36,6 +36,9 @@
           color:$background_color_submit;
         }
       }
+      >div.menu-item.more {
+        cursor: pointer;
+      }
     }
   }
 }

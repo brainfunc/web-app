@@ -21,6 +21,8 @@
       .aae-section__container.header > div.wrapper > div.brand > div.menu-item a:hover {
         cursor: pointer;
         color: #d34a5b; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      cursor: pointer; }
 
 .modal__container > div.menu-close {
   text-align: right;
