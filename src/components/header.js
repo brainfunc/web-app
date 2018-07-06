@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Links} from '../constants/constants';
 
 class Header extends Component {
   render() {
@@ -17,9 +18,10 @@ class Header extends Component {
                 onMouseOver={e => (e.currentTarget.src = "../../style/images/template/more_pink.svg")}
                 onMouseOut={e => (e.currentTarget.src = "../../style/images/template/more.svg")}/>
             </div>
-            <div className='menu-item'> FAQs </div>
-            <div className='menu-item'> Team </div>
-            <div className='menu-item'> Marketplace </div>
+
+            <div className='menu-item'><a href={Links.faqs}>FAQs </a></div>
+            <div className='menu-item'><a href={Links.team}> Team </a></div>
+            <div className='menu-item'><a href={Links.marketplace}> Marketplace </a></div>
 
           </div>
         </div>

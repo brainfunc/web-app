@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Links} from '../constants/constants';
 
 class Footer extends Component {
 
@@ -10,11 +11,11 @@ class Footer extends Component {
           <div className='sub-section footer'>
             <ul>
               <li className='list-heading'> About </li>
-              <li><a href=''> White Paper </a></li>
-              <li><a href=''> Team </a></li>
+              <li><a href={Links.about.whitepaper}> White Paper </a></li>
+              <li><a href={Links.about.team}> Team </a></li>
               <li><a href=''> Blog </a></li>
               <li><a href=''> Jobs </a></li>
-              <li><a href=''> FAQs </a></li>
+              <li><a href={Links.about.faqs}> FAQs </a></li>
               <li><a href=''> Contact </a></li>
             </ul>
           </div>
