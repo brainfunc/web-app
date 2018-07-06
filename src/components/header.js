@@ -19,9 +19,9 @@ class Header extends Component {
                 onMouseOut={e => (e.currentTarget.src = "../../style/images/template/more.svg")}/>
             </div>
 
-            <div className='menu-item'><a href={Links.about.faqs}>FAQs </a></div>
-            <div className='menu-item'><a href={Links.about.team}> Team </a></div>
-            <div className='menu-item'><a href={Links.gameplay.marketplace}> Marketplace </a></div>
+            <div className='menu-item'><a href={Links.footer.about.faqs}>FAQs </a></div>
+            <div className='menu-item'><a href={Links.footer.about.team}> Team </a></div>
+            <div className='menu-item'><a href=''> Marketplace </a></div>
 
           </div>
         </div>

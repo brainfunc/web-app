@@ -2,7 +2,8 @@
   background-color: #f3f1ee;
   border-top: 2px solid #f3f1ee;
   padding: 32px;
-  padding-left: 96px; }
+  padding-left: 96px;
+  padding-top: 64px; }
   .aae-section__container.footer > div.sub-section.footer {
     width: 25%;
     display: inline;
