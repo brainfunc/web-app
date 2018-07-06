@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Modal from 'react-awesome-modal';
+import Modal from '../libs/react-awesome-modal/lib/index';
 
 import {Links} from '../constants/constants';
 
