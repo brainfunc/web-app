@@ -22,6 +22,28 @@
         cursor: pointer;
         color: #d34a5b; }
 
+.modal__container > div.menu-close {
+  text-align: right;
+  margin: 4%;
+  margin-bottom: 72px; }
+  .modal__container > div.menu-close > img {
+    cursor: pointer;
+    height: 32px;
+    width: 32px; }
+
+.modal__container > div.menu-item {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Calibre", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+  .modal__container > div.menu-item > a {
+    text-decoration: none;
+    color: white; }
+  .modal__container > div.menu-item > a:hover {
+    cursor: pointer;
+    color: #d34a5b; }
+
 @media (max-width: 768px) {
   .aae-section__container.header > div.wrapper {
     text-align: left; } }

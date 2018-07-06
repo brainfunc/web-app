@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-
 import SectionTypeTwo from '../components/section-type-two';
 import SectionTypeOne from '../components/section-type-one';
 import SectionTypeZero from '../components/section-type-zero';
@@ -11,6 +10,8 @@ import Footer from '../components/footer';
 import * as Constants from '../utils/data';
 
 export default class App extends Component {
+
+
 
   handleScrollToElement(event) {
     console.log(this.refs);

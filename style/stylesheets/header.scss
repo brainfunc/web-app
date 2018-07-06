@@ -5,6 +5,7 @@
   //border-top: 2px solid $background_color_cream;
   border-bottom: 2px solid $background_color_cream;
   //background-color: $background_color_cream;
+
   >div.wrapper {
     width:100%;
     padding:20px 40px 20px 40px;
@@ -38,6 +39,38 @@
     }
   }
 }
+
+.modal__container {
+  >div.menu-close {
+//    background-color: gray;
+    text-align: right;
+    margin:4%;
+    margin-bottom: 72px;
+    >img{
+      cursor: pointer;
+      height: 32px;
+      width: 32px;
+    }
+  }
+  >div.menu-item {
+    text-align: center;
+    font-size: 24px;
+    font-family: $font_family_4;
+    margin-top:12px;
+    margin-bottom:12px;
+
+    >a {
+      text-decoration: none;
+      color: white;
+    }
+    >a:hover {
+      cursor: pointer;
+      color:$background_color_submit;
+    }
+  }
+
+}
+
 
 @media (max-width: 768px) {
   .aae-section__container.header {
