@@ -10,10 +10,12 @@
     padding:20px 40px 20px 40px;
     //background-color: #ccc;
     >div.brand {
-      >img.logo-image {
-        margin-right: 20px;
-      }
-      >img.logo-text {
+      >a {
+        >img.logo-image {
+          margin-right: 20px;
+        }
+        >img.logo-text {
+        }
       }
       >div.menu-item {
         font-family: $font_family_4;

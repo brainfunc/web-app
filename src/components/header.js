@@ -6,8 +6,10 @@ class Header extends Component {
       <div className="aae-section__container header">
         <div className='wrapper'>
           <div className='brand'>
+          <a href='/' style={{textDecoration:'none'}}>
             <img className='logo-image' src= {`../../style/images/template/brand_image.svg` }/>
             <img className='logo-text' src={`../../style/images/template/brand_text.svg`} />
+          </a>
             <div className='menu-item more'>
               <img
                 className='image-more'

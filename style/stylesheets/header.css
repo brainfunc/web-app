@@ -4,7 +4,7 @@
   .aae-section__container.header > div.wrapper {
     width: 100%;
     padding: 20px 40px 20px 40px; }
-    .aae-section__container.header > div.wrapper > div.brand > img.logo-image {
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
       margin-right: 20px; }
     .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
       font-family: "Calibre", sans-serif;
