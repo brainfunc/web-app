@@ -46,4 +46,32 @@
 
 @media (max-width: 768px) {
   .aae-section__container.header > div.wrapper {
-    text-align: left; } }
+    text-align: left; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
+      height: 40px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-text {
+      height: 20px; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
+      display: none; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      margin-top: 6px;
+      display: inline;
+      float: right; } }
+
+@media (max-width: 300px) {
+  .aae-section__container.header > div.wrapper {
+    padding-left: 4px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
+      height: 32px;
+      text-align: center;
+      margin-right: 8px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-text {
+      height: 16px;
+      text-align: center; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
+      display: none; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      text-align: center;
+      margin-top: 4px;
+      display: inline;
+      float: right; } }

@@ -77,11 +77,51 @@
     >div.wrapper {
       text-align: left;
       >div.brand {
+        >a{
+          >img.logo-image {
+            height: 40px;
+          }
+          >img.logo-text {
+            height: 20px;
+          }
+        }
         >div.menu-item {
-
+          display: none;
         }
         >div.menu-item.more{
+          margin-top:6px;
+          display: inline;
+          float:right;
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 300px) {
+  .aae-section__container.header {
+    >div.wrapper {
+      padding-left: 4px;
+      >div.brand {
+        >a{
+          >img.logo-image {
+            height: 32px;
+            text-align: center;
+            margin-right: 8px;
+          }
+          >img.logo-text {
+            height: 16px;
+            text-align: center;
+          }
+        }
+        >div.menu-item {
+          display: none;
+        }
+        >div.menu-item.more{
+          text-align: center;
+          margin-top:4px;
+          display: inline;
+          float:right;
         }
       }
     }
