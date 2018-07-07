@@ -1,4 +1,4 @@
-# BrainFunc Concepts
+# BrainFunc Gameplay
 
 ## Overview
 
