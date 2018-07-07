@@ -35,10 +35,11 @@ class Footer extends Component {
           <div className='sub-section footer'>
           <ul>
             <li className='list-heading'> Gameplay </li>
-            <li><a href=''> Concept </a></li>
-            <li><a href=''> Metamask </a></li>
-            <li><a href=''> Battles </a></li>
+            <li><a href=''> Overview </a></li>
+            <li><a href=''> Concepts </a></li>
+            <li><a href=''> Collectibles </a></li>
             <li><a href=''> Marketplace </a></li>
+            <li><a href=''> Metamask </a></li>
           </ul>
           </div>
           <div className='sub-section footer'>
