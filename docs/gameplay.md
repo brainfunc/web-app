@@ -9,13 +9,13 @@ There are **13** different types of neurons (& correspondingly 13 different brai
 
 ## Concepts
 
-#### (a) Battles
+### (a) Battles
 In a battle, two players are paired <sup>**[2]**</sup> and given a task. For e.g - 'Listening to Music' or 'Smelling a Jasmine Flower'. Both players have to select brain parts from their collection that they think are involved in performing that activity or task. A correct combination, coupled with the shortest time taken leads to a win. In case of a tie for both of these factors, we determine whose brain part combination has the maximum combined strength <sup>**[3]**</sup>
 
 
 Battles can be more complex and tasks can involve usage of a combination of parts. A battle win leads to an increase in the strength of the parts involved, making them more valuable on the market place. Higher strength parts also enable the player to fight higher stake battles<sup>**[4]**</sup>
 
-#### (b) Strength
+### (b) Strength
 
 The strength of a brain part is the measure of it's valuability. The strength grows as a brain part wins more and more battles. Another way to grow strength of a part is to spend neurons to construct it, which can be bought on the marketplace.
 
@@ -23,10 +23,10 @@ Having said this, a higher strength brain part does not necessarily mean that th
 
 ## Collectibles
 
-#### (a) Neurons
+### (a) Neurons
 These are currently the smallest indivisible units of crypto items. They are available in 13 varieties corresponding to 13 "Component Parts". Having a neuron of specific type allows you to construct a component part of that type. You can add more neurons of the same type to increase the strenght of that part, as mentioned before. You can buy a neuron from the market place but the kind of neuron you get is based on luck. (We use a uniform distribution)
 
-#### (b) Component Parts
+### (b) Component Parts
 There are 13 Component brain parts corresponding to 13 types of neurons. They are enlisted below.
 
    - Frontal Lobe (Left and Right)
