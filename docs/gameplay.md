@@ -60,13 +60,18 @@ To use BrainFunc, you will need to install MetaMask, a digital wallet. You will 
 https://medium.com/@Hash_Rush/how-to-use-metamask-staying-safe-with-dapps-4f2b6c2c298
 
 # Footnotes
-**[1]** You can buy a neuron from our market place. You can buy a generic neuron, but the type of neuron that you get will be based on luck.
+**[1]** You can buy a generic neuron from the marketplace, which can be any of the 13 types based on luck.
 
-**[2]** The pairing algorithm is based on pairing players of similar strength randomly, to keep the game interesting and knowledge based as opposed to simply capital based.
+**[2]** The pairing algorithm is based on pairing players of similar strength.This is done deliberately to keep the game interesting and knowledge based as opposed to simply capital based.
 
-**[3]** A battle result is decided on (a) Choice of correct parts (b) Time taken  and (c) Combined part strength of parts involved, in that order.
+**[3]** A battle result is decided on three factors
+- (a) Choice of correct parts
+- (b) Time taken to solve the task
+- (c) Strength of the part combination
 
-**[4]** Higher stake battles mean higher absolute strength increase in case of a win, or corresponding decrease in case of a loss.
+The order of priority is **a->b->c** ('a' being highest and 'c' being lowest priority)
+
+**[4]** Higher stake battles are fought for higher win rewards. This means that the player who wins will have a higher absolute strength increase in case of a win, and will lose more strenght in case of a loss.
 
 # Copyright
 - © 2018 The Brainfunc Team.
