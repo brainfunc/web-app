@@ -10,7 +10,7 @@
 ## Do I need real Ether to play the game?
 
 
-## I'm a school. Can I get a discount for bulk runs of the game for students?
+## I'm a school. Can I get a discount for students?
 
 ## How do you make money?
 
