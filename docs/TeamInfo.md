@@ -10,6 +10,7 @@ The founder has had a very successful track record being both an Entrepreneur in
   Fullstack and Blockchain Developer, Lead Designer for Project.
   - Linkedin:- https://www.linkedin.com/in/tejas-nikumbh-19826061/
   - Github:- https://github.com/tejasnikumbh
+  - Behance:- https://www.behance.net/tejnikumbh11b9
 
 ## Advisors
 The team has advisors across three verticals, viz Medicine, Design and Business, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as we go along as well.
