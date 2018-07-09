@@ -52,7 +52,7 @@ The team has had previous development and marketing experience as a team. They a
   
   
   Previously worked with founder on an award winning Blockchain Project. 
-  - [OST KIT Alpha Phase II]
+  - [OST KIT Alpha Phase II](https://www.youtube.com/watch?v=6dUieg9o7iM&t=50s)
 
 
 # Copyright
