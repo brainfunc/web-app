@@ -51,7 +51,8 @@ The team has had previous development and marketing experience as a team. They a
   Javascript development and ERC721-Research. 
   
   
-  Previously worked with founder on an award winning Blockchain Project.
+  Previously worked with founder on an award winning Blockchain Project. 
+  - [OST KIT Alpha Phase II]
 
 
 # Copyright
