@@ -46,6 +46,13 @@ The team has had previous development and marketing experience as a team. They a
   Handles Social Media, Content, Digital Marketing and SEO.
   - Linkedin:- https://www.linkedin.com/in/prasanna-dhavale-758987165/
 
+### Hrushikesh Bhamre (Junior Developer Intern)
+
+  Javascript development and ERC721-Research. 
+  
+  
+  Previously worked with founder on an award winning Blockchain Project.
+
 
 # Copyright
 - © 2018 The Brainfunc Team.
