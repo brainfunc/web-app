@@ -22,7 +22,7 @@ The team has advisors across three verticals, viz Medicine, Design and Business,
   Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
-    - Masters in Surgery
+    - Masters in Surgery with Piles Speciality
 
 ### Abhinav Chhikara
 
