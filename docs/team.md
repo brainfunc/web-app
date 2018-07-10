@@ -8,8 +8,9 @@ The founder has had a very successful track record being both an Entrepreneur in
   Innovator (Ideation, Design and Development).
 
   Fullstack and Blockchain Developer, Lead Designer for Project.
-  - Linkedin:- https://www.linkedin.com/in/tejas-nikumbh-19826061/
-  - Github:- https://github.com/tejasnikumbh
+  - [Linkedin](https://www.linkedin.com/in/tejas-nikumbh-19826061/)
+  - [Github](https://github.com/tejasnikumbh)
+  - [Behance](https://www.behance.net/tejnikumbh11b9)
 
 ## Advisors
 The team has advisors across three verticals, viz Medicine, Design and Business, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as we go along as well.
@@ -21,7 +22,7 @@ The team has advisors across three verticals, viz Medicine, Design and Business,
   Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
-    - Masters in Surgery
+    - Masters in Surgery with Piles Speciality
 
 ### Abhinav Chhikara
 
@@ -29,14 +30,14 @@ The team has advisors across three verticals, viz Medicine, Design and Business,
 
   Lead Designer at Unacademy.
   Co-founder @lisn.xyz. Product Designer.
-  - Linkedin:- https://www.linkedin.com/in/abhinavchhikara/
+  - [Linkedin](https://www.linkedin.com/in/abhinavchhikara/)
 
 ### Abhishek Sen
 
   **Business Advisor**
 
   Co-founder and CEO @numbereight.me (Funded, Inc. in London, UK)
-  - Linkedin:- https://www.linkedin.com/in/abhisheksen/
+  - [Linkedin](https://www.linkedin.com/in/abhisheksen/)
 
 ## Interns
 The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. We intend to keep the interns and take them along as full time hires as the project develops.
@@ -44,7 +45,15 @@ The team has had previous development and marketing experience as a team. They a
 ### Prasanna Dhavale (PR and Marketing Intern)
 
   Handles Social Media, Content, Digital Marketing and SEO.
-  - Linkedin:- https://www.linkedin.com/in/prasanna-dhavale-758987165/
+  - [Linkedin](https://www.linkedin.com/in/prasanna-dhavale-758987165/)
+
+### Hrushikesh Bhamre (Junior Developer Intern)
+
+  Javascript development and ERC721-Research. 
+  
+  
+  Previously worked with founder on an award winning Blockchain Project. 
+  - [OST KIT Alpha Phase II](https://www.youtube.com/watch?v=6dUieg9o7iM&t=50s)
 
 
 # Copyright
