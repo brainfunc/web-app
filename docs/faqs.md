@@ -17,7 +17,7 @@ No you don't need a lot of prior knowledge about getting started with the game. 
 You can consult wikipedia, the internet or any other sources you like. We will provide with a basic starter Knowledge.md file in order for you to skim through brain parts and their functions. That should be good enough to get you started.
 
 ## What do I need to play the game?
-You need the chrome plugin [metamask](https://metamask.io/) with an account and real ether balance in it to play the game. Other than that, there are no other requirements. 
+You only need the chrome plugin [metamask](https://metamask.io/) with an account and real ether balance in it. There are no other special requirements to play the game. All the starter knowledge you need to win in battles and learn more can be found in Knolwedge.md file which we provide you upon registeration.
 
 ## What is Metamask and why do I need it?
 Metamask is a chrome plugin that helps you create a digital wallet with a unique wallet address. You can use this address to receive and send crypto funds and store crypto currencies.For more information and installation instructions, consult this [link](https://metamask.io/)
