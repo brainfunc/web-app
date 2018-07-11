@@ -13,7 +13,7 @@ The founder has had a very successful track record being both an Entrepreneur in
   - [Behance](https://www.behance.net/tejnikumbh11b9)
 
 ## Core Team
-The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. 
+The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. The team is well positioned to execute the game on a scalable production level.
 
 ### Prasanna Dhavale (PR and Marketing)
 
