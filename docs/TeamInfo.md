@@ -27,7 +27,11 @@ The team has had previous development and marketing experience as a team. They a
   Handles Social Media, Content, Digital Marketing and SEO.
   - [Linkedin](https://www.linkedin.com/in/prasanna-dhavale-758987165/)
 
-### Hrushikesh Bhamre (Junior Developer)
+
+## Interns
+The team has interns across development profiles currently. We are open to hiring new interns as well. Any applications are welcomed and the relevant link for the same is can be found [here](https://angel.co/brainfunc/jobs)
+
+### Hrushikesh Bhamre (Junior Developer Intern)
 
   Javascript development and ERC721-Research. 
   
