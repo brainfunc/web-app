@@ -40,14 +40,6 @@ The team has advisors across Medicine and Business verticals, which we feel are 
     - Bachelor of Ayurved Medicine & Surgery
     - Masters in Surgery with Piles Speciality
 
-### Abhishek Sen
-
-  **Business Advisor**
-
-  Co-founder and CEO @numbereight.me (Funded, Inc. in London, UK)
-  - [Linkedin](https://www.linkedin.com/in/abhisheksen/)
-
-
 # Copyright
 - © 2018 The Brainfunc Team.
 - Contact: tejnikumbh@gmail.com
