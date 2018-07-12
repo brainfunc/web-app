@@ -29,7 +29,7 @@ The team has had previous development and marketing experience as a team. They a
   - [OST KIT Alpha Phase II](https://www.youtube.com/watch?v=6dUieg9o7iM&t=50s)
 
 ## Advisors
-The team has advisors across Medicine and Business verticals, which we feel are a complete set given the current positioning of the project. We will look forward to onboard other advisors as we go along as well.
+The team has advisors in the Medicine Field, which we feel are a great complement given the current positioning of the project. We will look forward to onboard other advisors as we go along.
 
 ### Abhinav Sonawane
 
