@@ -3,7 +3,16 @@ import {Links} from '../constants/constants';
 
 class Footer extends Component {
 
-
+  // Code for notice
+  // <div className='sub-section notice'>
+  //   <div className='component left'>
+  //     Terms of use
+  //   </div>
+  //   <div className='component right'>
+  //     Privacy
+  //   </div>
+  // </div>
+  
   render() {
     return (
       <div>
@@ -11,7 +20,6 @@ class Footer extends Component {
           <div className='sub-section footer'>
             <ul>
               <li className='list-heading'> About </li>
-              <li><a href={Links.footer.about.whitepaper}> White Paper </a></li>
               <li><a href={Links.footer.about.team}> Team </a></li>
               <li><a href=''> Blog </a></li>
               <li><a href=''> Jobs </a></li>

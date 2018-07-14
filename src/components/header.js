@@ -54,9 +54,10 @@ class Header extends Component {
                 <img src='../../style/images/template/cross.png'
                 onClick={this.hideModal.bind(this)}/>
               </div>
-              <div className='menu-item'><a href={Links.footer.about.faqs}> Whitepaper </a></div>
+              <div className='menu-item'><a href={Links.footer.about.team}> Team </a></div>
               <div className='menu-item'><a href={Links.footer.about.team}> Blog </a></div>
               <div className='menu-item'><a href=''> Jobs </a></div>
+              <div className='menu-item'><a href=''> FAQs </a></div>
               <div className='menu-item'><a href=''> Contact </a></div>
             </div>
           </Modal>
@@ -75,8 +76,7 @@ class Header extends Component {
                   onClick={this.showModal.bind(this)}/>
               </div>
 
-              <div className='menu-item'><a href={Links.footer.about.faqs}>FAQs </a></div>
-              <div className='menu-item'><a href={Links.footer.about.team}> Team </a></div>
+              <div className='menu-item'><a href={Links.footer.about.faqs}>How to Play? </a></div>
               <div className='menu-item'><a href=''> Marketplace </a></div>
             </div>
           </div>
