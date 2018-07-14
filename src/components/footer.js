@@ -40,10 +40,9 @@ class Footer extends Component {
               <li><a href=''> Facebook </a></li>
               <li><a href=''> Twitter </a></li>
               <li><a href=''> Telegram </a></li>
-              <li><a href=''> Instagram </a></li>
               <li><a href=''> Reddit </a></li>
               <li><a href=''> Youtube </a></li>
-              <li><a href=''> Slack </a></li>
+              <li><a href=''> Discord </a></li>
               <li><a href=''> Linkedin </a></li>
             </ul>
           </div>
