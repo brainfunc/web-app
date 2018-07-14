@@ -3,6 +3,9 @@
 	border-top: 2px solid $background_color_cream;
 	background-image: url('../images/template/neural-network-light.svg');
 	border-bottom: 2px solid $background_color_cream;
+	>div.wrapper {
+		text-align: center;
+	}
 }
 
 @media (max-width: 512px) {
