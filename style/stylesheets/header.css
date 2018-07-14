@@ -20,7 +20,7 @@
         color: #4a4a4a; }
       .aae-section__container.header > div.wrapper > div.brand > div.menu-item a:hover {
         cursor: pointer;
-        color: #d34a5b; }
+        color: #ec1943; }
     .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
       cursor: pointer; }
 
@@ -44,7 +44,7 @@
     color: white; }
   .modal__container > div.menu-item > a:hover {
     cursor: pointer;
-    color: #d34a5b; }
+    color: #ec1943; }
 
 @media (max-width: 768px) {
   .aae-section__container.header > div.wrapper {

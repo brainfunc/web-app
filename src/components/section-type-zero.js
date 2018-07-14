@@ -15,7 +15,7 @@ class SectionTypeZero extends Component {
           <button
           className='signup-button'
           onClick = {this.props.navigateFunction}>
-            Start Game!
+            Get Started
           </button>
         </div>
       </div>

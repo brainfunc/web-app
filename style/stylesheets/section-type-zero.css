@@ -39,15 +39,17 @@
     .aae-section__container.section-type-zero > div.wrapper > .signup-button {
       margin-left: 0%;
       border: 2px solid #fff;
-      border-radius: 25px;
+      border-radius: 8px;
       height: 50px;
       padding-left: 40px;
       padding-right: 40px;
-      background-color: #d34a5b;
+      background-color: #ec1943;
+      border: 2px solid #ec1943;
+      box-shadow: 4px 8px 16px #d3d3d3;
       color: #fff;
       font-weight: 400;
       font-family: "Avenir next", sans-serif;
-      font-size: 1.1em;
+      font-size: 1.2em;
       opacity: 1;
       width: 80%;
       margin-top: 5%;

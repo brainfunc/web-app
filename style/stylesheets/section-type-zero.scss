@@ -46,15 +46,17 @@
       >.signup-button {
         margin-left: 0%;
         border: 2px solid #fff;
-        border-radius: 25px;
+        border-radius: 8px;
         height: 50px;
         padding-left: 40px;
         padding-right: 40px;
 				background-color: $background_color_submit;
+				border: 2px solid $background_color_submit;
+				box-shadow: 4px 8px 16px #d3d3d3;
         color: #fff;
 				font-weight: 400;
 				font-family: $font_family_2;
-				font-size:1.1em;
+				font-size:1.2em;
 				opacity: 1;
 				width: 80%;
 				margin-top: 5%;
