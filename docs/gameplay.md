@@ -6,10 +6,9 @@ BrainFunc is an epic e-learning adventure powered by the blockchain.
 
 In the game, you can collect neurons (crypto collectibles in the game), use them to construct your own unique brain parts (again crypto collectibles) and use them to fight epic battles! All this while learning about different parts of the brain and their functions. We know it sounds super intriguing and fun, and we can't wait for you to get started. Read on to get a primer about the general gameplay.
 
-There are **13** different types of neurons (& correspondingly 13 different brain parts).You can start off by buying neuron packs<sup>**[1]**</sup> on the game marketplace. These can then be used to construct brain parts which will be useful in fighting **battles**.
-
-
 ## Concepts
+
+There are **thirteen(13)** different types of neurons (& correspondingly thirteen different brain parts).You can start off by buying neuron packs<sup>**[1]**</sup> on the game marketplace. These can then be used to construct brain parts which will be useful in fighting **battles**.
 
 ### (a) Battles
 In a battle, two players are paired <sup>**[2]**</sup> and given a task. For e.g - 'Listening to Music' or 'Smelling a Jasmine Flower'. Both players have to select brain parts from their collection that they think are involved in performing that activity or task. A correct combination, coupled with the shortest time taken leads to a win. In case of a tie for both of these factors, we determine whose brain part combination has the maximum combined strength <sup>**[3]**</sup>
