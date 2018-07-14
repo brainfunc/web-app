@@ -2,18 +2,19 @@
 
 ## Overview
 
-Brainfunc is an e-learning game where players construct different parts of the brain by collecting neurons. These brain parts can then be used to fight battles.
+BrainFunc is an epic e-learning adventure powered by the blockchain.
 
-There are **13** different types of neurons (& correspondingly 13 different brain parts). A player can buy neurons <sup>**[1]**</sup> on the marketplace to construct brain parts.
-
+In the game, you can collect neurons (crypto collectibles in the game), use them to construct your own unique brain parts (again crypto collectibles) and use them to fight epic battles! All this while learning about different parts of the brain and their functions. We know it sounds super intriguing and fun, and we can't wait for you to get started. Read on to get a primer about the general gameplay.
 
 ## Concepts
+
+There are **thirteen(13)** different types of neurons (& correspondingly thirteen different brain parts).You can start off by buying neuron packs <sup>**[1]**</sup> on the game marketplace. These can then be used to construct brain parts which will be useful in fighting **battles**.
 
 ### (a) Battles
 In a battle, two players are paired <sup>**[2]**</sup> and given a task. For e.g - 'Listening to Music' or 'Smelling a Jasmine Flower'. Both players have to select brain parts from their collection that they think are involved in performing that activity or task. A correct combination, coupled with the shortest time taken leads to a win. In case of a tie for both of these factors, we determine whose brain part combination has the maximum combined strength <sup>**[3]**</sup>
 
 
-Battles can be more complex and tasks can involve usage of a combination of parts. A battle win leads to an increase in the strength of the parts involved, making them more valuable on the market place. Higher strength parts also enable the player to fight higher stake battles<sup>**[4]**</sup>
+Battles can be more complex and tasks can involve usage of a combination of parts. A battle win leads to an increase in the **strength** of the parts involved, making them more valuable on the market place. Higher strength parts also enable the player to fight higher stake battles<sup>**[4]**</sup>
 
 ### (b) Strength
 
@@ -24,10 +25,10 @@ Having said this, a higher strength brain part does not necessarily mean that th
 ## Collectibles
 
 ### (a) Neurons
-These are currently the smallest indivisible units of crypto items. They are available in 13 varieties corresponding to 13 "Component Parts". Having a neuron of specific type allows you to construct a component part of that type. You can add more neurons of the same type to increase the strenght of that part, as mentioned before. You can buy a neuron from the market place but the kind of neuron you get is based on luck. (We use a uniform distribution)
+These are currently the smallest indivisible units of crypto items. They are available in thirteen varieties corresponding to thirteen **Component Parts**. Having a neuron of specific type allows you to construct a component part of that type. You can add more neurons of the same type to increase the strenght of that part, as mentioned before. You can buy a neuron from the market place but the kind of neuron you get is based on luck. (We use a uniform distribution)
 
 ### (b) Component Parts
-There are 13 Component brain parts corresponding to 13 types of neurons. They are enlisted below.
+There are thirteen Component brain parts corresponding to thirteen types of neurons. They are enlisted below.
 
    - Frontal Lobe (Left and Right)
    - Parietal Lobe
@@ -60,7 +61,7 @@ To use BrainFunc, you will need to install MetaMask, a digital wallet. You will 
 https://medium.com/@Hash_Rush/how-to-use-metamask-staying-safe-with-dapps-4f2b6c2c298
 
 # Footnotes
-**[1]** You can buy a generic neuron from the marketplace, which can be any of the 13 types based on luck.
+**[1]** You can buy a general neuron pack from the marketplace, which can contain any combination of the 13 types.
 
 **[2]** The pairing algorithm is based on pairing players of similar strength.This is done deliberately to keep the game interesting and knowledge based as opposed to simply capital based.
 
