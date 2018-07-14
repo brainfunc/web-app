@@ -8,13 +8,13 @@ In the game, you can collect neurons (crypto collectibles in the game), use them
 
 ## Concepts
 
-There are **thirteen(13)** different types of neurons (& correspondingly thirteen different brain parts).You can start off by buying neuron packs<sup>**[1]**</sup> on the game marketplace. These can then be used to construct brain parts which will be useful in fighting **battles**.
+There are **thirteen(13)** different types of neurons (& correspondingly thirteen different brain parts).You can start off by buying neuron packs <sup>**[1]**</sup> on the game marketplace. These can then be used to construct brain parts which will be useful in fighting **battles**.
 
 ### (a) Battles
 In a battle, two players are paired <sup>**[2]**</sup> and given a task. For e.g - 'Listening to Music' or 'Smelling a Jasmine Flower'. Both players have to select brain parts from their collection that they think are involved in performing that activity or task. A correct combination, coupled with the shortest time taken leads to a win. In case of a tie for both of these factors, we determine whose brain part combination has the maximum combined strength <sup>**[3]**</sup>
 
 
-Battles can be more complex and tasks can involve usage of a combination of parts. A battle win leads to an increase in the strength of the parts involved, making them more valuable on the market place. Higher strength parts also enable the player to fight higher stake battles<sup>**[4]**</sup>
+Battles can be more complex and tasks can involve usage of a combination of parts. A battle win leads to an increase in the **strength** of the parts involved, making them more valuable on the market place. Higher strength parts also enable the player to fight higher stake battles<sup>**[4]**</sup>
 
 ### (b) Strength
 
@@ -25,10 +25,10 @@ Having said this, a higher strength brain part does not necessarily mean that th
 ## Collectibles
 
 ### (a) Neurons
-These are currently the smallest indivisible units of crypto items. They are available in 13 varieties corresponding to 13 "Component Parts". Having a neuron of specific type allows you to construct a component part of that type. You can add more neurons of the same type to increase the strenght of that part, as mentioned before. You can buy a neuron from the market place but the kind of neuron you get is based on luck. (We use a uniform distribution)
+These are currently the smallest indivisible units of crypto items. They are available in thirteen varieties corresponding to thirteen **Component Parts**. Having a neuron of specific type allows you to construct a component part of that type. You can add more neurons of the same type to increase the strenght of that part, as mentioned before. You can buy a neuron from the market place but the kind of neuron you get is based on luck. (We use a uniform distribution)
 
 ### (b) Component Parts
-There are 13 Component brain parts corresponding to 13 types of neurons. They are enlisted below.
+There are thirteen Component brain parts corresponding to thirteen types of neurons. They are enlisted below.
 
    - Frontal Lobe (Left and Right)
    - Parietal Lobe
