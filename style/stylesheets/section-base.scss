@@ -20,6 +20,11 @@
 			margin-left: 20%;
 			margin-top: 10%;
 		}
+		>img.feature__image.card {
+			box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,.1);
+			border-radius: 10%;
+			border: 0px;
+		}
 		>div.feature__action {
 			font-family: $font_family_3;
 			font-size: 3.25em;

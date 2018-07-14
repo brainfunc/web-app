@@ -7,7 +7,7 @@ class SectionTypeZero extends Component {
     return (
       <div className='aae-section__container section-type-zero'>
         <div className='wrapper'>
-          <img className='feature__image' src={`../../style/images/${this.props.logoImage}`}/>
+          <img className='feature__image card' src={`../../style/images/${this.props.logoImage}`}/>
         </div>
         <div className='wrapper'>
           <div className='title'> {this.props.title} </div>

@@ -15,6 +15,10 @@
     width: 60%;
     margin-left: 20%;
     margin-top: 10%; }
+  .aae-section__container > div.wrapper > img.feature__image.card {
+    box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    border: 0px; }
   .aae-section__container > div.wrapper > div.feature__action {
     font-family: "Moderneratrial", sans-serif;
     font-size: 3.25em;
