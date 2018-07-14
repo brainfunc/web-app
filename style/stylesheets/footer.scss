@@ -84,20 +84,21 @@
 		font-size: 14px;
 		color: #767676;
 		text-align: center;
-		// >div.component {
-		// 	width: 12.5%;
-		// 	text-decoration: none;
-		// 	display:inline;
-		// 	float:left;
-		// }
-		// >div.component.left {
-		// 	margin-left: 37.5%;
-		// 	text-align: right;
-		// }
-		// >div.component.right {
-		// 	margin-left: 5%;
-		// 	text-align: left;
-		// }
+		margin-bottom: 8px;
+		>div.component {
+			width: 50%;
+			text-decoration: none;
+			display:inline;
+			float:left;
+		}
+		>div.component.left {
+			padding-right: 2%;
+			text-align: right;
+		}
+		>div.component.right {
+			padding-left: 2%;
+			text-align: left;
+		}
 	}
 }
 

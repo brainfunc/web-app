@@ -61,7 +61,19 @@
     font-family: "Avenir next", sans-serif;
     font-size: 14px;
     color: #767676;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 8px; }
+    .aae-section__container.notice > div.sub-section.notice > div.component {
+      width: 50%;
+      text-decoration: none;
+      display: inline;
+      float: left; }
+    .aae-section__container.notice > div.sub-section.notice > div.component.left {
+      padding-right: 2%;
+      text-align: right; }
+    .aae-section__container.notice > div.sub-section.notice > div.component.right {
+      padding-left: 2%;
+      text-align: left; }
 
 @media (max-width: 1024px) {
   .aae-section__container.footer > div.sub-section.footer > div.tech-message-wrapper > div.tech-message {

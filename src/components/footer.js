@@ -1,18 +1,25 @@
 import React,{Component} from 'react';
 import {Links} from '../constants/constants';
 
+// Code for copyright notice
+// <div className='divider'></div>
+// <div className='sub-section notice'>
+//   © Tejas Nikumbh 2018. All rights reserved.
+// </div>
+
+// Code for terms and privacy
+// <div className='sub-section notice'>
+//   <div className='component left'>
+//     Terms of use
+//   </div>
+//   <div className='component right'>
+//     Privacy
+//   </div>
+// </div>
+
 class Footer extends Component {
 
-  // Code for notice
-  // <div className='sub-section notice'>
-  //   <div className='component left'>
-  //     Terms of use
-  //   </div>
-  //   <div className='component right'>
-  //     Privacy
-  //   </div>
-  // </div>
-  
+
   render() {
     return (
       <div>
@@ -62,9 +69,8 @@ class Footer extends Component {
           </div>
         </div>
         <div className='aae-section__container notice'>
-          <div className='divider'></div>
           <div className='sub-section notice'>
-            © Tejas Nikumbh 2018. All rights reserved.
+            © All rights are reserved by Tejas Nikumbh (2018)
           </div>
         </div>
       </div>

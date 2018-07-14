@@ -6,11 +6,16 @@ BrainFunc is a learning adventure where you can apply your knowledge of neurosci
 
 # Contents
 - [docs](https://github.com/brainfunc/web-app/tree/master/docs)
-  
+
   Documents related to the team, faq, and proposals to competitions/challenges.
 - [design](https://github.com/brainfunc/web-app/tree/master/design)
 
   General static design resources related to the web-app [sketch files or svgs + pngs]
+
+# Pending Tasks
+- [ ] Put 'Terms of use' and 'Privacy' in footer
+- [ ] Protect all creative assets hosted on website
+- [ ] Organise design resources
 
 # Copyright
 - © 2018 The Brainfunc Team.
