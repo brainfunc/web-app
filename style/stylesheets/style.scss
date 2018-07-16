@@ -1,7 +1,7 @@
 @import "../constants/constants.scss";
 
 body {
-	background-color: $background_color_cream;
+	background-color: white;
 }
 
 ::placeholder {
@@ -16,7 +16,7 @@ body {
 .aae__container {
 	width: 100%;
 	//padding-top: 10%;
-	background-color: $background_color_cream;
+	background-color: white;
 	//background-image:
 	//url('../images/template/neural-network-light.svg');
 }

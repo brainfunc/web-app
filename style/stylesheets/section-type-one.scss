@@ -4,6 +4,10 @@
 	background-image: url('../images/template/neural-network-light.svg');
 	background-color: $background_color_cream;
 	border-bottom: 2px solid $background_color_cream;
+	margin: 8%;
+	//margin-top: 6%;
+	margin-bottom: 3%;
+	//box-shadow: 0em 0.5em 1.5em 0 rgba(0,0,0,0.1);
 }
 
 @media (max-width: 512px) {
