@@ -42,7 +42,7 @@ The team has interns across development profiles currently. We are open to hirin
 ## Advisors
 The team has advisors in the Medicine Field, which we feel are a great complement given the current positioning of the project. We will look forward to onboard other advisors as we go along.
 
-### Shubhada Bhamre
+### Shubhada Bhamre (MBBS, MS)
 
   **Medical Advisor**
 
@@ -51,7 +51,7 @@ The team has advisors in the Medicine Field, which we feel are a great complemen
     - Bachelor of Medicine, Bachelor of Surgery
     - Experienced Surgeon with over 25 years of Experience
 
-### Abhinav Sonawane
+### Abhinav Sonawane (BAMS, MS)
 
   **Medical Advisor**
 
