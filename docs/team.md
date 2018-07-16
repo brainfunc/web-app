@@ -49,6 +49,7 @@ The team has advisors in the Medicine Field, which we feel are a great complemen
   Doctor. Supervisory Advice.
   - Qualifications
     - Bachelor of Medicine, Bachelor of Surgery
+    - Masters in Surgery with General Surgery Speciality
     - Experienced Surgeon with over 25 years of Experience
 
 ### Abhinav Sonawane (BAMS, MS)
@@ -58,7 +59,7 @@ The team has advisors in the Medicine Field, which we feel are a great complemen
   Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
-    - Masters in Surgery with Piles Speciality
+    - Masters in Ayurvedic Surgery (Minimal Invasive Surgery)
 
 # Copyright
 - © 2018 The Brainfunc Team.
