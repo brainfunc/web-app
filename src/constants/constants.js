@@ -1,7 +1,7 @@
 export const Links = {
   'header': {
     'marketplace':'',
-    'how_to_play':'',
+    'how_to_play':'https://github.com/brainfunc/web-app/blob/dev/docs/gameplay.md',
     'team': 'https://github.com/brainfunc/web-app/blob/dev/docs/team.md',
     'blog': 'https://medium.com/brainfunc',
     'jobs': 'https://angel.co/brainfunc/jobs',
