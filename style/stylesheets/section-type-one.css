@@ -1,9 +1,8 @@
 .aae-section__container.type-one {
   border-top: 2px solid #f3f1ee;
   background-image: url("../images/template/neural-network-light.svg");
+  background-color: #f3f1ee;
   border-bottom: 2px solid #f3f1ee; }
-  .aae-section__container.type-one > div.wrapper {
-    text-align: center; }
 
 @media (max-width: 512px) {
   .aae-section__container.type-one > div.wrapper {

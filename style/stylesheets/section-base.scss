@@ -18,14 +18,14 @@
 			width: 60%;
 			margin-left: 20%;
 			margin-top: 10%;
+			border: 0px;
 		}
-		>img.feature__image.card {
+		>img.feature__image.card.neuron {
 			width: 60%;
 			margin-left: 20%;
 			margin-top: 10%;
 			box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,.1);
 			border-radius: 10%;
-			border: 0px;
 		}
 		>div.feature__action {
 			font-family: $font_family_3;

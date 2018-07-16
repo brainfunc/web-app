@@ -7,7 +7,7 @@ export const footerData = {
 
 export const sectionData = [
     {
-      logoImage: 'template/logov3.3.svg',
+      logoImage: 'template/logov3.5.svg',
       title: 'BrainFunc',
       subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate Brain on the Blockchain!`
     },
