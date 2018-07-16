@@ -3,7 +3,7 @@
   padding-top: 0%;
   padding-bottom: 5%;
   background-color: #fff;
-  background-image: url("../images/template/red_rect.svg");
+  background-image: url("../images/template/red_rectv2.svg");
   background-repeat: no-repeat;
   background-size: contain; }
   .aae-section__container.section-type-zero > div.wrapper {
@@ -45,7 +45,7 @@
       padding-right: 40px;
       background-color: #ec1943;
       border: 2px solid #ec1943;
-      box-shadow: 4px 8px 16px #d3d3d3;
+      box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
       color: #fff;
       font-weight: 400;
       font-family: "Avenir next", sans-serif;
