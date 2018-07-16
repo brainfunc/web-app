@@ -58,7 +58,7 @@ class Header extends Component {
               <div className='menu-item'><a target='_blank' href={Links.header.blog}> Blog </a></div>
               <div className='menu-item'><a target='_blank' href={Links.header.jobs}> Jobs </a></div>
               <div className='menu-item'><a target='_blank' href={Links.header.faqs}> FAQs </a></div>
-              <div className='menu-item'><a target='_blank' href={Links.header.contact}> Contact </a></div>
+              <div className='menu-item'><a href={Links.header.contact}> Contact </a></div>
             </div>
           </Modal>
           <div className='wrapper'>
@@ -77,7 +77,7 @@ class Header extends Component {
               </div>
 
               <div className='menu-item'><a target='_blank' href={Links.header.how_to_play}>How to Play? </a></div>
-              <div className='menu-item'><a target='_blank' href={Links.header.marketplace}> Marketplace </a></div>
+              <div className='menu-item'><a href={Links.header.marketplace}> Marketplace </a></div>
             </div>
           </div>
       </div>

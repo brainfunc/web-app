@@ -31,7 +31,7 @@ class Footer extends Component {
               <li><a target='_blank' href={Links.footer.about.blog}> Blog </a></li>
               <li><a target='_blank' href={Links.footer.about.jobs}> Jobs </a></li>
               <li><a target='_blank' href={Links.footer.about.faqs}> FAQs </a></li>
-              <li><a target='_blank' href={Links.footer.about.contact}> Contact </a></li>
+              <li><a href={Links.footer.about.contact}> Contact </a></li>
             </ul>
           </div>
           <div className='sub-section footer'>
