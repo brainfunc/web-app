@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="898px" height="512px" viewBox="0 0 898 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="47.528671%" y1="73.5157534%" x2="100%" y2="11.7671948%" id="linearGradient-1">
+            <stop stop-color="#F73678" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#EC1943" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero">
+            <rect id="Rectangle-2" fill="url(#linearGradient-1)" transform="translate(-48.000000, 44.700351) rotate(30.000000) translate(48.000000, -44.700351) " x="-331.009699" y="-333.112471" width="566.019398" height="755.625644"></rect>
+            <polygon id="Rectangle-3" fill-opacity="0.5" fill="#FA97B4" transform="translate(376.614564, -13.173533) rotate(60.000000) translate(-376.614564, 13.173533) " points="104.73892 -595.924038 648.490208 -595.924038 648.43109 569.168407 104.73892 569.576973"></polygon>
+        </g>
+    </g>
+</svg>
