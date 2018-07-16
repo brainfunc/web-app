@@ -54,11 +54,11 @@ class Header extends Component {
                 <img src='../../style/images/template/cross.png'
                 onClick={this.hideModal.bind(this)}/>
               </div>
-              <div className='menu-item'><a href={Links.header.team}> Team </a></div>
-              <div className='menu-item'><a href={Links.header.blog}> Blog </a></div>
-              <div className='menu-item'><a href={Links.header.jobs}> Jobs </a></div>
-              <div className='menu-item'><a href={Links.header.faqs}> FAQs </a></div>
-              <div className='menu-item'><a href={Links.header.contact}> Contact </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.team}> Team </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.blog}> Blog </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.jobs}> Jobs </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.faqs}> FAQs </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.contact}> Contact </a></div>
             </div>
           </Modal>
           <div className='wrapper'>
@@ -76,8 +76,8 @@ class Header extends Component {
                   onClick={this.showModal.bind(this)}/>
               </div>
 
-              <div className='menu-item'><a href={Links.header.how_to_play}>How to Play? </a></div>
-              <div className='menu-item'><a href={Links.header.marketplace}> Marketplace </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.how_to_play}>How to Play? </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.marketplace}> Marketplace </a></div>
             </div>
           </div>
       </div>

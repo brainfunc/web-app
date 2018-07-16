@@ -27,32 +27,32 @@ class Footer extends Component {
           <div className='sub-section footer'>
             <ul>
               <li className='list-heading'> About </li>
-              <li><a href={Links.footer.about.team}> Team </a></li>
-              <li><a href={Links.footer.about.blog}> Blog </a></li>
-              <li><a href={Links.footer.about.jobs}> Jobs </a></li>
-              <li><a href={Links.footer.about.faqs}> FAQs </a></li>
-              <li><a href={Links.footer.about.contact}> Contact </a></li>
+              <li><a target='_blank' href={Links.footer.about.team}> Team </a></li>
+              <li><a target='_blank' href={Links.footer.about.blog}> Blog </a></li>
+              <li><a target='_blank' href={Links.footer.about.jobs}> Jobs </a></li>
+              <li><a target='_blank' href={Links.footer.about.faqs}> FAQs </a></li>
+              <li><a target='_blank' href={Links.footer.about.contact}> Contact </a></li>
             </ul>
           </div>
           <div className='sub-section footer'>
             <ul>
               <li className='list-heading'> Community </li>
-              <li><a href={Links.footer.community.facebook}> Facebook </a></li>
-              <li><a href={Links.footer.community.twitter}> Twitter </a></li>
-              <li><a href={Links.footer.community.telegram}> Telegram </a></li>
-              <li><a href={Links.footer.community.reddit}> Reddit </a></li>
-              <li><a href={Links.footer.community.youtube}> Youtube </a></li>
-              <li><a href={Links.footer.community.linkedin}> Linkedin </a></li>
+              <li><a target='_blank' href={Links.footer.community.facebook}> Facebook </a></li>
+              <li><a target='_blank' href={Links.footer.community.twitter}> Twitter </a></li>
+              <li><a target='_blank' href={Links.footer.community.telegram}> Telegram </a></li>
+              <li><a target='_blank' href={Links.footer.community.reddit}> Reddit </a></li>
+              <li><a target='_blank' href={Links.footer.community.youtube}> Youtube </a></li>
+              <li><a target='_blank' href={Links.footer.community.linkedin}> Linkedin </a></li>
             </ul>
           </div>
           <div className='sub-section footer'>
           <ul>
             <li className='list-heading'> Gameplay </li>
-            <li><a href={Links.footer.gameplay.overview}> Overview </a></li>
-            <li><a href={Links.footer.gameplay.concepts}> Concepts </a></li>
-            <li><a href={Links.footer.gameplay.collectibles}> Collectibles </a></li>
-            <li><a href={Links.footer.gameplay.marketplace}> Marketplace </a></li>
-            <li><a href={Links.footer.gameplay.metamask}> Metamask </a></li>
+            <li><a target='_blank' href={Links.footer.gameplay.overview}> Overview </a></li>
+            <li><a target='_blank' href={Links.footer.gameplay.concepts}> Concepts </a></li>
+            <li><a target='_blank' href={Links.footer.gameplay.collectibles}> Collectibles </a></li>
+            <li><a target='_blank' href={Links.footer.gameplay.marketplace}> Marketplace </a></li>
+            <li><a target='_blank' href={Links.footer.gameplay.metamask}> Metamask </a></li>
           </ul>
           </div>
           <div className='sub-section footer'>
