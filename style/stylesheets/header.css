@@ -1,135 +1,79 @@
 .aae-section__container.header {
-  padding-bottom: 32px;
-  margin: 10%;
-  margin-top: 0%;
-  background-color: #fff;
-  background-repeat: repeat;
-  background-size: auto; }
-  .aae-section__container.header > div.wrapper > img.feature__image {
-    width: 80%;
-    margin-top: 20%;
-    margin-left: 10%;
-    margin-right: 10%; }
-  .aae-section__container.header > div.wrapper > div.title {
-    font-family: "Avenir", sans-serif;
-    font-size: 4em;
-    font-weight: 700;
-    color: #212121;
-    text-align: left;
-    margin-top: 80px;
-    margin-left: 0%;
-    margin-right: 10%;
-    margin-bottom: 20px;
-    line-height: 1.0; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-family: "Avenir", sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    color: #7c7c7c;
-    text-align: left;
-    margin-top: 40px;
-    margin-left: 0%;
-    margin-right: 15%;
-    margin-bottom: 20px;
-    line-height: 1.25; }
-  .aae-section__container.header > div.wrapper > .signup-button {
-    margin-left: 0%;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    height: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #d34a5b;
-    color: #fff;
-    font-weight: 400;
-    font-family: "Avenir next", sans-serif;
-    opacity: 1;
-    width: 80%;
-    margin-top: 5%;
-    outline: none; }
-  .aae-section__container.header > div.wrapper > .signup-button:hover {
-    opacity: 0.8; }
-  .aae-section__container.header > div.wrapper > .signup-button:focus {
-    opacity: 1.0; }
+  width: 100%;
+  border-bottom: 2px solid #f3f1ee; }
+  .aae-section__container.header > div.wrapper {
+    width: 100%;
+    padding: 20px 40px 20px 40px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
+      margin-right: 20px; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
+      font-family: "Calibre", sans-serif;
+      font-size: 1.1em;
+      font-weight: 500;
+      text-align: center;
+      display: inline;
+      float: right;
+      padding: 0px 16px 10px 16px;
+      margin-top: 10px; }
+      .aae-section__container.header > div.wrapper > div.brand > div.menu-item a {
+        text-decoration: none;
+        color: #4a4a4a; }
+      .aae-section__container.header > div.wrapper > div.brand > div.menu-item a:hover {
+        cursor: pointer;
+        color: #ec1943; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      cursor: pointer; }
 
-@media (max-width: 1024px) {
-  .aae-section__container.header > div.wrapper > img.feature__image {
-    width: 80%;
-    margin-top: 25%; }
-  .aae-section__container.header > div.wrapper > div.title {
-    font-size: 3.5em;
-    margin-left: 0%; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-size: 1.7em;
-    margin-left: 0%; }
-  .aae-section__container.header > div.wrapper > .signup-button {
-    margin-left: 0%; } }
+.modal__container > div.menu-close {
+  text-align: right;
+  margin: 4%;
+  margin-bottom: 72px; }
+  .modal__container > div.menu-close > img {
+    cursor: pointer;
+    height: 32px;
+    width: 32px; }
 
-@media (max-width: 900px) {
-  .aae-section__container.header > div.wrapper > img.feature__image {
-    margin-top: 40%; }
-  .aae-section__container.header > div.wrapper > div.title {
-    font-size: 3.2em; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-size: 1.6em; } }
+.modal__container > div.menu-item {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Calibre", sans-serif;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+  .modal__container > div.menu-item > a {
+    text-decoration: none;
+    color: white; }
+  .modal__container > div.menu-item > a:hover {
+    cursor: pointer;
+    color: #ec1943; }
 
 @media (max-width: 768px) {
-  .aae-section__container.header > div.wrapper > img.feature__image {
-    width: 70%;
-    margin-bottom: 0%;
-    margin-top: 8%; }
-  .aae-section__container.header > div.wrapper > div.title {
-    font-size: 4em;
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 4%; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-size: 2em;
-    text-align: center;
-    margin-left: 10%; }
-  .aae-section__container.header > div.wrapper .signup-button {
-    text-align: center;
-    margin-left: 0%; } }
-
-@media (max-width: 512px) {
   .aae-section__container.header > div.wrapper {
-    display: block;
-    padding: 32px;
-    height: 100%;
-    text-align: center; }
-    .aae-section__container.header > div.wrapper > img.feature__image {
-      width: 80%;
-      margin-left: 10%; }
-    .aae-section__container.header > div.wrapper > div.title {
-      font-size: 3em;
-      margin-top: 0%; }
-    .aae-section__container.header > div.wrapper > div.sub-title {
-      font-size: 1.5em;
-      margin-left: 8%;
-      margin-right: 8%;
-      margin-bottom: 0%;
-      margin-top: 0%; }
-    .aae-section__container.header > div.wrapper > .signup-button {
-      margin-top: 10%;
-      margin-left: 0%;
-      width: 80%; } }
-
-@media (max-width: 412px) {
-  .aae-section__container.header > div.wrapper > div.title {
-    width: 100%;
-    margin-left: 0%;
-    padding-left: 0%;
-    font-size: 2.5em; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-size: 1.25em; }
-  .aae-section__container.header > div.wrapper > .signup-button {
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 1em; } }
+    text-align: left; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
+      height: 40px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-text {
+      height: 20px; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
+      display: none; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      margin-top: 6px;
+      display: inline;
+      float: right; } }
 
 @media (max-width: 300px) {
-  .aae-section__container.header > div.wrapper > div.title {
-    width: 100%;
-    font-size: 2em; }
-  .aae-section__container.header > div.wrapper > div.sub-title {
-    font-size: 1em; } }
+  .aae-section__container.header > div.wrapper {
+    padding-left: 4px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-image {
+      height: 32px;
+      text-align: center;
+      margin-right: 8px; }
+    .aae-section__container.header > div.wrapper > div.brand > a > img.logo-text {
+      height: 16px;
+      text-align: center; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item {
+      display: none; }
+    .aae-section__container.header > div.wrapper > div.brand > div.menu-item.more {
+      text-align: center;
+      margin-top: 4px;
+      display: inline;
+      float: right; } }

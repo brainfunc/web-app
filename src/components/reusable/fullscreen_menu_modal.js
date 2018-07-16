@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Modal from 'react-awesome-modal';
 
-class AaeModal extends Component {
+class FullScreenMenuModal extends Component {
   render() {
     return(
       <Modal visible={this.props.visible}
@@ -23,4 +23,4 @@ class AaeModal extends Component {
   }
 }
 
-export default AaeModal;
+export default FullScreenMenuModal;

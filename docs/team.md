@@ -5,7 +5,7 @@ The team behind BrainFunc(BioHackers) is comprised of the Founder - **Tejas Niku
 
 He is assisted by **Prasanna Dhavale**, who handles PR and Marketing for BrainFunc. Prasanna is skilled in Digital Marketing and SEO and is a budding Javascript Developer. He has worked on numerous projects with Tejas, handling SEO, Research and Digital Marketing. Prasanna and Tejas have been childhood friends since Grade 5.
 
-The team also has interns and medical advisors who help with guidance related to the biology aspects of the game. 
+The team also has interns and medical advisors who help with guidance related to the biology aspects of the game.
 
 ## Founder
 The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are given a 5 year UK Genius Visa (Exceptional Talent) every year,  but had to let it go due to medical reasons.
@@ -33,10 +33,10 @@ The team has interns across development profiles currently. We are open to hirin
 
 ### Hrushikesh Bhamre (Junior Developer Intern)
 
-  Javascript development and ERC721-Research. 
-  
- 
-  Previously worked with founder on an award winning Blockchain Project. 
+  Javascript development and ERC721-Research.
+
+
+  Previously worked with founder on an award winning Blockchain Project.
   - [OST KIT Alpha Phase II](https://www.youtube.com/watch?v=6dUieg9o7iM&t=50s)
 
 ## Advisors
@@ -44,7 +44,7 @@ The team has advisors in the Medicine Field, which we feel are a great complemen
 
 ### Abhinav Sonawane
 
-  **Medical Advisor** 
+  **Medical Advisor**
 
   Doctor. Content Development for biology based aspects.
   - Qualifications

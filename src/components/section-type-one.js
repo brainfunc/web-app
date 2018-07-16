@@ -6,7 +6,7 @@ class SectionTypeOne extends Component {
     return (
       <div className='aae-section__container type-one'>
         <div className='wrapper'>
-          <img className='feature__image'
+          <img className='feature__image card neuron'
            src={`../../style/images/${this.props.image}`}/>
         </div>
         <div className='wrapper'>
