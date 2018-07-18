@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import SectionTypeTwo from '../components/section-type-two';
-import SectionTypeOne from '../components/section-type-one';
-import SectionTypeZero from '../components/section-type-zero';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import SectionTypeTwo from '../components/common/section-type-two';
+import SectionTypeOne from '../components/common/section-type-one';
+import SectionTypeZero from '../components/common/section-type-zero';
+import Header from '../components/common/header';
+import Footer from '../components/common/footer';
 
 import * as Constants from '../utils/data';
 
-export default class App extends Component {
-
-
+export default class Home extends Component {
 
   handleScrollToElement(event) {
     console.log(this.refs);

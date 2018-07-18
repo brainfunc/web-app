@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Links} from '../constants/constants';
+import {Links} from '../../constants/constants';
 
 // Code for copyright notice
 // <div className='divider'></div>

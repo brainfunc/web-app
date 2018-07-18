@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import Modal from '../libs/react-awesome-modal/lib/index';
+import Modal from '../../libs/react-awesome-modal/lib/index';
 
-import {Links} from '../constants/constants';
+import {Links} from '../../constants/constants';
 
 class Header extends Component {
   constructor(props) {
