@@ -9,7 +9,8 @@ export const sectionData = [
     {
       logoImage: 'template/logov3.5.svg',
       title: 'BrainFunc',
-      subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate Brain on the Blockchain!`
+      subTitle: `Learn about the Brain. Fight epic Battles. Build the ultimate
+      Brain on the Blockchain!`
     },
     {
       image: 'custom/sections/networkv3.3.svg',
@@ -24,15 +25,16 @@ export const sectionData = [
         'custom/sections/battlev3.3.svg'],
       titles: ['Collect Neurons', 'Construct Parts', 'Fight Epic Battles'],
       descriptions: [
-        `Start by buying neurons on the marketplace. Neurons available are of
-        different types. Each neuron gives you the ability to build a specific
-        part of the brain.`,
-        `The strength of a part depends on the number of neurons used to build it.
-        You can increase this by (a) collecting more neurons for
-        the part, or (b) winning battles.`,
-        `Battles pair you with a random opponent. Battles are won based on your
-        knowledge of neuro science and brain part power. Each battle win empowers
-        the parts used in the battle.`
+        `Start by buying neural packs on the marketplace. Neurons are available
+        in 13 different varieties and are randomly distributed. You can use these
+        to build different brain parts or trade them on the market place.`,
+        `Construct your own unique parts using neurons. These are crypto
+        collectibles that exist forever on the blockchain, and are  unique to you.
+        Each part is as valuable as it's strength, which can be increased in
+        interesting ways.`,
+        `Battles pair you with a random opponent. You can win these based on your
+        knowledge of neuro science and the strength of your crypto collectibles.
+        Each battle win will further strengthen your brain (or brain parts).`
       ]
     }
 ];

@@ -12,8 +12,39 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/style/stylesheets/style.css" />
-
     <title> BrainFunc | Construct the ultimate brain!</title>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script>
+      var cryptoZombies;
+      var userAccount;
+
+      function startApp() {
+        console.log("App started!");
+
+        // Start here
+      }
+
+      window.addEventListener('load', function() {
+
+        // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+        if (typeof web3 !== 'undefined') {
+          // Use Mist/MetaMask's provider
+          console.log("Metamask installed!");
+          web3js = new Web3(web3.currentProvider);
+          // Now you can start your app & access web3 freely:
+          startApp();
+        } else {
+          // Handle the case where the user doesn't have Metamask installed
+          // Probably show them a message prompting them to install Metamask
+          console.log("Metamask not installed");
+          // Show dialog for please install metamask
+        }
+
+
+
+      });
+      </script>
   </head>
   <body>
     <div class="app__container"></div>

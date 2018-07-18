@@ -1,6 +1,8 @@
 export const Links = {
   'header': {
-    'marketplace':'',
+    'marketplace':'https://brainfunc.herokuapp.com/marketplace',
+    'my_collectibles': 'https://brainfunc.herokuapp.com/my_collectibles',
+    'battleground': 'https://brainfunc.herokuapp.com/battleground',
     'how_to_play':'https://github.com/brainfunc/web-app/blob/dev/docs/gameplay.md',
     'team': 'https://github.com/brainfunc/web-app/blob/dev/docs/team.md',
     'blog': 'https://medium.com/brainfunc',
