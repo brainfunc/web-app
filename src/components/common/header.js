@@ -1,7 +1,12 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
+
 import Modal from '../../libs/react-awesome-modal/lib/index';
 
 import {Links} from '../../constants/constants';
+
+// TODO:- Replace a tags by Link when you want pages to be part of app
+// rather than external links
 
 class Header extends Component {
   constructor(props) {
@@ -77,9 +82,9 @@ class Header extends Component {
               </div>
 
               <div className='menu-item'><a target='_blank' href={Links.header.how_to_play}>How to Play? </a></div>
-              <div className='menu-item'><a href={Links.header.battleground}> Battleground </a></div>
-              <div className='menu-item'><a href={Links.header.marketplace}> Marketplace </a></div>
-              <div className='menu-item'><a href={Links.header.my_collectibles}> My Collectibles </a></div>
+              <div className='menu-item'><Link to={Links.header.battleground}> Battleground </Link></div>
+              <div className='menu-item'><Link to={Links.header.marketplace}> Marketplace </Link></div>
+              <div className='menu-item'><Link to={Links.header.my_collectibles}> My Collectibles </Link></div>
             </div>
           </div>
       </div>

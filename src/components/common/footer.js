@@ -19,7 +19,6 @@ import {Links} from '../../constants/constants';
 
 class Footer extends Component {
 
-
   render() {
     return (
       <div>
