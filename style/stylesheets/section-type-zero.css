@@ -37,6 +37,7 @@
       margin-bottom: 20px;
       line-height: 1.25; }
     .aae-section__container.section-type-zero > div.wrapper > .signup-button {
+      text-decoration: none;
       margin-left: 0%;
       border: 2px solid #fff;
       border-radius: 8px;

@@ -31,8 +31,7 @@ export default class Home extends Component {
         <SectionTypeZero
           logoImage={Constants.sectionData[0].logoImage}
           title={Constants.sectionData[0].title}
-          subTitle={Constants.sectionData[0].subTitle}
-          navigateFunction = {this.handleScrollToElement.bind(this)}/>
+          subTitle={Constants.sectionData[0].subTitle}/>
         <SectionTypeOne
           image={Constants.sectionData[1].image}
           titles={Constants.sectionData[1].titles}

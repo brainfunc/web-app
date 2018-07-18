@@ -5,6 +5,13 @@ export const footerData = {
   notice: '© Tejas Nikumbh 2018. All rights reserved'
 }
 
+export const lockedSectionData = {
+  image: 'custom/sections/networkv3.3.svg',
+  titles: ['Collect.', ' Construct.', 'Battle.'],
+  description: `BrainFunc is a learning adventure where you can apply your
+    knowledge of neuroscience to compete and win in battles.`
+}
+
 export const sectionData = [
     {
       logoImage: 'template/logov3.5.svg',
