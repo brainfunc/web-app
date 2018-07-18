@@ -6,10 +6,11 @@ export const footerData = {
 }
 
 export const lockedSectionData = {
-  image: 'custom/sections/networkv3.3.svg',
-  titles: ['Collect.', ' Construct.', 'Battle.'],
-  description: `BrainFunc is a learning adventure where you can apply your
-    knowledge of neuroscience to compete and win in battles.`
+  image: 'template/lockv3.2.svg',
+  titles: ['Unlock', 'Metamask'],
+  description: `In order to access this section, you need to have metamask installed
+  and unlocked. Click on 'How to Play?' section in the menu to get more information
+  on this!`
 }
 
 export const sectionData = [

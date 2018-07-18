@@ -15,10 +15,11 @@ class SectionTypeZero extends Component {
         <div className='wrapper'>
           <div className='title'> {this.props.title} </div>
           <div className='sub-title'> {this.props.subTitle} </div>
-
-          <Link className='signup-button' to={Links.header.marketplace}>
-              Get Started
-          </Link>
+          <div className='signup-button-wrapper'>
+            <Link className='signup-button' to={Links.header.marketplace}>
+                Get Started
+            </Link>
+          </div>
         </div>
       </div>
     );

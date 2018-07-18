@@ -12,7 +12,6 @@ class SectionTypeLocked extends Component {
         <div className='wrapper'>
           <div className='feature__action'>{this.props.titles[0]}</div>
           <div className='feature__action'>{this.props.titles[1]}</div>
-          <div className='feature__action'>{this.props.titles[2]}</div>
           <div className='feature__result'>
             {this.props.description}
           </div>
