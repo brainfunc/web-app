@@ -54,24 +54,27 @@ export default class Battleground extends Component {
 
    getWeb3Accounts() {
      const { web3 } = window;
-     web3.eth.getAccounts((err, res) => {
-       if(err) {
-         console.log(err.message);
-         return;
-       }
-       console.log('User account fetching success. Here is the account.');
-       var account = res[0];
-       console.log(account);
-       // Changing state if account has changed
-       if(account !== this.state.userAccount) {
-         this.setState({'userAccount': account});
-       }
-     })
+     var periodicFunction = (function(){
+       web3.eth.getAccounts((err, res) => {
+         if(err) {
+           console.log(err.message);
+           return;
+         }
+         var account = res[0];
+         // console.log('Fetched user account successfully');
+         // console.log(account);
+         // Changing state if account has changed
+         if(account !== this.state.userAccount) {
+           this.setState({'userAccount': account});
+         }
+       })
+     }).bind(this);
+     var accountInterval = setInterval(periodicFunction, 1000);
    }
 
   componentDidMount() {
     console.log('Is Metamask Installed:', this.isMetamaskInstalled());
-    console.log('Is Metamask Unlocked', this.isMetamaskUnlocked());
+    console.log('Is Metamask Unlocked:', this.isMetamaskUnlocked());
 
     var callback = (function(err) {
       if(err) {
@@ -89,10 +92,25 @@ export default class Battleground extends Component {
     this.startMonitoringIfOnRopstenTestNetwork(callback)
   }
 
+  renderMetamaskNotInstalledScreen() {
 
+  }
+
+  renderMetamaskLockedScreen() {
+
+  }
+
+  renderIncorrectNetworkScreen() {
+
+  }
+
+  renderSuccessScreen() {
+
+  }
 
   render() {
-    // console.log('User Account', this.state.userAccount);
+    // console.log('Active User Account:-', this.state.userAccount);
+    // Active user account is undefined in case of logout
     return (
       <div className="aae__container">
         <Header/>
