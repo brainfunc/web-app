@@ -1,13 +1,35 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from '../components/common/header';
-import Footer from '../components/common/footer';
-import SectionTypeLocked from '../components/common/section-type-locked';
+import Header from './common/header';
+import Footer from './common/footer';
+import SectionTypeLocked from './common/section-type-locked';
+
+import MyCollectibles from './menu/my_collectibles';
+import Marketplace from './menu/marketplace';
+import Battleground from './menu/battleground';
 
 import * as Constants from '../utils/data';
 
-export default class Battleground extends Component {
+const RouteSpecificComponent = ({route}) => {
+  if(route == '/battleground') {
+    return (
+      <Battleground/>
+    );
+  }
+  if(route == '/my_collectibles') {
+    return (
+      <MyCollectibles/>
+    );
+  }
+  if(route == '/marketplace') {
+    return (
+      <Marketplace/>
+    );
+  }
+}
+
+export default class Web3ProviderBase extends Component {
 
   constructor(props) {
     super(props)
@@ -77,7 +99,8 @@ export default class Battleground extends Component {
     return (
       <div className="aae__container">
         <Header/>
-        EverythingCorrect!
+        <RouteSpecificComponent
+          route={this.props.location.pathname}/>
         <Footer
           ref= 'footer'
           title={Constants.footerData.title}
@@ -127,6 +150,7 @@ export default class Battleground extends Component {
 
   render() {
     console.log('Active User Account:-', this.state.userAccount);
+    // console.log(this.props);
     // Active user account is undefined in case of logout
     if(!this.state.userAccount) {
       if(this.state.metamaskState == 'NotInstalled') {
@@ -134,11 +158,9 @@ export default class Battleground extends Component {
       }
       return this.renderIncorrectSetupScreen();
     }
-
     if(this.state.metamaskState == 'Active') {
       return this.renderSuccessScreen();
     }
-
   }
 
 }
