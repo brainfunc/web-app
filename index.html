@@ -15,37 +15,62 @@
     <link rel="stylesheet" href="/style/stylesheets/style.css" />
     <title> BrainFunc | Construct the ultimate brain!</title>
 
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="/src/libs/web3/web3.min.js"></script>
     <script>
       var cryptoZombies;
       var userAccount;
 
-      function startApp() {
-        console.log("App started!");
+      function getWeb3(callback) {
+        if (typeof window.web3 === 'undefined') {
+          // no web3, use fallback
+          console.error("Please install metamask.");
+        } else {
+          // window.web3 == web3 most of the time. Don't override the provided,
+          // web3, just wrap it in your Web3.
+          var myWeb3 = new Web3(window.web3.currentProvider);
 
-        // Start here
+          // the default account doesn't seem to be persisted, copy it to our
+          // new instance
+          myWeb3.eth.defaultAccount = window.web3.eth.defaultAccount;
+          // Checking if metamask is unlocked
+          if(!myWeb3.eth.defaultAccount) {
+            console.log("Please unlock metamask");
+            return;
+          }
+
+          // Checking if metamask is on Ropsten Test Network
+          web3.version.getNetwork((err, netId) => {
+            switch (netId) {
+              case "1":
+                console.log("Please make sure you're on the ropsten test network");
+                console.log('This is mainnet');
+                break
+              case "2":
+                console.log("Please make sure you're on the ropsten test network");
+                console.log('This is the deprecated Morden test network.');
+                break
+              case "3":
+                console.log('This is the ropsten test network.');
+                callback(myWeb3);
+                break
+              default:
+                console.log("Please make sure you're on the ropsten test network");
+                console.log('This is an unknown network.');
+            }
+          })
+
+        }
+      }
+
+      function startApp(web3) {
+        console.log("App started!");
       }
 
       window.addEventListener('load', function() {
-
-        // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-        if (typeof web3 !== 'undefined') {
-          // Use Mist/MetaMask's provider
-          console.log("Metamask installed!");
-          web3js = new Web3(web3.currentProvider);
-          // Now you can start your app & access web3 freely:
-          startApp();
-        } else {
-          // Handle the case where the user doesn't have Metamask installed
-          // Probably show them a message prompting them to install Metamask
-          console.log("Metamask not installed");
-          // Show dialog for please install metamask
-        }
-
-
-
+        getWeb3(startApp);
       });
-      </script>
+
+    </script>
   </head>
   <body>
     <div class="app__container"></div>
