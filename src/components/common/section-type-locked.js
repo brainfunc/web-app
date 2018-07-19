@@ -15,6 +15,9 @@ class SectionTypeLocked extends Component {
           <div className='feature__result'>
             {this.props.description}
           </div>
+          <div className='install-button-container'>
+          
+          </div>
         </div>
       </div>
     );

@@ -5,12 +5,24 @@ export const footerData = {
   notice: '© Tejas Nikumbh 2018. All rights reserved'
 }
 
-export const lockedSectionData = {
+export const lockedSection = {
   image: 'template/lockv3.2.svg',
-  titles: ['Unlock', 'Metamask'],
-  description: `In order to access this section, you need to have metamask installed
-  and unlocked. Click on 'How to Play?' section in the menu to get more information
-  on this!`
+  notInstalled: {
+    titles: ['Install Metamask', ''],
+    description: `Oops! To play, you need to have metamask installed and setup
+    correctly.`,
+    metamaskImage: 'template/download_metamask.png'
+  },
+  installedButLocked: {
+    titles: ['Unlock', 'Metamask'],
+    description: `Oops! To play, you need to have metamask unlocked and be on
+    the Ropsten Test Network.`
+  },
+  notRopstenNetwork: {
+    titles: ['Incorrect', 'Network'],
+    description: `Oops! To play, you need to be on the Ropsten Test Network.
+    Switch to the Ropsten Test Network in Metamask.`
+  }
 }
 
 export const sectionData = [
