@@ -10,18 +10,13 @@ export const lockedSection = {
   notInstalled: {
     titles: ['Install Metamask', ''],
     description: `Oops! To play, you need to have metamask installed and setup
-    correctly.`,
+    correctly. Click below to download metamask.`,
     metamaskImage: 'template/download_metamask.png'
   },
-  installedButLocked: {
-    titles: ['Unlock', 'Metamask'],
-    description: `Oops! To play, you need to have metamask unlocked and be on
-    the Ropsten Test Network.`
-  },
-  notRopstenNetwork: {
-    titles: ['Incorrect', 'Network'],
-    description: `Oops! To play, you need to be on the Ropsten Test Network.
-    Switch to the Ropsten Test Network in Metamask.`
+  incorrectSetup: {
+    titles: ['Setup', 'Metamask'],
+    description: `To play, you need to have metamask unlocked and be on
+    the Ropsten Test Network. Click the button below to see how.`
   }
 }
 

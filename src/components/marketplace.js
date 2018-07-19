@@ -14,9 +14,9 @@ export default class Marketplace extends Component {
       <div className="aae__container">
         <Header/>
         <SectionTypeLocked
-          image={Constants.lockedSectionData.image}
-          titles={Constants.lockedSectionData.titles}
-          description={Constants.lockedSectionData.description}
+          image={Constants.lockedSection.image}
+          titles={Constants.lockedSection.titles}
+          description={Constants.lockedSection.description}
         />
         <Footer
           ref= 'footer'

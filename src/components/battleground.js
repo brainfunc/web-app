@@ -73,6 +73,20 @@ export default class Battleground extends Component {
     }).bind(this))
   }
 
+  renderSuccessScreen() {
+    return (
+      <div className="aae__container">
+        <Header/>
+        EverythingCorrect!
+        <Footer
+          ref= 'footer'
+          title={Constants.footerData.title}
+          leadCaptureMessage = {Constants.footerData.leadCaptureMessage}
+          notice={Constants.footerData.notice}/>
+      </div>
+    );
+  }
+
   renderMetamaskNotInstalledScreen() {
     return (
       <div className="aae__container">
@@ -81,36 +95,8 @@ export default class Battleground extends Component {
           image={Constants.lockedSection.image}
           titles={Constants.lockedSection.notInstalled.titles}
           description={Constants.lockedSection.notInstalled.description}
-          metamaskImage={Constants.lockedSection.notInstalled.metamaskImage}
+          lockState="notInstalled"
         />
-        <Footer
-          ref= 'footer'
-          title={Constants.footerData.title}
-          leadCaptureMessage = {Constants.footerData.leadCaptureMessage}
-          notice={Constants.footerData.notice}/>
-      </div>
-    );
-  }
-
-  renderSuccessScreen() {
-    return (
-      <div className="aae__container">
-        <Header/>
-        Success!
-        <Footer
-          ref= 'footer'
-          title={Constants.footerData.title}
-          leadCaptureMessage = {Constants.footerData.leadCaptureMessage}
-          notice={Constants.footerData.notice}/>
-      </div>
-    );
-  }
-
-  renderLoadingScreen(){
-    return (
-      <div className="aae__container">
-        <Header/>
-        Loading...
         <Footer
           ref= 'footer'
           title={Constants.footerData.title}
@@ -124,7 +110,12 @@ export default class Battleground extends Component {
     return (
       <div className="aae__container">
         <Header/>
-        Incorrect Setup
+        <SectionTypeLocked
+          image={Constants.lockedSection.image}
+          titles={Constants.lockedSection.incorrectSetup.titles}
+          description={Constants.lockedSection.incorrectSetup.description}
+          lockState="incorrectSetup"
+        />
         <Footer
           ref= 'footer'
           title={Constants.footerData.title}
@@ -133,6 +124,7 @@ export default class Battleground extends Component {
       </div>
     );
   }
+
   render() {
     console.log('Active User Account:-', this.state.userAccount);
     // Active user account is undefined in case of logout
@@ -145,10 +137,6 @@ export default class Battleground extends Component {
 
     if(this.state.metamaskState == 'Active') {
       return this.renderSuccessScreen();
-    }
-
-    if(this.state.metamaskState == '') {
-      return this.renderLoadingScreen();
     }
 
   }
