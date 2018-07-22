@@ -19,17 +19,13 @@ The founder has had a very successful track record being both an Entrepreneur in
   - [Github](https://github.com/tejasnikumbh)
   - [Behance](https://www.behance.net/tejnikumbh11b9)
 
-## Core Team
-The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. The team is well positioned to execute the game on a scalable production level.
+## Interns
+The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge and has interns across development and marketing profiles. The team is well positioned to execute the game on a scalable production level. We are open to hiring new interns and any applications are welcomed. The relevant link for the same can be found [here](https://angel.co/brainfunc/jobs)
 
-### Prasanna Dhavale (PR and Marketing)
+### Prasanna Dhavale (PR and Marketing Intern)
 
   Handles Social Media, Content, Digital Marketing and SEO.
   - [Linkedin](https://www.linkedin.com/in/prasanna-dhavale-758987165/)
-
-
-## Interns
-The team has interns across development profiles currently. We are open to hiring new interns as well. Any applications are welcomed and the relevant link for the same is can be found [here](https://angel.co/brainfunc/jobs)
 
 ### Hrushikesh Bhamre (Junior Developer Intern)
 
