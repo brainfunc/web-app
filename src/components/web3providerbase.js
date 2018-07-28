@@ -8,10 +8,16 @@ import SectionTypeLocked from './common/section-type-locked';
 import MyCollectibles from './menu/my_collectibles';
 import Marketplace from './menu/marketplace';
 import Battleground from './menu/battleground';
+import Library from './menu/library';
 
 import * as Constants from '../utils/data';
 
 const RouteSpecificComponent = ({route}) => {
+  if(route == '/library') {
+    return (
+      <Library/>
+    );
+  }
   if(route == '/battleground') {
     return (
       <Battleground/>

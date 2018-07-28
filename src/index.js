@@ -19,6 +19,7 @@ ReactDOM.render(
         <Route path="/my_collectibles" component={Web3ProviderBase}/>
         <Route path="/marketplace" component={Web3ProviderBase}/>
         <Route path="/battleground" component={Web3ProviderBase}/>
+        <Route path="/library" component={Web3ProviderBase}/>
         <Route path="/" component={Home}/>
       </Switch>
     </BrowserRouter>

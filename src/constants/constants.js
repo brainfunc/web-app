@@ -3,6 +3,7 @@ export const Links = {
     'marketplace':'/marketplace',
     'my_collectibles': '/my_collectibles',
     'battleground': '/battleground',
+    'library':'/library',
     'how_to_play':'https://github.com/brainfunc/web-app/blob/dev/docs/gameplay.md',
     'team': 'https://github.com/brainfunc/web-app/blob/dev/docs/team.md',
     'blog': 'https://medium.com/brainfunc',
