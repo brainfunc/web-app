@@ -62,15 +62,15 @@ export default class Web3ProviderBase extends Component {
 
   // For other network parameters
   // refer:- https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md
-  startMonitoringIfOnRopstenTestNetwork(callback) {
+  startMonitoringIfOnRinkebyTestNetwork(callback) {
     const { web3 } = window;
     web3.version.getNetwork((err, netId) => {
       switch (netId) {
-       case "3":
+       case "4":
          callback(null);
          return true;
        default:
-         callback(new Error('Not the Ropsten test network'));
+         callback(new Error('Not the Rinkeby test network'));
          return false;
       }
     })
@@ -84,13 +84,13 @@ export default class Web3ProviderBase extends Component {
       return;
     }
 
-    this.startMonitoringIfOnRopstenTestNetwork((function(err) {
+    this.startMonitoringIfOnRinkebyTestNetwork((function(err) {
       if(err) {
         console.log(err.message);
         return;
       }
-      // Success! Unlocked, installed and on Ropsten Test Network
-      console.log('Success! User is on Ropsten Test Network');
+      // Success! Unlocked, installed and on rinkeby Test Network
+      console.log('Success! User is on Rinkeby Test Network');
       this.getWeb3Accounts();
     }).bind(this))
   }

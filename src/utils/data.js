@@ -16,7 +16,7 @@ export const lockedSection = {
   incorrectSetup: {
     titles: ['Setup', 'Metamask'],
     description: `To play, you need to have metamask unlocked and be on
-    the Ropsten Test Network. Click the button below to see how.`
+    the Rinkeby Test Network. Click the button below to see how.`
   }
 }
 
