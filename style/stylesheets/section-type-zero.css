@@ -1,4 +1,5 @@
 .aae-section__container.section-type-zero {
+  margin-top: 2%;
   padding: 10%;
   padding-top: 0%;
   padding-bottom: 5%;
@@ -36,27 +37,28 @@
       margin-right: 15%;
       margin-bottom: 20px;
       line-height: 1.25; }
-    .aae-section__container.section-type-zero > div.wrapper > .signup-button {
-      margin-left: 0%;
-      border: 2px solid #fff;
+    .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper {
       border-radius: 8px;
       height: 50px;
       padding-left: 40px;
       padding-right: 40px;
       background-color: #ec1943;
-      border: 2px solid #ec1943;
+      border: 2px solid #bc1a39;
       box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
-      color: #fff;
-      font-weight: 400;
-      font-family: "Avenir next", sans-serif;
-      font-size: 1.2em;
       opacity: 1;
-      width: 80%;
-      margin-top: 5%;
-      outline: none; }
-    .aae-section__container.section-type-zero > div.wrapper > .signup-button:hover {
+      width: 50%;
+      margin-top: 8%;
+      padding-top: 8px;
+      text-align: center; }
+      .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper > .signup-button {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Avenir next", sans-serif;
+        font-size: 1.2em; }
+    .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper:hover {
       opacity: 0.8; }
-    .aae-section__container.section-type-zero > div.wrapper > .signup-button:focus {
+    .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper:focus {
       opacity: 1.0; }
 
 @media (max-width: 1024px) {
@@ -69,7 +71,7 @@
   .aae-section__container.section-type-zero > div.wrapper > div.sub-title {
     font-size: 1.7em;
     margin-left: 0%; }
-  .aae-section__container.section-type-zero > div.wrapper > .signup-button {
+  .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper {
     margin-left: 0%; } }
 
 @media (max-width: 900px) {
@@ -94,7 +96,7 @@
     font-size: 2em;
     text-align: center;
     margin-left: 10%; }
-  .aae-section__container.section-type-zero > div.wrapper .signup-button {
+  .aae-section__container.section-type-zero > div.wrapper div.signup-button-wrapper {
     text-align: center;
     margin-left: 0%; } }
 
@@ -116,10 +118,10 @@
       margin-right: 8%;
       margin-bottom: 0%;
       margin-top: 0%; }
-    .aae-section__container.section-type-zero > div.wrapper > .signup-button {
+    .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper {
       margin-top: 10%;
       margin-left: 0%;
-      width: 80%; } }
+      width: 100%; } }
 
 @media (max-width: 412px) {
   .aae-section__container.section-type-zero > div.wrapper > div.title {
@@ -129,7 +131,7 @@
     font-size: 2.5em; }
   .aae-section__container.section-type-zero > div.wrapper > div.sub-title {
     font-size: 1.25em; }
-  .aae-section__container.section-type-zero > div.wrapper > .signup-button {
+  .aae-section__container.section-type-zero > div.wrapper > div.signup-button-wrapper {
     padding-left: 0px;
     padding-right: 0px;
     font-size: 1em; } }

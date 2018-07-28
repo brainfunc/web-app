@@ -1,5 +1,8 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+
+import {Links} from '../../constants/constants';
 
 class SectionTypeZero extends Component {
 
@@ -12,11 +15,11 @@ class SectionTypeZero extends Component {
         <div className='wrapper'>
           <div className='title'> {this.props.title} </div>
           <div className='sub-title'> {this.props.subTitle} </div>
-          <button
-          className='signup-button'
-          onClick = {this.props.navigateFunction}>
-            Get Started
-          </button>
+          <div className='signup-button-wrapper'>
+            <Link className='signup-button' to={Links.header.marketplace}>
+                Get Started
+            </Link>
+          </div>
         </div>
       </div>
     );

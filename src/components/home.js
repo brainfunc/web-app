@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import SectionTypeTwo from '../components/section-type-two';
-import SectionTypeOne from '../components/section-type-one';
-import SectionTypeZero from '../components/section-type-zero';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import SectionTypeTwo from '../components/common/section-type-two';
+import SectionTypeOne from '../components/common/section-type-one';
+import SectionTypeZero from '../components/common/section-type-zero';
+import Header from '../components/common/header';
+import Footer from '../components/common/footer';
 
 import * as Constants from '../utils/data';
 
-export default class App extends Component {
-
-
+export default class Home extends Component {
 
   handleScrollToElement(event) {
     console.log(this.refs);
@@ -33,8 +31,7 @@ export default class App extends Component {
         <SectionTypeZero
           logoImage={Constants.sectionData[0].logoImage}
           title={Constants.sectionData[0].title}
-          subTitle={Constants.sectionData[0].subTitle}
-          navigateFunction = {this.handleScrollToElement.bind(this)}/>
+          subTitle={Constants.sectionData[0].subTitle}/>
         <SectionTypeOne
           image={Constants.sectionData[1].image}
           titles={Constants.sectionData[1].titles}

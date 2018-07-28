@@ -1,11 +1,9 @@
 # Brainfunc Team
 
 ## Summary
-The team behind BrainFunc(BioHackers) is comprised of the Founder - **Tejas Nikumbh** who is the Lead Designer and Lead Developer for the project. He has previously worked with  multi-billion dollar Multinationals (ADFG), Y-Combinator backed startups and Product Startups. He has also been a part of prestigious Entrepreneur in Residence programs from **MIT** and [**Entrepreneur First**](https://joinef.com). He was one of the very few (~200) people worldwide who were endorsed for the UK's Tier I Exceptional Talent VISA last year.
+The team behind BrainFunc(BioHackers) is comprised of the Founder - **Tejas Nikumbh** who is the Lead Designer and Lead Developer for the project. He has previously worked with  multi-billion dollar Multinationals (ADFG), Y-Combinator backed startups and Product Startups and MIT Global Startup Labs. He has also been a part of prestigious Entrepreneur in Residence programs from [**Entrepreneur First**](https://joinef.com), Europe's best seed accelerator backed by Reid Hoffman. He was one of the very few (~200) people worldwide who were endorsed for the UK's Tier I Exceptional Talent VISA last year.
 
-He is assisted by **Prasanna Dhavale**, who handles PR and Marketing for BrainFunc. Prasanna is skilled in Digital Marketing and SEO and is a budding Javascript Developer. He has worked on numerous projects with Tejas, handling SEO, Research and Digital Marketing. Prasanna and Tejas have been childhood friends since Grade 5.
-
-The team also has interns and medical advisors who help with guidance related to the biology aspects of the game.
+He is assisted by interns and medical advisors who help with guidance related to the biology aspects of the game.
 
 ## Founder
 The founder has had a very successful track record being both an Entrepreneur in Residence as well as Fullstack Developer at Multinationals, Startups, Elite Universities and Freelancing combined. He was also one of the 200 people who are given a 5 year UK Genius Visa (Exceptional Talent) every year,  but had to let it go due to medical reasons.
@@ -19,17 +17,13 @@ The founder has had a very successful track record being both an Entrepreneur in
   - [Github](https://github.com/tejasnikumbh)
   - [Behance](https://www.behance.net/tejnikumbh11b9)
 
-## Core Team
-The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge as well. The team is well positioned to execute the game on a scalable production level.
+## Interns
+The team has had previous development and marketing experience as a team. They as a team have recently won a dev challenge - the OST Alpha Phase II Dev Challenge and has interns across development and marketing profiles. The team is well positioned to execute the game on a scalable production level. We are open to hiring new interns and any applications are welcomed. The relevant link for the same can be found [here](https://angel.co/brainfunc/jobs)
 
-### Prasanna Dhavale (PR and Marketing)
+### Prasanna Dhavale (PR and Marketing Intern)
 
   Handles Social Media, Content, Digital Marketing and SEO.
   - [Linkedin](https://www.linkedin.com/in/prasanna-dhavale-758987165/)
-
-
-## Interns
-The team has interns across development profiles currently. We are open to hiring new interns as well. Any applications are welcomed and the relevant link for the same is can be found [here](https://angel.co/brainfunc/jobs)
 
 ### Hrushikesh Bhamre (Junior Developer Intern)
 
@@ -42,14 +36,24 @@ The team has interns across development profiles currently. We are open to hirin
 ## Advisors
 The team has advisors in the Medicine Field, which we feel are a great complement given the current positioning of the project. We will look forward to onboard other advisors as we go along.
 
-### Abhinav Sonawane
+### Shubhada Bhamre (MBBS, MS)
+
+  **Medical Advisor**
+
+  Doctor. Supervisory Advice.
+  - Qualifications
+    - Bachelor of Medicine, Bachelor of Surgery
+    - Masters in Surgery with General Surgery Speciality
+    - Experienced Surgeon with over 25 years of Experience
+
+### Abhinav Sonawane (BAMS, MS)
 
   **Medical Advisor**
 
   Doctor. Content Development for biology based aspects.
   - Qualifications
     - Bachelor of Ayurved Medicine & Surgery
-    - Masters in Surgery with Piles Speciality
+    - Masters in Ayurvedic Surgery (Minimal Invasive Surgery)
 
 # Copyright
 - © 2018 The Brainfunc Team.

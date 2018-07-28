@@ -1,7 +1,12 @@
 import React,{Component} from 'react';
-import Modal from '../libs/react-awesome-modal/lib/index';
+import {Link} from 'react-router-dom';
 
-import {Links} from '../constants/constants';
+import Modal from '../../libs/react-awesome-modal/lib/index';
+
+import {Links} from '../../constants/constants';
+
+// TODO:- Replace a tags by Link when you want pages to be part of app
+// rather than external links
 
 class Header extends Component {
   constructor(props) {
@@ -54,10 +59,10 @@ class Header extends Component {
                 <img src='../../style/images/template/cross.png'
                 onClick={this.hideModal.bind(this)}/>
               </div>
-              <div className='menu-item'><a href={Links.header.team}> Team </a></div>
-              <div className='menu-item'><a href={Links.header.blog}> Blog </a></div>
-              <div className='menu-item'><a href={Links.header.jobs}> Jobs </a></div>
-              <div className='menu-item'><a href={Links.header.faqs}> FAQs </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.team}> Team </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.blog}> Blog </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.jobs}> Jobs </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.faqs}> FAQs </a></div>
               <div className='menu-item'><a href={Links.header.contact}> Contact </a></div>
             </div>
           </Modal>
@@ -76,8 +81,11 @@ class Header extends Component {
                   onClick={this.showModal.bind(this)}/>
               </div>
 
-              <div className='menu-item'><a href={Links.header.how_to_play}>How to Play? </a></div>
-              <div className='menu-item'><a href={Links.header.marketplace}> Marketplace </a></div>
+              <div className='menu-item'><a target='_blank' href={Links.header.how_to_play}>How to Play? </a></div>
+              <div className='menu-item'><Link to={Links.header.library}> Library </Link></div>
+              <div className='menu-item'><Link to={Links.header.battleground}> Battles </Link></div>
+              <div className='menu-item'><Link to={Links.header.marketplace}> Market </Link></div>
+              <div className='menu-item'><Link to={Links.header.my_collectibles}> My Collectibles </Link></div>
             </div>
           </div>
       </div>
