@@ -1,12 +1,12 @@
 # Challenge Loot Utilization
-Following is the item exchange mapping from the thirteen(13) brain parts to the Challenge Loot Items. We plan to exchange a brain part of **strength one**<sup>**[1]**</sup>, with the corresponding Challenge Loot Item. The Mapping is based on common sense and brain part function. Items that are mapped are related in some way or the other to the function that the corresponding brain part performs. In cases where multiple items are mapped, any single item can be traded in exchange of concerned brain part.  
+Following is the item exchange mapping from the thirteen(13) brain parts to the Challenge Loot Items. We plan to exchange a brain part of **strength one**<sup>**[1]**</sup>(unless specifically specified otherwise), with the corresponding Challenge Loot Item. The Mapping is based on common sense and brain part function. Items that are mapped are related in some way or the other to the function that the corresponding brain part performs. In cases where multiple items are mapped, any single item can be traded in exchange of concerned brain part.  
 
 Given below is a summary of the **brain part function**, the **Mapped Item(s)** and **Why the mapping makes sense?**
 
 ## Frontal Lobe (Left, Right)
 **Performs core cognition function** - Most important part, that controls important cognitive skills in humans, such as emotional expression, problem solving, memory, language, judgment, and sexual behaviors. The left part is associated with logical cognition, while the right with creative aspects.
 ### Mapped Items
-Arcanist's Tome of Spells, Lamp of Wonder , Cards of Fate, Quill of Binding
+Scroll of Light's Watch, Arcanist's Tome of Spells (3 Neurons), Lamp of Wonder , Cards of Fate, Quill of Binding
 ### Why it makes sense?
 Mapping it to seemingly most important items like Arcanist's Tome of Spells makes sense because the Frontal Lobe is the most important part of the brain, where all the magic happens.
 
