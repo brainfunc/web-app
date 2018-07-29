@@ -1,0 +1,62 @@
+.marketplace__container {
+  padding: 4% 8% 4% 8%; }
+  .marketplace__container > div.heading {
+    font-family: "Moderneratrial", sans-serif;
+    font-weight: 600;
+    font-size: 3em; }
+  .marketplace__container > div.description-wrapper {
+    width: 100%;
+    overflow: hidden; }
+    .marketplace__container > div.description-wrapper > div.description {
+      display: inline;
+      float: left;
+      width: 92%;
+      margin-left: 16px;
+      font-family: "Avenir", sans-serif;
+      font-weight: 400;
+      font-size: 1.25em;
+      padding-top: 16px;
+      text-align: justify; }
+  .marketplace__container > div.packs-wrapper {
+    margin-top: 32px;
+    overflow: hidden; }
+    .marketplace__container > div.packs-wrapper > div.pack {
+      display: inline;
+      float: left;
+      width: 22.5%;
+      height: auto;
+      border: 2px solid #f3f1ee;
+      border-radius: 16px;
+      margin-right: 2.5%;
+      padding: 16px; }
+      .marketplace__container > div.packs-wrapper > div.pack > div.title {
+        margin-left: 16px;
+        font-family: "Moderneratrial", sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        color: #545454; }
+      .marketplace__container > div.packs-wrapper > div.pack > img.pack_image {
+        max-width: 100%;
+        max-height: 100%; }
+      .marketplace__container > div.packs-wrapper > div.pack > div.pack_description {
+        margin-left: 16px;
+        overflow: hidden;
+        font-family: "Avenir", sans-serif;
+        font-weight: 400;
+        color: #9b9b9b; }
+        .marketplace__container > div.packs-wrapper > div.pack > div.pack_description > div.number {
+          text-align: left;
+          display: inline;
+          float: left;
+          width: 50%; }
+        .marketplace__container > div.packs-wrapper > div.pack > div.pack_description > div.price {
+          background-color: #b1d1f7;
+          color: white;
+          border-radius: 8px;
+          margin-right: 10%;
+          text-align: center;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          display: inline;
+          float: right;
+          width: 40%; }

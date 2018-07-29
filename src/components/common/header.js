@@ -5,8 +5,6 @@ import Modal from '../../libs/react-awesome-modal/lib/index';
 
 import {Links} from '../../constants/constants';
 
-// TODO:- Replace a tags by Link when you want pages to be part of app
-// rather than external links
 
 class Header extends Component {
   constructor(props) {

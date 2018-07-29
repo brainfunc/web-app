@@ -54,6 +54,17 @@ export const sectionData = [
     }
 ];
 
+export const menuData = {
+  "marketplace": {
+    "images": {
+      "cerebrum_pack": "menu/marketplace/cerebrum_pack.png",
+      "cerebellum_pack": "menu/marketplace/cerebellum_pack.png",
+      "brainstem_pack":"menu/marketplace/brainstem_pack.png",
+      "arterial_pack":"menu/marketplace/arterial_pack.png"
+    }
+  }
+}
+
 //Collect different parts of the brain using different neurons.
 //Battle to increase their strength. Try various combinations
 //to come up with the ultimate brain!
