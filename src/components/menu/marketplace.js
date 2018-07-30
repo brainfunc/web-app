@@ -47,7 +47,7 @@ export default class Marketplace extends Component {
           DecreaseItem={this.DecreaseItem}/>
         <MarketplaceStash
           buyQuantity= {this.state.buyQuantity}
-          selectedPack = {this.state.selectedPack}/>
+          type = {this.state.selectedPack}/>
       </div>
     );
   }

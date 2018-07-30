@@ -78,7 +78,8 @@ export const menuData = {
         These 5 parts correspond to the parts of the Cerebrum and will help you compete
         in battles involving Cerebrum functionality. For details on functionality,
         checkout the library!`,
-        "price": "0.04"
+        "price": "0.04",
+        "neurons": 5
       },
       "cerebellum": {
         "title": "Cerebellum",
@@ -88,7 +89,8 @@ export const menuData = {
         correspond to the parts of the Cerebellum and will help you compete in
         battles involving Cerebellum related functionality. For details on functionality,
         checkout the library!`,
-        "price": "0.03"
+        "price": "0.03",
+        "neurons": 3
       },
       "brainstem": {
         "title": "Brainstem",
@@ -97,7 +99,8 @@ export const menuData = {
         Medulla, Midbrain and Pons. These 3 parts correspond to the parts of the
         Brainstem and will help you compete in battles involving brainstem
         related functionality. For details on functionality, checkout the library!`,
-        "price": "0.02"
+        "price": "0.02",
+        "neurons": 3
       },
       "arterial": {
         "title": "Arterial",
@@ -106,7 +109,8 @@ export const menuData = {
         the Basilar or Vertebral Arteries. They will help you construct these Arteries
         and aid you in fighting battles that require their functionality. For details on
         functionality, checkout the library!`,
-        "price": "0.01"
+        "price": "0.01",
+        "neurons": 2
       }
     }
   }
