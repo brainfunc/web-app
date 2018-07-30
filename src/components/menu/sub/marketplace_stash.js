@@ -10,7 +10,10 @@ export const Part = function (props) {
         <div className='part' key={`${i}`}>
           <img className='part-image'
           src={`/style/images/${Constants.menuData.marketplace.images.pack[props.type]}`}/>
-          <div className='part-qty'></div>
+          <div className='part-qty'>
+            <div className='text'>Quantity:</div>
+            <div className='number'> 0 </div>
+          </div>
         </div>
       );
     }

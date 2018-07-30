@@ -243,7 +243,30 @@
           max-height: 100%;
         }
         >div.part-qty{
-
+          margin-left: 4%;
+          margin-right: 4%;
+          overflow: hidden;
+          font-family: $font_family_1;
+          font-size: 1.5vw;
+          font-weight: 400;
+          color: $font_color_description;
+          >div.text {
+            display: inline;
+            float:left;
+            width: 50%;
+          }
+          >div.number {
+            font-size: 1.25vw;
+            margin-top: 0.25vw;
+            display:inline;
+            float:right;
+            background-color: #f1234c;
+            opacity: 0.85;
+            color:white;
+            border-radius: 8px;
+            text-align: center;
+            width: 25%;
+          }
         }
       }
     }
