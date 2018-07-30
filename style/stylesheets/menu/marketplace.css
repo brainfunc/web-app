@@ -118,8 +118,8 @@
             margin-right: 5%;
             margin-left: 5%;
             border-radius: 6px;
-            background-color: #ec1943;
-            border: 2px solid #bc1a39;
+            background-color: #9b9b9b;
+            border: 2px solid #7c7c7c;
             color: white;
             outline: none; }
           .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity > button.qty:hover {
@@ -145,6 +145,50 @@
           border: 2px solid #16a05d;
           border-radius: 8px;
           color: white;
-          height: 56px; }
+          height: 56px;
+          outline: none; }
         .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper > button.buy:hover {
           opacity: 0.75; }
+  .marketplace__container > div.stash-wrapper {
+    margin-top: 64px; }
+    .marketplace__container > div.stash-wrapper > div.title-wrapper {
+      overflow: hidden; }
+      .marketplace__container > div.stash-wrapper > div.title-wrapper > div.lock {
+        width: 4%;
+        margin-top: 2%;
+        display: inline;
+        float: left; }
+        .marketplace__container > div.stash-wrapper > div.title-wrapper > div.lock > img {
+          max-width: 100%;
+          max-height: 100%; }
+      .marketplace__container > div.stash-wrapper > div.title-wrapper > div.lock.left {
+        margin-left: 4%; }
+      .marketplace__container > div.stash-wrapper > div.title-wrapper > div.lock.right {
+        margin-right: 4%;
+        float: right; }
+      .marketplace__container > div.stash-wrapper > div.title-wrapper > div.title {
+        display: inline;
+        float: left;
+        width: 70%;
+        margin-left: 4%;
+        margin-bottom: 4%;
+        margin-top: 2%;
+        font-family: "Moderneratrial", sans-serif;
+        font-size: 3vw;
+        font-weight: 600;
+        color: #545454;
+        text-align: center; }
+    .marketplace__container > div.stash-wrapper > div.parts-wrapper {
+      margin: 2% 4% 2% 4%;
+      overflow: hidden; }
+      .marketplace__container > div.stash-wrapper > div.parts-wrapper > div.part {
+        width: 19%;
+        margin-right: 1%;
+        padding: 2%;
+        border: 2px solid #f3f1ee;
+        border-radius: 16px;
+        display: inline;
+        float: left; }
+        .marketplace__container > div.stash-wrapper > div.parts-wrapper > div.part > img.part-image {
+          max-width: 100%;
+          max-height: 100%; }

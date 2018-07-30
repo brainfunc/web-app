@@ -54,13 +54,18 @@ export const sectionData = [
     }
 ];
 
+export const templateData = {
+  "images": {
+    "lock": "template/lock.png"
+  }
+}
 export const menuData = {
   "marketplace": {
     "images": {
       "cerebrum_pack": "menu/marketplace/cerebrum_pack.png",
       "cerebellum_pack": "menu/marketplace/cerebellum_pack.png",
       "brainstem_pack":"menu/marketplace/brainstem_pack.png",
-      "arterial_pack":"menu/marketplace/arterial_pack.png"
+      "arterial_pack":"menu/marketplace/arterial_pack.png",
     },
     "details" : {
       "cerebrum": {

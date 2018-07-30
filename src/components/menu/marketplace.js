@@ -91,6 +91,45 @@ export default class Marketplace extends Component {
             </div>
           </div>
         </div>
+        <div className='stash-wrapper'>
+          <div className='title-wrapper'>
+            <div className='lock left'>
+              <img src={`/style/images/${Constants.templateData.images.lock}`}/>
+            </div>
+            <div className='title'> Buy Neurons to Reveal</div>
+            <div className='lock right'>
+              <img src={`/style/images/${Constants.templateData.images.lock}`}/>
+            </div>
+
+          </div>
+          <div className='parts-wrapper'>
+            <div className='part'>
+              <img className='part-image'
+              src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+              <div className='part-qty'></div>
+            </div>
+            <div className='part'>
+              <img className='part-image'
+              src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+              <div className='part-qty'></div>
+            </div>
+            <div className='part'>
+              <img className='part-image'
+              src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+              <div className='part-qty'></div>
+            </div>
+            <div className='part'>
+              <img className='part-image'
+              src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+              <div className='part-qty'></div>
+            </div>
+            <div className='part'>
+              <img className='part-image'
+              src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+              <div className='part-qty'></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
