@@ -62,10 +62,12 @@ export const templateData = {
 export const menuData = {
   "marketplace": {
     "images": {
-      "cerebrum_pack": "menu/marketplace/cerebrum_pack.png",
-      "cerebellum_pack": "menu/marketplace/cerebellum_pack.png",
-      "brainstem_pack":"menu/marketplace/brainstem_pack.png",
-      "arterial_pack":"menu/marketplace/arterial_pack.png",
+      "pack": {
+        "cerebrum": "menu/marketplace/cerebrum_pack.png",
+        "cerebellum": "menu/marketplace/cerebellum_pack.png",
+        "brainstem":"menu/marketplace/brainstem_pack.png",
+        "arterial":"menu/marketplace/arterial_pack.png"
+      }
     },
     "details" : {
       "cerebrum": {
@@ -95,7 +97,7 @@ export const menuData = {
         Medulla, Midbrain and Pons. These 3 parts correspond to the parts of the
         Brainstem and will help you compete in battles involving brainstem
         related functionality. For details on functionality, checkout the library!`,
-        "price": "0.025"
+        "price": "0.02"
       },
       "arterial": {
         "title": "Arterial",

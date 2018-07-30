@@ -25,27 +25,27 @@ export default class MarketplaceStash extends Component {
         <div className='parts-wrapper'>
           <div className='part'>
             <img className='part-image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
             <div className='part-qty'></div>
           </div>
           <div className='part'>
             <img className='part-image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
             <div className='part-qty'></div>
           </div>
           <div className='part'>
             <img className='part-image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
             <div className='part-qty'></div>
           </div>
           <div className='part'>
             <img className='part-image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
             <div className='part-qty'></div>
           </div>
           <div className='part'>
             <img className='part-image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
             <div className='part-qty'></div>
           </div>
         </div>

@@ -51,10 +51,10 @@ export default class MarketplacePacks extends Component {
           onClick={ () => this.props.SwitchSelectedPack("cerebrum")}>
           <div className='title'> Cerebrum </div>
           <img className='pack_image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebrum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebrum}`}/>
           <div className='pack_description'>
             <div className='number'> Neural Price </div>
-            <div className='price'> 0.04 Eth</div>
+            <div className='price'> {Constants.menuData.marketplace.details.cerebrum.price} Eth</div>
           </div>
         </Pack>
         <Pack className='pack green'
@@ -64,10 +64,10 @@ export default class MarketplacePacks extends Component {
           onClick={ () => this.props.SwitchSelectedPack("cerebellum")}>
           <div className='title'> Cerebellum </div>
           <img className='pack_image'
-            src={`/style/images/${Constants.menuData.marketplace.images.cerebellum_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.cerebellum}`}/>
           <div className='pack_description'>
             <div className='number'> Neural Price</div>
-            <div className='price'> 0.03 Eth</div>
+            <div className='price'> {Constants.menuData.marketplace.details.cerebellum.price} Eth</div>
           </div>
         </Pack>
         <Pack className='pack blue'
@@ -78,10 +78,10 @@ export default class MarketplacePacks extends Component {
           <div className='title'> BrainStem </div>
           <img
             className='pack_image'
-            src={`/style/images/${Constants.menuData.marketplace.images.brainstem_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.brainstem}`}/>
           <div className='pack_description'>
             <div className='number'> Neural Price</div>
-            <div className='price'> 0.025 Eth</div>
+            <div className='price'> {Constants.menuData.marketplace.details.brainstem.price} Eth</div>
           </div>
         </Pack>
         <Pack className='pack purple'
@@ -91,10 +91,10 @@ export default class MarketplacePacks extends Component {
           onClick={ () => this.props.SwitchSelectedPack("arterial")}>
           <div className='title'> Areterial </div>
           <img className='pack_image'
-            src={`/style/images/${Constants.menuData.marketplace.images.arterial_pack}`}/>
+            src={`/style/images/${Constants.menuData.marketplace.images.pack.arterial}`}/>
           <div className='pack_description'>
             <div className='number'> Neural Price</div>
-            <div className='price'> 0.01 Eth</div>
+            <div className='price'> {Constants.menuData.marketplace.details.arterial.price} Eth</div>
           </div>
         </Pack>
       </div>

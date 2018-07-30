@@ -9,34 +9,19 @@ import MarketplaceDetails from './sub/marketplace_details';
 import MarketplaceStash from './sub/marketplace_stash';
 import MarketplacePacks from './sub/marketplace_packs';
 
-const MAX_BUY_QUANTITY = 100;
-const MIN_BUY_QUANTITY = 0;
-
 export default class Marketplace extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      buyQuantity:0,
-      packType: "cerebrum"
+      selectedPack: "cerebrum"
     };
-    this.IncrementItem = this.IncrementItem.bind(this);
-    this.DecreaseItem = this.DecreaseItem.bind(this);
     this.SwitchSelectedPack = this.SwitchSelectedPack.bind(this);
   }
 
-  IncrementItem = () => {
-    if(this.state.buyQuantity < MAX_BUY_QUANTITY) {
-      this.setState({ buyQuantity: this.state.buyQuantity + 1 });
-    }
-  }
-  DecreaseItem = () => {
-    if(this.state.buyQuantity > MIN_BUY_QUANTITY) {
-      this.setState({ buyQuantity: this.state.buyQuantity - 1 });
-    }
-  }
+
 
   SwitchSelectedPack = (packType) => {
-    console.log(packType);
+    // console.log(packType);
     this.setState({ selectedPack: packType });
   }
 
@@ -54,11 +39,10 @@ export default class Marketplace extends Component {
           </div>
         </div>
         <MarketplacePacks
-          selectedPack = {this.state.selectedPack}
           SwitchSelectedPack= {this.SwitchSelectedPack}/>
         <MarketplaceDetails
           buyQuantity={this.state.buyQuantity}
-          selectedPack = {this.state.selectedPack}
+          type = {this.state.selectedPack}
           IncrementItem={this.IncrementItem}
           DecreaseItem={this.DecreaseItem}/>
         <MarketplaceStash
