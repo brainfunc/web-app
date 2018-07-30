@@ -3,7 +3,7 @@
   .marketplace__container > div.heading {
     font-family: "Moderneratrial", sans-serif;
     font-weight: 600;
-    font-size: 3em; }
+    font-size: 3.5em; }
   .marketplace__container > div.description-wrapper {
     width: 100%;
     overflow: hidden; }
@@ -60,3 +60,91 @@
           display: inline;
           float: right;
           width: 40%; }
+  .marketplace__container > div.details-wrapper {
+    margin-top: 4%;
+    overflow: hidden; }
+    .marketplace__container > div.details-wrapper > div.details-image-wrapper {
+      width: 50%;
+      display: inline;
+      float: left; }
+      .marketplace__container > div.details-wrapper > div.details-image-wrapper > img.details-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .marketplace__container > div.details-wrapper > div.details-description-wrapper {
+      text-align: justify;
+      width: 46%;
+      margin-left: 4%;
+      display: inline;
+      float: left;
+      padding-top: 0px; }
+      .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.title {
+        font-family: "Moderneratrial", sans-serif;
+        font-size: 3.5em;
+        font-weight: 600;
+        color: #545454; }
+      .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.subtitle {
+        font-family: "Avenir", sans-serif;
+        font-size: 2.4em;
+        font-weight: 400;
+        color: #9b9b9b; }
+      .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.description {
+        font-family: "Avenir", sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #545454; }
+      .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper {
+        overflow: hidden;
+        font-family: "Avenir", sans-serif;
+        font-weight: 400;
+        color: #545454;
+        font-size: 1.25em;
+        border-top: 2px solid #f3f1ee;
+        border-bottom: 2px solid #f3f1ee;
+        margin-top: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px; }
+        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity {
+          width: 50%;
+          display: inline;
+          float: left;
+          overflow: hidden; }
+          .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity > button.qty, .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity div.qty {
+            display: inline;
+            float: left;
+            text-align: center; }
+          .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity > button.qty {
+            width: 18%;
+            margin-right: 5%;
+            margin-left: 5%;
+            border-radius: 6px;
+            background-color: #ec1943;
+            border: 2px solid #bc1a39;
+            color: white;
+            outline: none; }
+          .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity > button.qty:hover {
+            opacity: 0.75; }
+          .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.quantity > div.qty {
+            padding-top: 4px; }
+        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.price-wrapper > div.total-price {
+          width: 50%;
+          display: inline;
+          float: left;
+          text-align: right;
+          padding-top: 8px; }
+      .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper {
+        margin-top: 4%;
+        width: 100%; }
+        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper > button.buy {
+          font-family: "Avenir", sans-serif;
+          font-weight: 400;
+          color: #545454;
+          font-size: 1.25em;
+          width: 100%;
+          background-color: #5bb75b;
+          border: 2px solid #16a05d;
+          border-radius: 8px;
+          color: white;
+          height: 56px; }
+        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper > button.buy:hover {
+          opacity: 0.75; }
