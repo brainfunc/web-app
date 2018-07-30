@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import * as Constants from '../../../utils/data';
 
-export const Part = function (props) {
+export const Parts = function (props) {
     var partsArr = []
     for(var i = 0; i < props["number"]; i++) {
       partsArr.push(
@@ -43,7 +43,7 @@ export default class MarketplaceStash extends Component {
 
         </div>
         <div className='parts-wrapper'>
-          <Part
+          <Parts
           number={Constants.menuData.marketplace.details[this.props.type].neurons}
           type={this.props.type}/>
         </div>
