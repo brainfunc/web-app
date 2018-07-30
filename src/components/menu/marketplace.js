@@ -13,6 +13,8 @@ export default class Marketplace extends Component {
     this.state = {
       buy_quantity:0,
     };
+    this.IncrementItem = this.IncrementItem.bind(this);
+    this.DecreaseItem = this.DecreaseItem.bind(this);
   }
 
   IncrementItem = () => {
