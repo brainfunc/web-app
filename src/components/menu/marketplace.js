@@ -5,12 +5,24 @@ import Header from '../common/header';
 import Footer from '../common/footer';
 
 import * as Constants from '../../utils/data';
-
+const MAX_BUY_QUANTITY = 100;
+const MIN_BUY_QUANTITY = 0;
 export default class Marketplace extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedPack : ''
+      buy_quantity:0,
+    };
+  }
+
+  IncrementItem = () => {
+    if(this.state.buy_quantity < MAX_BUY_QUANTITY) {
+      this.setState({ buy_quantity: this.state.buy_quantity + 1 });
+    }
+  }
+  DecreaseItem = () => {
+    if(this.state.buy_quantity > MIN_BUY_QUANTITY) {
+      this.setState({ buy_quantity: this.state.buy_quantity - 1 });
     }
   }
 
@@ -78,12 +90,17 @@ export default class Marketplace extends Component {
             </div>
             <div className='price-wrapper'>
               <div className='quantity'>
-                <button className='qty decrement'> - </button>
-                <div className='qty number'> 1 </div>
-                <button className='qty increment'> + </button>
+                <button className='qty decrement'
+                onClick={this.DecreaseItem}> - </button>
+                <div className='qty number'> {this.state.buy_quantity} </div>
+                <button className='qty increment'
+                onClick={this.IncrementItem}> + </button>
               </div>
               <div className='total-price'>
-                Total Price: {Constants.menuData.marketplace.details.cerebrum.price} Eth
+                Total Price:
+                {` ${Number(Constants.menuData.marketplace.details.cerebrum.price
+                  * this.state.buy_quantity).toFixed(2)}`}
+                Eth
               </div>
             </div>
             <div className='buy-wrapper'>
