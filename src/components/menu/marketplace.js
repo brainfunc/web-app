@@ -62,9 +62,10 @@ export default class Marketplace extends Component {
     const neuronContractInstance = neuronContract.at(
       CONFIG.CONTRACTS.NEURON.ADDRESS);
     // console.log(neuronContractInstance);
+    // console.log(web3.eth.defaultAccount);
     neuronContractInstance.createNeuron(
       "ts", "cerebrum", "leftFrontal", this.GetNeuronUri(),
-      0x75c088e1935468c0178b1e9733f250e9ad8d14f2,
+      web3.eth.defaultAccount,
       {
         from:web3.eth.defaultAccount,
         value:web3.toWei(
