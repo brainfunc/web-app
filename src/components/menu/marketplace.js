@@ -25,6 +25,32 @@ export default class Marketplace extends Component {
 
     this.GetTotalAmountToPay = this.GetTotalAmountToPay.bind(this);
     this.GetTotalAmountToPay = this.GetTotalAmountToPay.bind(this);
+
+    this.startListeningForEvents = this.startListeningForEvents.bind(this);
+  }
+
+  componentDidMount() {
+    this.startListeningForEvents();
+  }
+
+  startListeningForEvents() {
+    console.log("Starting to listen for events...");
+    // Instantiating neuron contract
+    const {web3} = window;
+    const neuronContract = web3.eth.contract(
+      CONFIG.CONTRACTS.NEURON.ABI);
+    const neuronContractInstance = neuronContract.at(
+      CONFIG.CONTRACTS.NEURON.ADDRESS);
+    // Or pass a callback to start watching immediately
+    var currentComponent = this;
+    var events = neuronContractInstance.allEvents(function(error, log) {
+      if (!error) {
+        console.log(log);
+        if(log.event == "Transfer") {
+          currentComponent.setState({currentState: "bought"});
+        }
+      }
+    });
   }
 
   SwitchSelectedPack = (packType) => {
@@ -52,9 +78,6 @@ export default class Marketplace extends Component {
 
   BuyNeuronsClicked = () => {
     console.log("Buying Neurons...");
-    this.setState({
-      currentState: "purchasing"
-    })
     // Instantiating neuron contract
     const {web3} = window;
     const neuronContract = web3.eth.contract(
@@ -77,15 +100,14 @@ export default class Marketplace extends Component {
         console.log("Error:", err);
         return;
       }
-      // console.log("Transaction Hash: ", res);
+      console.log("Transaction Hash: ", res);
+      this.setState({currentState: "buying"});
     });
   }
 
   UpdateRootState = (qty) => {
     console.log("Updating buyQuantity...");
-    this.setState({
-      buyQuantity: qty
-    })
+    this.setState({ buyQuantity: qty })
   }
 
   render() {

@@ -27,6 +27,17 @@ export default class MarketplaceStash extends Component {
 
   constructor(props) {
     super(props);
+    this.getHeading = this.getHeading.bind(this);
+  }
+
+  getHeading() {
+    if(this.props.currentState == "bought") {
+      return "Your freshly minted Neurons are here!";
+    } else if (this.props.currentState == "buying") {
+      return "Minting your Neurons...";
+    } else { // currentState is "default" here
+      return "...Buy Neurons to Unlock...";
+    }
   }
 
   render() {
@@ -36,7 +47,7 @@ export default class MarketplaceStash extends Component {
           <div className='lock left'>
             <img src={`/style/images/${Constants.templateData.images.lock}`}/>
           </div>
-          <div className='title'> Buy Neurons to Reveal</div>
+          <div className='title'> {this.getHeading()}</div>
           <div className='lock right'>
             <img src={`/style/images/${Constants.templateData.images.lock}`}/>
           </div>
