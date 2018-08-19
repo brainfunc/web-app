@@ -1,3 +1,9 @@
+export const PRICE_MAP = {
+  "cerebrum": 0.04,
+  "cerebellum": 0.03,
+  "brainstem": 0.02,
+  "arterial": 0.01
+}
 
 export const footerData = {
   title: 'Thanks for submitting your response',

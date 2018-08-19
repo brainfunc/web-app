@@ -11,7 +11,7 @@ export default class MarketplaceDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      buyQuantity: 0
+      buyQty: 0
     }
 
     this.IncrementItem = this.IncrementItem.bind(this);
@@ -19,13 +19,16 @@ export default class MarketplaceDetails extends Component {
   }
 
   IncrementItem = () => {
-    if(this.state.buyQuantity < MAX_BUY_QUANTITY) {
-      this.setState({ buyQuantity: this.state.buyQuantity + 1 });
+    if(this.state.buyQty < MAX_BUY_QUANTITY) {
+      this.setState({ buyQty: this.state.buyQty + 1 });
+      this.props.UpdateRootState(this.state.buyQty + 1);
     }
   }
+
   DecreaseItem = () => {
-    if(this.state.buyQuantity > MIN_BUY_QUANTITY) {
-      this.setState({ buyQuantity: this.state.buyQuantity - 1 });
+    if(this.state.buyQty > MIN_BUY_QUANTITY) {
+      this.setState({ buyQty: this.state.buyQty - 1 });
+      this.props.UpdateRootState(this.state.buyQty - 1);
     }
   }
 
@@ -46,19 +49,20 @@ export default class MarketplaceDetails extends Component {
             <div className='quantity'>
               <button className='qty decrement'
                 onClick={this.DecreaseItem}> - </button>
-              <div className='qty number'> {this.state.buyQuantity} </div>
+              <div className='qty number'> {this.state.buyQty} </div>
               <button className='qty increment'
                 onClick={this.IncrementItem}> + </button>
             </div>
             <div className='total-price'>
               Total Price:
               {` ${Number(Constants.menuData.marketplace.details[this.props.type].price
-                * this.state.buyQuantity).toFixed(2)}`}
+                * this.state.buyQty).toFixed(2)}`}
               Eth
             </div>
           </div>
           <div className='buy-wrapper'>
-            <button className='buy'> Buy Neurons </button>
+            <button className='buy'
+            onClick={this.props.BuyNeuronsClicked}> Buy Neurons </button>
           </div>
         </div>
       </div>
