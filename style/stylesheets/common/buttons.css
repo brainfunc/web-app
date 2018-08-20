@@ -12,6 +12,9 @@ div.sidebar-button {
   font-size: 1.35em; }
 
 div.sidebar-button:hover {
+  cursor: pointer; }
+
+div.sidebar-button.selected {
   background-color: white;
   color: #5AA9E0;
   cursor: pointer; }

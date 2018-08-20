@@ -5,6 +5,8 @@ import NeuronStash from "./sub/my_collectibles_neuron_stash";
 import BrainpartStash from "./sub/my_collectibles_brainpart_stash";
 import Exchange from "./sub/my_collectibles_exchange";
 
+import SideBar from "./sub/my_collectibles_sidebar";
+
 export default class MyCollectibles extends Component {
 
   constructor(props) {
@@ -84,20 +86,11 @@ export default class MyCollectibles extends Component {
         </div>
 
         <div className="stash_container">
-          <div className="sidebar">
-            <div className="neurons_button sidebar-button"
-              onClick={this.displayNeuronStash}>
-            Neurons
-            </div>
-            <div className="brainparts_button sidebar-button"
-              onClick={this.displayBrainpartStash}>
-            Brain Parts
-            </div>
-            <div className="exchange_button sidebar-button"
-              onClick={this.displayExchange}>
-            Exchange
-            </div>
-          </div>
+          <SideBar
+            activeComponent={this.state.activeComponent}
+            displayNeuronStash={this.displayNeuronStash}
+            displayBrainpartStash={this.displayBrainpartStash}
+            displayExchange={this.displayExchange}/>
           <div className="active_component">
             { this.renderActiveComponent() }
           </div>
