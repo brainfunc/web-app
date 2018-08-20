@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import NeuronStash from "./sub/my_collectibles_neuron_stash";
+import BrainpartStash from "./sub/my_collectibles_brainpart_stash";
+import Exchange from "./sub/my_collectibles_exchange";
+
 export default class MyCollectibles extends Component {
 
   constructor(props) {
@@ -17,6 +21,8 @@ export default class MyCollectibles extends Component {
     this.displayNeuronStash = this.displayNeuronStash.bind(this);
     this.displayBrainpartStash = this.displayBrainpartStash.bind(this);
     this.displayExchange = this.displayExchange.bind(this);
+
+    this.renderActiveComponent = this.renderActiveComponent.bind(this);
   }
 
   getImageForProfile() {
@@ -48,6 +54,16 @@ export default class MyCollectibles extends Component {
     // return (
     //   <div className="exchange"> Exchange </div>
     // );
+  }
+
+  renderActiveComponent() {
+    if(this.state.activeComponent == "neuron_stash") {
+      return <NeuronStash/>
+    } else if(this.state.activeComponent == "brainpart_stash") {
+      return <BrainpartStash/>
+    } else if(this.state.activeComponent == "exchange") {
+      return <Exchange/>
+    }
   }
 
   render() {
@@ -82,8 +98,8 @@ export default class MyCollectibles extends Component {
             Exchange
             </div>
           </div>
-          <div className="detail-section">
-            Details
+          <div className="active_component">
+            { this.renderActiveComponent() }
           </div>
         </div>
       </div>
