@@ -1,0 +1,29 @@
+.my_collectibles__container > div.profile_container {
+  border: 2px solid #f3f1ee;
+  border-radius: 24px;
+  margin: 32px;
+  padding: 32px;
+  overflow: hidden; }
+  .my_collectibles__container > div.profile_container > div.image_container {
+    display: inline;
+    float: left; }
+    .my_collectibles__container > div.profile_container > div.image_container > img {
+      height: 10vw;
+      width: 10vw;
+      padding: 1vw;
+      border-radius: 24px;
+      overflow: hidden; }
+  .my_collectibles__container > div.profile_container > div.wallet_container {
+    font-family: "Avenir", sans-serif;
+    font-weight: 400;
+    font-size: 1.25em; }
+    .my_collectibles__container > div.profile_container > div.wallet_container > div.title {
+      margin-top: 1.25vw;
+      margin-left: 11vw;
+      font-weight: 600; }
+    .my_collectibles__container > div.profile_container > div.wallet_container > div.wallet_address {
+      margin-left: 11vw;
+      font-weight: 400; }
+    .my_collectibles__container > div.profile_container > div.wallet_container > div.total_item_value {
+      margin-left: 11vw;
+      font-weight: 400; }
