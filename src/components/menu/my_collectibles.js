@@ -4,10 +4,19 @@ import ReactDOM from 'react-dom';
 export default class MyCollectibles extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
+
+    this.state = {
+      activeComponent: "neuron_stash"
+    }
+
     this.getImageForProfile = this.getImageForProfile.bind(this);
     this.getWalletAddressForProfile = this.getWalletAddressForProfile.bind(this);
     this.getBalanceForProfile = this.getBalanceForProfile.bind(this);
+
+    this.displayNeuronStash = this.displayNeuronStash.bind(this);
+    this.displayBrainpartStash = this.displayBrainpartStash.bind(this);
+    this.displayExchange = this.displayExchange.bind(this);
   }
 
   getImageForProfile() {
@@ -20,7 +29,29 @@ export default class MyCollectibles extends Component {
     return "14.36 Ether";
   }
 
+  displayNeuronStash() {
+    this.setState({ activeComponent: "neuron_stash" });
+    // return (
+    //   <div className="neuron_stash"> Neuron Stash </div>
+    // );
+  }
+
+  displayBrainpartStash() {
+    this.setState({ activeComponent: "brainpart_stash" });
+    // return (
+    //   <div className="Brainpart_stash"> Brainpart Stash </div>
+    // );
+  }
+
+  displayExchange() {
+    this.setState({ activeComponent: "exchange" });
+    // return (
+    //   <div className="exchange"> Exchange </div>
+    // );
+  }
+
   render() {
+    console.log(this.state);
     return (
       <div className="my_collectibles__container">
         <div className="profile_container">
@@ -33,6 +64,26 @@ export default class MyCollectibles extends Component {
             <div className="total_item_value">
               Total Value:- ~ {this.getBalanceForProfile()}
             </div>
+          </div>
+        </div>
+
+        <div className="stash_container">
+          <div className="sidebar">
+            <div className="neurons_button sidebar-button"
+              onClick={this.displayNeuronStash}>
+            Neurons
+            </div>
+            <div className="brainparts_button sidebar-button"
+              onClick={this.displayBrainpartStash}>
+            Brain Parts
+            </div>
+            <div className="exchange_button sidebar-button"
+              onClick={this.displayExchange}>
+            Exchange
+            </div>
+          </div>
+          <div className="detail-section">
+            Details
           </div>
         </div>
       </div>

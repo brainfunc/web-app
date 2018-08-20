@@ -27,3 +27,20 @@
     .my_collectibles__container > div.profile_container > div.wallet_container > div.total_item_value {
       margin-left: 11vw;
       font-weight: 400; }
+
+.my_collectibles__container > div.stash_container {
+  border: 2px solid #f3f1ee;
+  border-radius: 24px;
+  margin: 32px;
+  padding: 24px;
+  overflow: hidden;
+  overflow: hidden; }
+  .my_collectibles__container > div.stash_container > div.sidebar {
+    width: 15vw;
+    display: inline;
+    float: left; }
+    .my_collectibles__container > div.stash_container > div.sidebar > div.brainparts_button, .my_collectibles__container > div.stash_container > div.sidebar > div.exchange_button {
+      margin-top: 0.75vw; }
+  .my_collectibles__container > div.stash_container > div.detail-section {
+    width: 75vw;
+    display: inline; }
