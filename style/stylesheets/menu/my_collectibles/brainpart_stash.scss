@@ -1,0 +1,100 @@
+@import "../../../constants/constants.scss";
+
+.brainpart_stash__container {
+  >div.brainpart_detail_container {
+    //border: 2px solid $background_color_cream;
+    //border-radius: 24px;
+    //margin: 32px;
+    //padding: 32px;
+    overflow: hidden;
+    >div.image_container{
+      >img{
+        height: 24vw;
+        width: 24vw;
+        padding: 1vw;
+        //border-radius: 24px;
+        overflow: hidden;
+      }
+      display: inline;
+      float: left;
+    }
+    >div.description_container {
+      margin-left: 2vw;
+      width: 50vw;
+      >div.name{
+        font-family: $font_family_3;
+        font-size: 3.5vw;
+        margin-top: 1.25vw;
+        margin-left: 0.5vw;
+        font-weight: 600;
+        color:#4a4a4a;
+      }
+      >div.details {
+        margin-left: 0.5vw;
+        >div.level{
+          overflow: hidden;
+          >div.increase-level-txt{
+            font-family: $font_family_1;
+            font-size: 2.65vw;
+            font-weight: 400;
+            color:#82817d;
+            display: inline;
+            float:left;
+          }
+          >button.increase-level-btn{
+            margin-left: 1.5vw;
+            font-size: 1.25vw;
+            font-weight: 400;
+            border-radius: 16px;
+            background-color: $color_theme_red;
+            padding: 12px;
+            color:white;
+            display:inline;
+            float:left;
+          }
+        }
+
+        >div.quantity{
+
+        }
+        >div.text{
+          font-family: $font_family_1;
+          font-size: 1.65vw;
+          font-weight: 400;
+          color:#82817d;
+        }
+      }
+      display: inline;
+      float: left;
+    }
+  }
+
+  >div.brainpart_cards_container{
+    border: 2px solid $background_color_cream;
+    border-radius: 8px;
+    // margin: 0px;
+    width:75vw;
+    margin-top:2vw;
+    margin-left:16vw;
+
+    // padding: 24px;
+    overflow: hidden;
+
+    >div.brainpart_card_row {
+      >div.brainpart_card{
+        border: 2px solid $background_color_cream;
+        border-radius: 8px;
+        width: 16vw;
+        margin-right: 3vw;
+        display:inline;
+        float:left;
+      }
+      >div.brainpart_card:first-child{
+        margin-left:1vw;
+      }
+      >div.brainpart_card:last-child{
+        margin-right:0vw;
+      }
+    }
+  }
+}

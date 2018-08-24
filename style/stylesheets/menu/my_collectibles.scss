@@ -2,15 +2,17 @@
 
 .my_collectibles__container {
   >div.profile_container {
-    border: 2px solid $background_color_cream;
-    border-radius: 24px;
+    //border: 2px solid $background_color_cream;
+    //border-radius: 24px;
+    border-bottom: 2px solid $background_color_cream;
     margin: 32px;
+    margin-top: 0px;
     padding: 32px;
     overflow: hidden;
     >div.image_container{
       >img{
-        height: 10vw;
-        width: 10vw;
+        height: 12.5vw;
+        width: 12.5vw;
         padding: 1vw;
         border-radius: 24px;
         overflow: hidden;
@@ -21,25 +23,31 @@
     >div.wallet_container {
       font-family: $font_family_1;
       font-weight: 400;
-      font-size: 1.25em;
+      font-size: 1.75vw;
+      margin-left: 2vw;
       >div.title{
-        margin-top: 1.25vw;
-        margin-left: 11vw;
+        margin-top: 1.5vw;
         font-weight: 600;
       }
       >div.wallet_address {
-        margin-left: 11vw;
         font-weight: 400;
+        font-size: 1.4vw;
       }
-      >div.total_item_value {
-        margin-left: 11vw;
+      >div.neurons {
         font-weight: 400;
+        font-size: 1.4vw;
       }
+      >div.brainparts {
+        font-weight: 400;
+        font-size: 1.4vw;
+      }
+      display: inline;
+      float: left;
     }
   }
 
   >div.stash_container{
-    border: 2px solid $background_color_cream;
+    //border: 2px solid $background_color_cream;
     border-radius: 24px;
     margin: 32px;
     padding: 24px;

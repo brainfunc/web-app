@@ -11,11 +11,20 @@ export default class NeuronStash extends Component {
     super(props);
   }
 
+
   render() {
     return (
       <div className='neuron_stash__container'>
-        Neuron Stash
-        <StashBase/>
+        <div className="neuron_cards_container">
+          <div className="neuron_card_row">
+            <div className="neuron_card">
+            </div>
+            <div className="neuron_card">
+            </div>
+            <div className="neuron_card">
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

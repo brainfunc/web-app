@@ -28,7 +28,7 @@ export default class MyCollectibles extends Component {
   }
 
   getImageForProfile() {
-    return "/style/images/template/wallet.png";
+    return "/style/images/template/wallet4.png";
   }
   getWalletAddressForProfile(){
     return "0x75c088e1935468c0178b1e9733f250e9ad8d14f2"
@@ -75,13 +75,17 @@ export default class MyCollectibles extends Component {
         <div className="profile_container">
           <div className="image_container"> <img src={this.getImageForProfile()}/> </div>
           <div className="wallet_container">
-            <div className="title"> BrainFunc Wallet </div>
+            <div className="title"> ERC721 BrainFunc Collectible Wallet </div>
             <div className="wallet_address">
-              Address:- {this.getWalletAddressForProfile()}
+              {this.getWalletAddressForProfile()}
             </div>
-            <div className="total_item_value">
-              Total Value:- ~ {this.getBalanceForProfile()}
+            <div className="neurons">
+              Neurons:- 24 Owned
             </div>
+            <div className="brainparts">
+              Brainparts:- 7 Unlocked out of 13
+            </div>
+
           </div>
         </div>
 
