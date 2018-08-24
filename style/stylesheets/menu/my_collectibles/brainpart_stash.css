@@ -47,21 +47,33 @@
         font-weight: 400;
         color: #82817d; }
 
-.brainpart_stash__container > div.brainpart_cards_container {
+.brainpart_stash__container > div.cards_container-4 {
   border: 2px solid #f3f1ee;
-  border-radius: 8px;
-  width: 75vw;
+  border-radius: 24px;
+  width: 76.5vw;
   margin-top: 2vw;
-  margin-left: 16vw;
-  overflow: hidden; }
-  .brainpart_stash__container > div.brainpart_cards_container > div.brainpart_card_row > div.brainpart_card {
+  margin-left: 15vw;
+  overflow: hidden;
+  text-align: center; }
+  .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
     border: 2px solid #f3f1ee;
     border-radius: 8px;
-    width: 16vw;
-    margin-right: 3vw;
+    width: 19vw;
     display: inline;
     float: left; }
-  .brainpart_stash__container > div.brainpart_cards_container > div.brainpart_card_row > div.brainpart_card:first-child {
-    margin-left: 1vw; }
-  .brainpart_stash__container > div.brainpart_cards_container > div.brainpart_card_row > div.brainpart_card:last-child {
-    margin-right: 0vw; }
+    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
+      width: 15vw;
+      height: 15vw; }
+    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
+      margin-top: 1vw;
+      font-family: "Avenir", sans-serif;
+      font-size: 1.30vw;
+      font-weight: 500;
+      color: #4a4a4a;
+      text-align: center; }
+    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description {
+      font-family: "Avenir", sans-serif;
+      font-size: 1.2vw;
+      font-weight: 400;
+      color: #82817d;
+      text-align: center; }

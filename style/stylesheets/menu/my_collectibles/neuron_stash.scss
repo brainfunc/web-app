@@ -1,32 +1,89 @@
 @import "../../../constants/constants.scss";
 
 .neuron_stash__container {
-  >div.neuron_cards_container{
+  overflow: hidden;
+  >div.cards_container-4{
     border: 2px solid $background_color_cream;
-    border-radius: 8px;
+    border-radius: 24px;
     // margin: 0px;
-    width:75vw;
-    margin-top:2vw;
-    margin-left:16vw;
-
-    // padding: 24px;
-    overflow: hidden;
-
-    >div.neuron_card_row {
-      >div.neuron_card{
+    //width:75vw;
+    display: inline;
+    float:left;
+    //padding: 24px;
+    >div.card_row-4 {
+      >div.card-4{
         border: 2px solid $background_color_cream;
         border-radius: 8px;
-        width: 21vw;
+        width: 18vw;
         display:inline;
         float:left;
 
-        margin-right: 1.5vw;
-        margin-left: 1.5vw;
-        padding:2vw;
-      }
-      >div.neuron_card:first-child{
-        margin-left: 2.5vw;
+        >img.image{
+          width: 15vw;
+          height: 15vw;
+        }
+        >div.title{
+          margin-top: 1vw;
+          font-family: $font_family_1;
+          font-size: 1.30vw;
+          font-weight: 500;
+          color: $text_color_blackish;
+          text-align: center;
+        }
+        >div.description{
+          font-family: $font_family_1;
+          font-size: 1.2vw;
+          font-weight: 400;
+          color:$text_color_cream;
+          text-align: center;
+        }
       }
     }
   }
 }
+// >div.cards_container{
+//   //border: 2px solid $background_color_cream;
+//   //border-radius: 8px;
+//   // margin: 0px;
+//   width:70vw;
+//   //margin-top:2vw;
+//   margin-left:16vw;
+//   padding-top: 0vw;
+//   // padding: 24px;
+//   overflow: hidden;
+//
+//
+//   >div.card_row {
+//     >div.card{
+//       border: 0px solid $background_color_cream;
+//       border-radius: 8px;
+//       width: 21vw;
+//       display:inline;
+//       float:left;
+//
+//       margin-right: 2vw;
+//       padding:1vw;
+//       >img.image{
+//         width: 19vw;
+//         height: 19vw;
+//       }
+//       >div.title{
+//         margin-top: 1vw;
+//         font-family: $font_family_1;
+//         font-size: 1.45vw;
+//         font-weight: 500;
+//         color: $text_color_blackish;
+//         text-align: center;
+//       }
+//       >div.description{
+//
+//       }
+//     }
+//     >div.card:first-child{
+//       margin-left: 1.5vw;
+//     }
+//     >div.card:last-child{
+//       margin-right: 0vw;
+//     }
+//   }
+// }

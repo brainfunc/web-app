@@ -15,6 +15,10 @@ export default class BrainpartStash extends Component {
     return "/style/images/collectibles/brainparts/leftfrontal.png";
   }
 
+  getBrainpartImage(){
+    return "/style/images/collectibles/brainparts/rightfrontal.png";
+  }
+
   render() {
     return (
       <div className='brainpart_stash__container'>
@@ -40,15 +44,43 @@ export default class BrainpartStash extends Component {
             </div>
           </div>
         </div>
-        <div className="brainpart_cards_container">
-          <div className="brainpart_card_row">
-            <div className="brainpart_card">
+        <div className="cards_container-4">
+          <div className="card_row-4">
+            <div className="card-4">
+              <img className="image" src={this.getBrainpartImage()}/>
+              <div className="title">
+                Frontal Lobe(Left)
+              </div>
+              <div className="description">
+                Strength Level 2
+              </div>
             </div>
-            <div className="brainpart_card">
+            <div className="card-4">
+              <img className="image" src={this.getBrainpartImage()}/>
+              <div className="title">
+                Frontal Lobe(Right)
+              </div>
+              <div className="description">
+                Strength Level 0
+              </div>
             </div>
-            <div className="brainpart_card">
+            <div className="card-4">
+              <img className="image" src={this.getBrainpartImage()}/>
+              <div className="title">
+                Temporal Lobe
+              </div>
+              <div className="description">
+                Strength Level 5
+              </div>
             </div>
-            <div className="brainpart_card">
+            <div className="card-4">
+              <img className="image" src={this.getBrainpartImage()}/>
+              <div className="title">
+                Foccolonodular Lobe
+              </div>
+              <div className="description">
+                Strength Level 3
+              </div>
             </div>
           </div>
         </div>

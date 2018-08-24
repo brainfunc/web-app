@@ -37,7 +37,7 @@
             font-family: $font_family_1;
             font-size: 2.65vw;
             font-weight: 400;
-            color:#82817d;
+            color:$text_color_cream;
             display: inline;
             float:left;
           }
@@ -69,32 +69,52 @@
     }
   }
 
-  >div.brainpart_cards_container{
+  >div.cards_container-4{
     border: 2px solid $background_color_cream;
-    border-radius: 8px;
+    border-radius: 24px;
     // margin: 0px;
-    width:75vw;
+    width:76.5vw;
     margin-top:2vw;
-    margin-left:16vw;
+    margin-left:15vw;
 
-    // padding: 24px;
+    //padding: 24px;
     overflow: hidden;
 
-    >div.brainpart_card_row {
-      >div.brainpart_card{
+    text-align: center;
+    >div.card_row-4 {
+      >div.card-4{
         border: 2px solid $background_color_cream;
         border-radius: 8px;
-        width: 16vw;
-        margin-right: 3vw;
+        width: 19vw;
         display:inline;
         float:left;
+
+        >img.image{
+          width: 15vw;
+          height: 15vw;
+        }
+        >div.title{
+          margin-top: 1vw;
+          font-family: $font_family_1;
+          font-size: 1.30vw;
+          font-weight: 500;
+          color: $text_color_blackish;
+          text-align: center;
+        }
+        >div.description{
+          font-family: $font_family_1;
+          font-size: 1.2vw;
+          font-weight: 400;
+          color:$text_color_cream;
+          text-align: center;
+        }
       }
-      >div.brainpart_card:first-child{
-        margin-left:1vw;
-      }
-      >div.brainpart_card:last-child{
-        margin-right:0vw;
-      }
+      // >div.card-4:first-child{
+      //   margin-left:0vw;
+      // }
+      // >div.card-4:last-child{
+      //   margin-right:0vw;
+      // }
     }
   }
 }
