@@ -1,79 +1,88 @@
-.brainpart_stash__container > div.brainpart_detail_container {
+.brainpart_stash__container {
   overflow: hidden; }
-  .brainpart_stash__container > div.brainpart_detail_container > div.image_container {
+  .brainpart_stash__container > div.brainpart_detail_container {
+    border: 2px solid #f3f1ee;
     display: inline;
-    float: left; }
-    .brainpart_stash__container > div.brainpart_detail_container > div.image_container > img {
-      height: 24vw;
-      width: 24vw;
-      padding: 1vw;
-      overflow: hidden; }
-  .brainpart_stash__container > div.brainpart_detail_container > div.description_container {
-    margin-left: 2vw;
-    width: 50vw;
-    display: inline;
-    float: left; }
-    .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.name {
-      font-family: "Moderneratrial", sans-serif;
-      font-size: 3.5vw;
-      margin-top: 1.25vw;
-      margin-left: 0.5vw;
-      font-weight: 600;
-      color: #4a4a4a; }
-    .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details {
-      margin-left: 0.5vw; }
-      .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level {
-        overflow: hidden; }
-        .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.increase-level-txt {
+    float: left;
+    overflow: hidden;
+    width: 76vw; }
+    .brainpart_stash__container > div.brainpart_detail_container > div.image_container {
+      display: inline;
+      float: left; }
+      .brainpart_stash__container > div.brainpart_detail_container > div.image_container > img {
+        height: 24vw;
+        width: 24vw;
+        padding: 1vw;
+        display: inline;
+        float: left; }
+    .brainpart_stash__container > div.brainpart_detail_container > div.description_container {
+      display: inline;
+      float: left;
+      margin-left: 1vw;
+      width: 48vw; }
+      .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.name {
+        font-family: "Moderneratrial", sans-serif;
+        font-size: 3.5vw;
+        margin-top: 1.25vw;
+        margin-left: 0.5vw;
+        font-weight: 600;
+        color: #4a4a4a; }
+      .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details {
+        margin-left: 0.5vw; }
+        .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level {
+          overflow: hidden; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.increase-level-txt {
+            font-family: "Avenir", sans-serif;
+            font-size: 2.65vw;
+            font-weight: 400;
+            color: #82817d;
+            display: inline;
+            float: left; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > button.increase-level-btn {
+            margin-left: 1.5vw;
+            font-size: 1.25vw;
+            font-weight: 400;
+            border-radius: 16px;
+            background-color: #ec1943;
+            padding: 12px;
+            color: white;
+            display: inline;
+            float: left; }
+        .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.text {
           font-family: "Avenir", sans-serif;
-          font-size: 2.65vw;
+          font-size: 1.65vw;
+          font-weight: 400;
+          color: #82817d; }
+  .brainpart_stash__container > div.cards_container-4 {
+    border: 2px solid #f3f1ee;
+    border-radius: 24px;
+    width: 75vw;
+    margin-top: 2vw;
+    display: inline;
+    float: left;
+    text-align: center; }
+    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 {
+      display: inline;
+      float: left; }
+      .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
+        border: 2px solid #f3f1ee;
+        border-radius: 8px;
+        width: 18.5vw;
+        display: inline;
+        float: left; }
+        .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
+          width: 15vw;
+          height: 15vw; }
+        .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
+          margin-top: 1vw;
+          font-family: "Avenir", sans-serif;
+          font-size: 1.30vw;
+          font-weight: 500;
+          color: #4a4a4a;
+          text-align: center; }
+        .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description {
+          font-family: "Avenir", sans-serif;
+          font-size: 1.2vw;
           font-weight: 400;
           color: #82817d;
-          display: inline;
-          float: left; }
-        .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > button.increase-level-btn {
-          margin-left: 1.5vw;
-          font-size: 1.25vw;
-          font-weight: 400;
-          border-radius: 16px;
-          background-color: #ec1943;
-          padding: 12px;
-          color: white;
-          display: inline;
-          float: left; }
-      .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.text {
-        font-family: "Avenir", sans-serif;
-        font-size: 1.65vw;
-        font-weight: 400;
-        color: #82817d; }
-
-.brainpart_stash__container > div.cards_container-4 {
-  border: 2px solid #f3f1ee;
-  border-radius: 24px;
-  width: 76.5vw;
-  margin-top: 2vw;
-  margin-left: 15vw;
-  overflow: hidden;
-  text-align: center; }
-  .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
-    border: 2px solid #f3f1ee;
-    border-radius: 8px;
-    width: 19vw;
-    display: inline;
-    float: left; }
-    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
-      width: 15vw;
-      height: 15vw; }
-    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
-      margin-top: 1vw;
-      font-family: "Avenir", sans-serif;
-      font-size: 1.30vw;
-      font-weight: 500;
-      color: #4a4a4a;
-      text-align: center; }
-    .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description {
-      font-family: "Avenir", sans-serif;
-      font-size: 1.2vw;
-      font-weight: 400;
-      color: #82817d;
-      text-align: center; }
+          text-align: center; }
