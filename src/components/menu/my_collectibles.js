@@ -80,10 +80,14 @@ export default class MyCollectibles extends Component {
               {this.getWalletAddressForProfile()}
             </div>
             <div className="neurons">
-              Neurons:- 24 Owned
+              <img src=""/>
+              <div className='lbl'>Neurons</div>
+              <div className='qty'>24</div>
             </div>
             <div className="brainparts">
-              Brainparts:- 7 Unlocked out of 13
+              <img src=""/>
+              <div className='lbl'>Brainparts</div>
+              <div className='qty'>7</div>
             </div>
 
           </div>
