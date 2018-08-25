@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import * as Constants from '../../../utils/data';
+import * as Collectibles from '../../../utils/data/collectibles';
 
 import StashBase from "./common/stash_base";
 
@@ -9,24 +9,52 @@ export const NeuronCard = function(props) {
   return (
     <div className="card-4">
       <img className="image"
-      src={"/style/images/collectibles/neurons/cerebrum2.png"}/>
-      <div className="title">
-        Frontal Lobe(Left)
-      </div>
+      src={props.image}/>
+      <div className="title">{props.subcategory}</div>
       <div className="description">
-        <div className="category"> Cerebrum </div>
-        <div className="quantity"> 34 </div>
+        <div className="category"> {props.category} </div>
+        <div className="quantity"> {props.quantity} </div>
       </div>
     </div>
   );
 }
 
-export const NeuronCards = function(props) {
+export const NeuronCardsRow = function(props) {
+  console.log(props);
   var cardsArr = []
   for(var i = 0; i < props["number"]; i++) {
-    cardsArr.push(<NeuronCard key={i}/>);
+    cardsArr.push(
+      <NeuronCard key={i}
+      category={props.neurons[i].category}
+      subcategory={props.neurons[i].subcategory}
+      quantity={props.neurons[i].quantity}
+      image={props.neurons[i].image}/>
+    );
   }
   return (cardsArr);
+}
+
+export const NeuronCardsComponent = function(props) {
+  return(
+    <div className="cards_container-4">
+      <div className="card_row-4">
+        <NeuronCardsRow number={4}
+        neurons={Collectibles.Data.Neurons.slice(0,4)}/>
+      </div>
+      <div className="card_row-4">
+        <NeuronCardsRow number={4}
+        neurons={Collectibles.Data.Neurons.slice(4,8)}/>
+      </div>
+      <div className="card_row-4">
+        <NeuronCardsRow number={4}
+        neurons={Collectibles.Data.Neurons.slice(8,12)}/>
+      </div>
+      <div className="card_row-4">
+        <NeuronCardsRow number={1}
+        neurons={Collectibles.Data.Neurons.slice(12,13)}/>
+      </div>
+    </div>
+  );
 }
 
 export default class NeuronStash extends Component {
@@ -38,21 +66,7 @@ export default class NeuronStash extends Component {
   render() {
     return (
       <div className='neuron_stash__container'>
-      <div className="cards_container-4">
-        <div className="card_row-4">
-          <NeuronCards number={4}/>
-        </div>
-        <div className="card_row-4">
-          <NeuronCards number={4}/>
-        </div>
-        <div className="card_row-4">
-          <NeuronCards number={4}/>
-        </div>
-        <div className="card_row-4">
-          <NeuronCards number={4}/>
-        </div>
-        
-      </div>
+        <NeuronCardsComponent/>
       </div>
     );
   }
