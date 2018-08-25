@@ -33,7 +33,7 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Anterior Lobe",
-      quantity:"23",
+      quantity:"0",
       image: "/style/images/collectibles/neurons/anteriorlobe.png",
     },
     {
@@ -51,13 +51,13 @@ export const Data = {
     {
       category:"Brainstem",
       subcategory:"Midbrain",
-      quantity:"23",
+      quantity:"0",
       image: "/style/images/collectibles/neurons/midbrain.png",
     },
     {
       category:"Brainstem",
       subcategory:"Pons",
-      quantity:"23",
+      quantity:"0",
       image: "/style/images/collectibles/neurons/pons.png",
     },
     {
@@ -69,7 +69,7 @@ export const Data = {
     {
       category:"Arterial",
       subcategory:"Basilar Artery",
-      quantity:"23",
+      quantity:"0",
       image: "/style/images/collectibles/neurons/basilarartery.png",
     },
     {

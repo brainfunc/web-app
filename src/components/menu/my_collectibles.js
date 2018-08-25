@@ -28,7 +28,7 @@ export default class MyCollectibles extends Component {
   }
 
   getImageForProfile() {
-    return "/style/images/template/wallet4.png";
+    return "/style/images/template/wallet5.png";
   }
   getWalletAddressForProfile(){
     return "0x75c088e1935468c0178b1e9733f250e9ad8d14f2"
