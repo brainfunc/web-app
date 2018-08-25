@@ -7,13 +7,39 @@
     width: 76vw; }
     .brainpart_stash__container > div.brainpart_detail_container > div.image_container {
       display: inline;
-      float: left; }
+      float: left;
+      width: 26vw;
+      text-align: center; }
       .brainpart_stash__container > div.brainpart_detail_container > div.image_container > img {
         height: 24vw;
         width: 24vw;
-        padding: 1vw;
+        margin: 1vw;
         display: inline;
-        float: left; }
+        float: left;
+        border-radius: 4.5vw;
+        box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.05); }
+      .brainpart_stash__container > div.brainpart_detail_container > div.image_container > button.boost {
+        width: 16vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 0.45vw;
+        padding-bottom: 0.45vw;
+        color: white;
+        background-color: #ffbb58;
+        border: 2px solid #d99f49;
+        border-radius: 1vw;
+        box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.075);
+        display: inline;
+        float: left;
+        font-family: "Avenir", sans-serif;
+        font-size: 1.75vw;
+        font-weight: 400;
+        outline: none; }
+      .brainpart_stash__container > div.brainpart_detail_container > div.image_container > button.boost:hover {
+        opacity: 0.75; }
     .brainpart_stash__container > div.brainpart_detail_container > div.description_container {
       display: inline;
       float: left;
@@ -78,7 +104,8 @@
         float: left; }
         .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
           width: 15vw;
-          height: 15vw; }
+          height: 15vw;
+          cursor: pointer; }
         .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
           margin-top: 1vw;
           font-family: "Avenir", sans-serif;
