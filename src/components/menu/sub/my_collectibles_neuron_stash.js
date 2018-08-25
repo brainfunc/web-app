@@ -54,8 +54,8 @@ export const NeuronCardsComponent = function(props) {
         neurons={props.neurons.slice(8,12)}/>
       </div>
       <div className="card_row-4">
-        <NeuronCardsRow number={1}
-        neurons={props.neurons.slice(12,13)}/>
+        <NeuronCardsRow number={2}
+        neurons={props.neurons.slice(12,14)}/>
       </div>
     </div>
   );

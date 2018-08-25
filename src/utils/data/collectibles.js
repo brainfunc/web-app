@@ -77,6 +77,12 @@ export const Data = {
       subcategory:"Vertebral Artery",
       quantity:"23",
       image: "/style/images/collectibles/neurons/vertebralartery.png",
+    },
+    {
+      category:"Unknown",
+      subcategory:"uNeuron (Soul)",
+      quantity:"0",
+      image: "/style/images/collectibles/neurons/unavailableNeuron.png",
     }
   ],
   Brainparts:[
