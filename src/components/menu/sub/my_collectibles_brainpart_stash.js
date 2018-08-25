@@ -67,13 +67,29 @@ export default class BrainpartStash extends Component {
   }
 
   render() {
+    var imageSrc, boostOrUnlockButtonText,description,
+    lockLabelClass, lockLabelDivText;
+    if (this.state.selectedBrainpart.strength == "0") {
+      imageSrc = "/style/images/collectibles/brainparts/lockedBrainpart5.png";
+      boostOrUnlockButtonText = "Construct";
+      lockLabelClass = "locked";
+      lockLabelDivText = "Locked";
+      description = Collectibles.GeneralData.Brainparts.lockedDescription;
+    } else {
+      imageSrc = this.state.selectedBrainpart.image;
+      boostOrUnlockButtonText = "Boost";
+      lockLabelClass = "owned";
+      lockLabelDivText = "Owned";
+      description = this.state.selectedBrainpart.description;
+    }
+
     return (
       <div className='brainpart_stash__container'>
         <div className="brainpart_detail_container">
           <div className="image_container">
-            <img src={this.state.selectedBrainpart.image}/>
+            <img src={imageSrc}/>
             <button className="boost"
-            onClick = {this.handleBoostClick}> Boost </button>
+            onClick = {this.handleBoostClick}> {boostOrUnlockButtonText} </button>
           </div>
           <div className="description_container">
             <div className="name">
@@ -84,13 +100,14 @@ export default class BrainpartStash extends Component {
                 <div className="increase-level-txt">
                   Strength Level {this.state.selectedBrainpart.strength}
                 </div>
-                <div className="locked-status">
-                  Locked
+                <div className={`${lockLabelClass}`}>
+                  {lockLabelDivText}
                 </div>
               </div>
               <div className="text">
-                {this.state.selectedBrainpart.description}
+                {description}
               </div>
+              
             </div>
           </div>
         </div>

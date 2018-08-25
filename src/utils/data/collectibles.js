@@ -228,5 +228,14 @@ export const Data = {
       image: "/style/images/collectibles/brainparts/soulpart.png",
       description: ``
     }
-  ]
+  ],
+}
+
+export const GeneralData = {
+  Neurons: {},
+  Brainparts: {
+    lockedDescription: `This part is currently locked. In order to construct this
+    part and use it in battles, you will need the relevant neurons. Try buying neuron
+    packs from the store to get them and click Construct.`
+  }
 }

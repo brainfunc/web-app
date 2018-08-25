@@ -77,21 +77,24 @@
             display: inline;
             float:left;
           }
-          >div.locked-status{
+          >div.locked, div.owned{
             margin-right: 4vw;
             margin-top: 0.5vw;
             margin-left: 2vw;
             font-size: 1.25vw;
             font-weight: 400;
             border-radius: 12px;
-            background-color: $color_theme_red;
-            border-color: $button_color_border;
+            background-color: $btn_color_green;
+            border-color: $btn_color_green;
             padding: 6px;
             padding-left:24px;
             padding-right:24px;
             color:white;
             display:inline;
             float:left;
+          }
+          >div.locked{
+            background-color: $color_theme_red;
           }
         }
 
