@@ -10,6 +10,8 @@
     padding: 32px;
     overflow: hidden;
     >div.image_container{
+      display: inline;
+      float: left;
       >img{
         height: 12.5vw;
         width: 12.5vw;
@@ -17,14 +19,16 @@
         border-radius: 24px;
         overflow: hidden;
       }
-      display: inline;
-      float: left;
     }
     >div.wallet_container {
+      display: inline;
+      float:left;
       font-family: $font_family_1;
       font-weight: 400;
       font-size: 1.75vw;
       margin-left: 2vw;
+      width: 35vw;
+      // border: 1px solid black;
       >div.title{
         margin-top: 1.5vw;
         font-weight: 600;
@@ -32,18 +36,56 @@
       >div.wallet_address {
         font-weight: 400;
         font-size: 1.4vw;
+        color: $text_color_blackish;
       }
-      >div.neurons {
-        font-weight: 400;
-        font-size: 1.4vw;
+
+      >div.neurons, >div.brainparts {
+        display: inline;
+        overflow: hidden;
+        // border: 1px solid black;
+        width: 15vw;
+        margin-top: 1vw;
+        >img{
+          width: 4vw;
+          height: 4vw;
+          display: inline;
+          float: left;
+        }
+        div.lbl{
+          display: inline;
+          float: left;
+
+          width: 10vw;
+          // border: 1px solid black;
+          font-weight: 400;
+          font-size: 1.4vw;
+          color: $text_color_blackish;
+
+          margin-left: 0.75vw;
+        }
+        div.qty{
+          display: inline;
+          float: left;
+          width: 10vw;
+          // border:1px solid black;
+
+          font-weight: 600;
+          font-size: 1.4vw;
+
+          margin-top: -0.2vw;
+          margin-left: 0.75vw;
+        }
       }
-      >div.brainparts {
-        font-weight: 400;
-        font-size: 1.4vw;
+      >div.neurons{
+        float:left;
+        text-align: left;
       }
-      display: inline;
-      float: left;
+      >div.brainparts{
+        float:right;
+        margin-right: 4vw;
+      }
     }
+
   }
 
   >div.stash_container{
