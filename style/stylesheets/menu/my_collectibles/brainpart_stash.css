@@ -1,6 +1,8 @@
 .brainpart_stash__container {
   overflow: hidden; }
   .brainpart_stash__container > div.brainpart_detail_container {
+    border-bottom: 2px solid #f3f1ee;
+    padding-bottom: 3vw;
     display: inline;
     float: left;
     overflow: hidden;
@@ -84,12 +86,29 @@
           font-size: 1.65vw;
           font-weight: 400;
           color: #82817d; }
+  .brainpart_stash__container > div.title {
+    display: inline;
+    float: left;
+    width: 75vw;
+    padding-left: 2.25vw;
+    margin-top: 3vw;
+    color: #4a4a4a;
+    font-family: "Moderneratrial", sans-serif;
+    font-size: 3.5vw;
+    font-weight: 600; }
+  .brainpart_stash__container > div.subtitle {
+    display: inline;
+    float: left;
+    width: 75vw;
+    padding-left: 2.25vw;
+    margin-bottom: 3vw;
+    color: #82817d;
+    font-family: "Avenir", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 400; }
   .brainpart_stash__container > div.cards_container-4 {
     border-radius: 24px;
     width: 75vw;
-    margin-top: 3vw;
-    padding-top: 3vw;
-    border-top: 2px solid #f3f1ee;
     display: inline;
     float: left;
     text-align: center; }
@@ -105,6 +124,8 @@
         .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
           width: 15vw;
           height: 15vw;
+          border-radius: 2.8125vw;
+          box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.05);
           cursor: pointer; }
         .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
           margin-top: 1vw;

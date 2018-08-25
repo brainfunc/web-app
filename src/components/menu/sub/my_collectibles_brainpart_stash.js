@@ -94,9 +94,13 @@ export default class BrainpartStash extends Component {
             </div>
           </div>
         </div>
+        <div className="title"> Brainpart Collectibles </div>
+        <div className="subtitle">
+          Click on the parts to see details above
+        </div>
         <BrainpartCardsComponent
-        brainparts={this.state.brainparts}
-        selectFunction={this.SetSelectedBrainpart}/>
+          brainparts={this.state.brainparts}
+          selectFunction={this.SetSelectedBrainpart}/>
       </div>
     );
   }

@@ -77,6 +77,10 @@ export default class NeuronStash extends Component {
     const neurons = this.sortNeuronsByQuantity(Collectibles.Data.Neurons);
     return (
       <div className='neuron_stash__container'>
+        <div className='title'> Neuron Collectibles </div>
+        <div className='subtitle'>
+          Here are the neuron collectibles that you own
+        </div>
         <NeuronCardsComponent neurons={neurons}/>
       </div>
     );

@@ -2,6 +2,30 @@
 
 .neuron_stash__container {
   overflow: hidden;
+  >div.title{
+    //border: 1px solid black;
+    display: inline;
+    float:left;
+    width: 75vw;
+    padding-left: 2.25vw;
+
+    color: $text_color_blackish;
+    font-family: $font_family_3;
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+  >div.subtitle{
+    display: inline;
+    float:left;
+    width: 75vw;
+    padding-left: 2.25vw;
+    margin-bottom: 3vw;
+    
+    color: $text_color_cream;
+    font-family: $font_family_1;
+    font-size: 2.5vw;
+    font-weight: 400;
+  }
   >div.cards_container-4{
     //border: 2px solid $background_color_cream;
     border-radius: 24px;
@@ -23,6 +47,8 @@
         >img.image{
           width: 15vw;
           height: 15vw;
+          border-radius: 2.8125vw;
+          box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,0.05);
         }
         >div.title{
           margin-top: 1vw;
