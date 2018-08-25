@@ -51,9 +51,7 @@ export default class NeuronStash extends Component {
         <div className="card_row-4">
           <NeuronCards number={4}/>
         </div>
-        <div className="card_row-4">
-          <NeuronCards number={1}/>
-        </div>
+        
       </div>
       </div>
     );

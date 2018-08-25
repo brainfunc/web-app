@@ -52,6 +52,9 @@ export default class BrainpartStash extends Component {
                 <div className="increase-level-txt">
                   Strength Level 3
                 </div>
+                <div className="locked-status">
+                  Locked
+                </div>
               </div>
               <div className="text">
                 The Frontal Lobe performs core cognition functions.It is the most

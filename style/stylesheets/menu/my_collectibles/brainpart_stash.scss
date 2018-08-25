@@ -39,6 +39,7 @@
         margin-left: 0.5vw;
         >div.level{
           overflow: hidden;
+          margin-bottom: 1.5vw;
           >div.increase-level-txt{
             font-family: $font_family_1;
             font-size: 2.65vw;
@@ -47,13 +48,18 @@
             display: inline;
             float:left;
           }
-          >button.increase-level-btn{
-            margin-left: 1.5vw;
+          >div.locked-status{
+            margin-right: 4vw;
+            margin-top: 0.5vw;
+            margin-left: 2vw;
             font-size: 1.25vw;
             font-weight: 400;
-            border-radius: 16px;
+            border-radius: 12px;
             background-color: $color_theme_red;
-            padding: 12px;
+            border-color: $button_color_border;
+            padding: 6px;
+            padding-left:24px;
+            padding-right:24px;
             color:white;
             display:inline;
             float:left;
@@ -79,7 +85,9 @@
     border-radius: 24px;
     // margin: 0px;
     width:75vw;
-    margin-top:6vw;
+    margin-top:3vw;
+    padding-top:3vw;
+    border-top: 2px solid $background_color_cream;
     //padding: 24px;
     display:inline;
     float:left;
