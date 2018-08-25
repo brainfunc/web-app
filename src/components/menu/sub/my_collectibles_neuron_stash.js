@@ -28,34 +28,36 @@ export default class NeuronStash extends Component {
               Frontal Lobe(Left)
             </div>
             <div className="description">
-              Strength Level 2
+              <div className="category"> Cerebrum </div>
+              <div className="quantity"> 34 </div>
             </div>
           </div>
           <div className="card-4">
             <img className="image" src={this.getNeuronImage()}/>
             <div className="title">
-              Frontal Lobe(Right)
+              Frontal Lobe(Left)
             </div>
             <div className="description">
-              Strength Level 0
+              <div className="category"> Cerebrum </div>
+              <div className="quantity"> 34 </div>
             </div>
-          </div>
-          <div className="card-4">
+          </div><div className="card-4">
             <img className="image" src={this.getNeuronImage()}/>
             <div className="title">
-              Temporal Lobe
+              Frontal Lobe(Left)
             </div>
             <div className="description">
-              Strength Level 5
+              <div className="category"> Cerebrum </div>
+              <div className="quantity"> 34 </div>
             </div>
-          </div>
-          <div className="card-4">
+          </div><div className="card-4">
             <img className="image" src={this.getNeuronImage()}/>
             <div className="title">
-              Foccolonodular Lobe
+              Frontal Lobe(Left)
             </div>
             <div className="description">
-              Strength Level 3
+              <div className="category"> Cerebrum </div>
+              <div className="quantity"> 34 </div>
             </div>
           </div>
         </div>

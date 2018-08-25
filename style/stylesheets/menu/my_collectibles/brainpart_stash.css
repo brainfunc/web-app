@@ -1,7 +1,6 @@
 .brainpart_stash__container {
   overflow: hidden; }
   .brainpart_stash__container > div.brainpart_detail_container {
-    border: 2px solid #f3f1ee;
     display: inline;
     float: left;
     overflow: hidden;
@@ -54,7 +53,6 @@
           font-weight: 400;
           color: #82817d; }
   .brainpart_stash__container > div.cards_container-4 {
-    border: 2px solid #f3f1ee;
     border-radius: 24px;
     width: 75vw;
     margin-top: 2vw;
@@ -65,7 +63,6 @@
       display: inline;
       float: left; }
       .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
-        border: 2px solid #f3f1ee;
         border-radius: 8px;
         width: 18.5vw;
         display: inline;

@@ -3,7 +3,7 @@
 .neuron_stash__container {
   overflow: hidden;
   >div.cards_container-4{
-    border: 2px solid $background_color_cream;
+    //border: 2px solid $background_color_cream;
     border-radius: 24px;
     // margin: 0px;
     //width:75vw;
@@ -12,12 +12,12 @@
     //padding: 24px;
     >div.card_row-4 {
       >div.card-4{
-        border: 2px solid $background_color_cream;
+        //border: 2px solid $background_color_cream;
         border-radius: 8px;
         width: 18vw;
         display:inline;
         float:left;
-
+        text-align: center;
         >img.image{
           width: 15vw;
           height: 15vw;
@@ -25,17 +25,37 @@
         >div.title{
           margin-top: 1vw;
           font-family: $font_family_1;
-          font-size: 1.30vw;
+          font-size: 1.5vw;
           font-weight: 500;
           color: $text_color_blackish;
-          text-align: center;
+          text-align: left;
+          margin-left: 2vw;
         }
         >div.description{
           font-family: $font_family_1;
-          font-size: 1.2vw;
-          font-weight: 400;
+          font-weight: 500;
           color:$text_color_cream;
-          text-align: center;
+          overflow: hidden;
+          >div.category{
+            display: inline;
+            float: left;
+            margin-left: 2vw;
+            font-size: 1.4vw;
+            //margin-top: 0.25vw;
+          }
+          >div.quantity{
+            font-size: 1vw;
+            display: inline;
+            float: left;
+            //margin-right: 4vw;
+            margin-left: 1vw;
+            color: white;
+            background-color: #ffbb58;
+            padding: 0.25vw;
+            padding-left: 0.5vw;
+            padding-right: 0.5vw;
+            border-radius: 4px;
+          }
         }
       }
     }
