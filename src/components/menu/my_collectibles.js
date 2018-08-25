@@ -90,8 +90,10 @@ export default class MyCollectibles extends Component {
               <div className='qty'>7 Unlocked</div>
             </div>
           </div>
-          <div className="action_button_container">
-            Buy Neurons
+          <div className="action_container">
+            <button className="action_button">
+              Buy Neurons
+            </button>
           </div>
         </div>
 

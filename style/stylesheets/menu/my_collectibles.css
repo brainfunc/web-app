@@ -6,7 +6,8 @@
   overflow: hidden; }
   .my_collectibles__container > div.profile_container > div.image_container {
     display: inline;
-    float: left; }
+    float: left;
+    margin-left: 4vw; }
     .my_collectibles__container > div.profile_container > div.image_container > img {
       height: 12.5vw;
       width: 12.5vw;
@@ -60,6 +61,27 @@
     .my_collectibles__container > div.profile_container > div.wallet_container > div.brainparts {
       float: right;
       margin-right: 4vw; }
+  .my_collectibles__container > div.profile_container > div.action_container {
+    display: inline;
+    float: left;
+    width: 36vw;
+    padding: 1.5vw;
+    margin-top: 2vw;
+    text-align: center; }
+    .my_collectibles__container > div.profile_container > div.action_container > button.action_button {
+      background-color: #00af01;
+      border: 2px solid #027101;
+      box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.05);
+      outline: none;
+      border-radius: 8px;
+      padding: 1.5vw;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      font-size: 2vw;
+      font-family: "Avenir", sans-serif;
+      color: white; }
+    .my_collectibles__container > div.profile_container > div.action_container > button.action_button:hover {
+      opacity: 0.75; }
 
 .my_collectibles__container > div.stash_container {
   border-radius: 24px;
