@@ -5,6 +5,29 @@ import * as Constants from '../../../utils/data';
 
 import StashBase from "./common/stash_base";
 
+export const BrainpartCard = function(props) {
+  return(
+    <div className="card-4">
+      <img className="image"
+      src={"/style/images/collectibles/brainparts/rightfrontal.png"}/>
+      <div className="title">
+        Frontal Lobe(Left)
+      </div>
+      <div className="description">
+        Strength Level 2
+      </div>
+    </div>
+  );
+}
+
+export const BrainpartCards = function(props) {
+  var cardsArr = []
+  for(var i = 0; i < props["number"]; i++) {
+    cardsArr.push(<BrainpartCard key={i}/>);
+  }
+  return (cardsArr);
+}
+
 export default class BrainpartStash extends Component {
 
   constructor(props) {
@@ -13,10 +36,6 @@ export default class BrainpartStash extends Component {
 
   getImageForBrainpartDetail() {
     return "/style/images/collectibles/brainparts/leftfrontal.png";
-  }
-
-  getBrainpartImage(){
-    return "/style/images/collectibles/brainparts/rightfrontal.png";
   }
 
   render() {
@@ -46,42 +65,16 @@ export default class BrainpartStash extends Component {
         </div>
         <div className="cards_container-4">
           <div className="card_row-4">
-            <div className="card-4">
-              <img className="image" src={this.getBrainpartImage()}/>
-              <div className="title">
-                Frontal Lobe(Left)
-              </div>
-              <div className="description">
-                Strength Level 2
-              </div>
-            </div>
-            <div className="card-4">
-              <img className="image" src={this.getBrainpartImage()}/>
-              <div className="title">
-                Frontal Lobe(Right)
-              </div>
-              <div className="description">
-                Strength Level 0
-              </div>
-            </div>
-            <div className="card-4">
-              <img className="image" src={this.getBrainpartImage()}/>
-              <div className="title">
-                Temporal Lobe
-              </div>
-              <div className="description">
-                Strength Level 5
-              </div>
-            </div>
-            <div className="card-4">
-              <img className="image" src={this.getBrainpartImage()}/>
-              <div className="title">
-                Foccolonodular Lobe
-              </div>
-              <div className="description">
-                Strength Level 3
-              </div>
-            </div>
+            <BrainpartCards number={4}/>
+          </div>
+          <div className="card_row-4">
+            <BrainpartCards number={4}/>
+          </div>
+          <div className="card_row-4">
+            <BrainpartCards number={4}/>
+          </div>
+          <div className="card_row-4">
+            <BrainpartCards number={3}/>
           </div>
         </div>
       </div>

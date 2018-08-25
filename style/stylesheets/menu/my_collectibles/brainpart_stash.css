@@ -55,13 +55,14 @@
   .brainpart_stash__container > div.cards_container-4 {
     border-radius: 24px;
     width: 75vw;
-    margin-top: 2vw;
+    margin-top: 6vw;
     display: inline;
     float: left;
     text-align: center; }
     .brainpart_stash__container > div.cards_container-4 > div.card_row-4 {
       display: inline;
-      float: left; }
+      float: left;
+      margin-bottom: 3vw; }
       .brainpart_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
         border-radius: 8px;
         width: 18.5vw;

@@ -4,41 +4,44 @@
     border-radius: 24px;
     display: inline;
     float: left; }
-    .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
-      border-radius: 8px;
-      width: 18vw;
-      display: inline;
-      float: left;
-      text-align: center; }
-      .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
-        width: 15vw;
-        height: 15vw; }
-      .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
-        margin-top: 1vw;
-        font-family: "Avenir", sans-serif;
-        font-size: 1.5vw;
-        font-weight: 500;
-        color: #4a4a4a;
-        text-align: left;
-        margin-left: 2vw; }
-      .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description {
-        font-family: "Avenir", sans-serif;
-        font-weight: 500;
-        color: #82817d;
-        overflow: hidden; }
-        .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description > div.category {
-          display: inline;
-          float: left;
-          margin-left: 2vw;
-          font-size: 1.4vw; }
-        .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description > div.quantity {
-          font-size: 1vw;
-          display: inline;
-          float: left;
-          margin-left: 1vw;
-          color: white;
-          background-color: #ffbb58;
-          padding: 0.25vw;
-          padding-left: 0.5vw;
-          padding-right: 0.5vw;
-          border-radius: 4px; }
+    .neuron_stash__container > div.cards_container-4 > div.card_row-4 {
+      margin-bottom: 3vw;
+      overflow: hidden; }
+      .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 {
+        border-radius: 8px;
+        width: 18vw;
+        display: inline;
+        float: left;
+        text-align: center; }
+        .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > img.image {
+          width: 15vw;
+          height: 15vw; }
+        .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.title {
+          margin-top: 1vw;
+          font-family: "Avenir", sans-serif;
+          font-size: 1.5vw;
+          font-weight: 500;
+          color: #4a4a4a;
+          text-align: left;
+          margin-left: 2vw; }
+        .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description {
+          font-family: "Avenir", sans-serif;
+          font-weight: 500;
+          color: #82817d;
+          overflow: hidden; }
+          .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description > div.category {
+            display: inline;
+            float: left;
+            margin-left: 2vw;
+            font-size: 1.4vw; }
+          .neuron_stash__container > div.cards_container-4 > div.card_row-4 > div.card-4 > div.description > div.quantity {
+            font-size: 1vw;
+            display: inline;
+            float: left;
+            margin-left: 1vw;
+            color: white;
+            background-color: #ffbb58;
+            padding: 0.25vw;
+            padding-left: 0.5vw;
+            padding-right: 0.5vw;
+            border-radius: 4px; }
