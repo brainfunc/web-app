@@ -148,8 +148,8 @@
           color: white;
           height: 56px;
           outline: none; }
-        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper > button.buy:hover {
-          opacity: 0.75; }
+        .marketplace__container > div.details-wrapper > div.details-description-wrapper > div.buy-wrapper > button.buy:disabled {
+          opacity: 0.45; }
   .marketplace__container > div.stash-wrapper {
     margin-top: 64px; }
     .marketplace__container > div.stash-wrapper > div.title-wrapper {

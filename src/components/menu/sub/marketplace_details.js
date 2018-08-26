@@ -14,8 +14,15 @@ export default class MarketplaceDetails extends Component {
       buyQty: 0
     }
 
+    this.IsBuyEnabled = this.IsBuyEnabled.bind(this);
     this.IncrementItem = this.IncrementItem.bind(this);
     this.DecreaseItem = this.DecreaseItem.bind(this);
+  }
+
+  IsBuyEnabled() {
+    return this.state.buyQty != 0;
+    // if(this.state.buyQty != 0) { return "enabled" }
+    // else { return "disabled" }
   }
 
   IncrementItem = () => {
@@ -64,7 +71,7 @@ export default class MarketplaceDetails extends Component {
             </div>
           </div>
           <div className='buy-wrapper'>
-            <button className='buy'
+            <button className='buy' disabled={!this.IsBuyEnabled()}
             onClick={this.props.BuyNeuronsClicked}> Buy Neuron </button>
           </div>
         </div>

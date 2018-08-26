@@ -178,8 +178,9 @@
           height: 56px;
           outline: none;
        }
-        >button.buy:hover {
-          opacity: 0.75;
+
+        >button.buy:disabled {
+          opacity: 0.45;
         }
       }
     }
