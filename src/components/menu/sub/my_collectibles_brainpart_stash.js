@@ -21,26 +21,21 @@ export const BrainpartCardsRow = function(props) {
 }
 
 export const BrainpartCardsComponent = function(props) {
+  const start = (props.page-1) * 8;
+  const end = props.brainparts.length <
+  (start + 8) ? (props.brainparts.length) : (start + 8);
+  const lastRowNumber = end - start - 4;
+  console.log(start, end);
   return(
     <div className="cards_container-4">
       <div className="card_row-4">
         <BrainpartCardsRow number={4}
-        brainparts={props.brainparts.slice(0,4)}
+        brainparts={props.brainparts.slice(start, start + 4)}
         selectFunction={props.selectFunction}/>
       </div>
       <div className="card_row-4">
-        <BrainpartCardsRow number={4}
-        brainparts={props.brainparts.slice(4,8)}
-        selectFunction={props.selectFunction}/>
-      </div>
-      <div className="card_row-4">
-        <BrainpartCardsRow number={4}
-        brainparts={props.brainparts.slice(8,12)}
-        selectFunction={props.selectFunction}/>
-      </div>
-      <div className="card_row-4">
-        <BrainpartCardsRow number={2}
-        brainparts={props.brainparts.slice(12,14)}
+        <BrainpartCardsRow number={lastRowNumber}
+        brainparts={props.brainparts.slice(start + 4, end)}
         selectFunction={props.selectFunction}/>
       </div>
     </div>
@@ -131,6 +126,7 @@ export default class BrainpartStash extends Component {
           Click on the parts to see details above
         </div>
         <BrainpartCardsComponent
+          page={this.state.selectedPage}
           brainparts={this.state.brainparts}
           selectFunction={this.SetSelectedBrainpart}/>
         <PagingBar
