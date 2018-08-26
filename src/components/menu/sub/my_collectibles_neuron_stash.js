@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import * as Collectibles from '../../../utils/data/collectibles';
 import * as Utils from '../../../utils/utils';
 import StashBase from "./common/stash_base";
+import PagingBar from "./common/paging_bar";
 
 export const NeuronCard = function(props) {
   var imageSrc = "";
@@ -66,22 +67,30 @@ export default class NeuronStash extends Component {
   constructor(props) {
     super(props);
 
-    this.sortNeuronsByQuantity = this.sortNeuronsByQuantity.bind(this);
+    this.state = {
+      selectedPage: 1,
+      neurons: Collectibles.Data.Neurons
+      .sort(Utils.GetSortOrder("quantity"))
+      .reverse()
+    }
+
+    this.SetSelectedPage = this.SetSelectedPage.bind(this);
   }
 
-  sortNeuronsByQuantity(neuralArray) {
-    return neuralArray.sort(Utils.GetSortOrder("quantity")).reverse();
+  SetSelectedPage(page) {
+    console.log("Page Switched!", page);
+    this.setState({ selectedPage: page })
   }
 
   render() {
-    const neurons = this.sortNeuronsByQuantity(Collectibles.Data.Neurons);
     return (
       <div className='neuron_stash__container'>
         <div className='title'> Neuron Collectibles </div>
         <div className='subtitle'>
           Here are the neuron collectibles that you own
         </div>
-        <NeuronCardsComponent neurons={neurons}/>
+        <NeuronCardsComponent neurons={this.state.neurons}/>
+        <PagingBar selectFunction={this.SetSelectedPage}/>
       </div>
     );
   }

@@ -5,6 +5,7 @@ import * as Collectibles from '../../../utils/data/collectibles';
 import * as Utils from '../../../utils/utils';
 
 import BrainpartCard from "./my_collectibles_brainpart_stash_brainpart_card";
+import PagingBar from "./common/paging_bar";
 
 export const BrainpartCardsRow = function(props) {
   console.log(props);
@@ -46,19 +47,27 @@ export const BrainpartCardsComponent = function(props) {
   );
 }
 
+
 export default class BrainpartStash extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
+      selectedPage: 1,
       selectedBrainpart: Collectibles.Data.Brainparts[0],
       brainparts: Collectibles.Data.Brainparts
       .sort(Utils.GetSortOrder("strength"))
       .reverse()
     }
 
+    this.SetSelectedPage = this.SetSelectedPage.bind(this);
     this.SetSelectedBrainpart = this.SetSelectedBrainpart.bind(this);
+  }
+
+  SetSelectedPage(page) {
+    console.log("Page Switched!", page);
+    this.setState({ selectedPage: page })
   }
 
   SetSelectedBrainpart(part) {
@@ -111,7 +120,7 @@ export default class BrainpartStash extends Component {
                 <img src="/style/images/icons/neurons_qty.png"/>
                 <div className="lbl"> Neurons Available</div>
                 <div className="qty">
-                  You have {this.state.selectedBrainpart.neuronQuantity} neurons of this type 
+                  You have {this.state.selectedBrainpart.neuronQuantity} neurons of this type
                 </div>
               </div>
             </div>
@@ -124,6 +133,8 @@ export default class BrainpartStash extends Component {
         <BrainpartCardsComponent
           brainparts={this.state.brainparts}
           selectFunction={this.SetSelectedBrainpart}/>
+        <PagingBar
+          selectFunction={this.SetSelectedPage}/>
       </div>
     );
   }
