@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import * as Constants from '../../../utils/data';
+import ItemExchanger from './my_collectibles_exchange_item_exchanger';
 
 export default class Exchange extends Component {
 
@@ -22,6 +23,7 @@ export default class Exchange extends Component {
           of strength 1) as shown below. Click on exchange for a transfer to take
           place. It's as easy as that!`}
         </div>
+        <ItemExchanger/>
       </div>
     );
   }

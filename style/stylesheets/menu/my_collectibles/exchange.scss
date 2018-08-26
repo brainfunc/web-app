@@ -29,4 +29,43 @@
     font-size: 2vw;
     font-weight: 400;
   }
+
+  div.item_exchanger__container {
+    border: 1px solid black;
+    display: inline;
+    float:left;
+    width: 100%;
+    padding: 2%;
+    >div.brainfunc_items_container,
+    >div.exchange_buttons_container,
+    >div.alto_items_container {
+      border: 1px solid black;
+      width: 100%;
+      padding: 1vw;
+      overflow: hidden;
+      >div.brainfunc_item_container ,
+      >div.button_container,
+      >div.alto_item_container {
+        width: 20%;
+        padding: 1%;
+        display:inline;
+        float:left;
+        text-align: center;
+      }
+    }
+
+    >div.brainfunc_items_container{
+      >div.brainfunc_item_container{
+        
+      }
+    }
+    >div.exchange_buttons_container {
+      >div.button_container{
+      }
+    }
+    >div.alto_items_container {
+      >div.alto_item_container{
+      }
+    }
+  }
 }
