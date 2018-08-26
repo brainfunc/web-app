@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import * as Constants from '../../../utils/data';
 
-const MAX_BUY_QUANTITY = 100;
+const MAX_BUY_QUANTITY = 1;
 const MIN_BUY_QUANTITY = 0;
 
 export default class MarketplaceDetails extends Component {
@@ -22,6 +22,9 @@ export default class MarketplaceDetails extends Component {
     if(this.state.buyQty < MAX_BUY_QUANTITY) {
       this.setState({ buyQty: this.state.buyQty + 1 });
       this.props.UpdateRootState(this.state.buyQty + 1);
+    } else {
+      // TODO:- Replace this log by modal
+      console.log("You can buy only one neuron at a time");
     }
   }
 
@@ -62,7 +65,7 @@ export default class MarketplaceDetails extends Component {
           </div>
           <div className='buy-wrapper'>
             <button className='buy'
-            onClick={this.props.BuyNeuronsClicked}> Buy Neurons </button>
+            onClick={this.props.BuyNeuronsClicked}> Buy Neuron </button>
           </div>
         </div>
       </div>

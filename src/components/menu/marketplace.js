@@ -113,14 +113,15 @@ export default class Marketplace extends Component {
   render() {
     return (
       <div className="marketplace__container">
-        <div className='heading'> Neuron Packs</div>
+        <div className='heading'> Buying Neurons</div>
         <div className='description-wrapper'>
           <div className='description'>
-            The neuron packs give you the ability to purchase a set of neurons.
-            These neurons will be a random combination of the 13 types available,
-            with any number of any type available. They will help you construct
-            your brain parts required in battles. Buying larger quantitites of
-            neurons mean you can buy them at a discounted price!
+            Neurons packs give you the ability to construct brain parts. Neurons
+            are available in 4 current categories, viz - Cerebrum, Cerebellum,
+            Brainstem and Arterial. Each type will help you construct a part of
+            the relevant category. The part you can construct will depend on the
+            subcategory that you get, which will be randomly allotted out of the 13
+            available types.
           </div>
         </div>
         <MarketplacePacks
@@ -131,10 +132,6 @@ export default class Marketplace extends Component {
           DecreaseItem = {this.DecreaseItem}
           BuyNeuronsClicked = {this.BuyNeuronsClicked}
           UpdateRootState = {this.UpdateRootState}/>
-        <MarketplaceStash
-          currentState = {this.state.currentState}
-          buyQuantity = {this.state.buyQuantity}
-          type = {this.state.selectedPack}/>
       </div>
     );
   }
