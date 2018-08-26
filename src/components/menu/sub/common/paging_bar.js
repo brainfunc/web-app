@@ -30,10 +30,12 @@ export default class PagingBar extends Component {
 
     return (
       <div className='paging__container'>
+        <div className="previous">  </div>
         <div className={`page ${this.GetPageSelectionClass(1)}`}
         onClick={() => this.HandlePageSelection(1)}> 1 </div>
         <div className={`page ${this.GetPageSelectionClass(2)}`}
         onClick={() => this.HandlePageSelection(2)}> 2 </div>
+        <div className="next"> </div>
       </div>
     );
   }
