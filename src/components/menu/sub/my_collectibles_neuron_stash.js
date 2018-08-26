@@ -40,23 +40,20 @@ export const NeuronCardsRow = function(props) {
 }
 
 export const NeuronCardsComponent = function(props) {
+  const start = (props.page-1) * 8;
+  const end = props.neurons.length <
+  (start + 8) ? (props.neurons.length) : (start + 8);
+  const lastRowNumber = end - start - 4;
+  console.log(start, end);
   return(
     <div className="cards_container-4">
       <div className="card_row-4">
         <NeuronCardsRow number={4}
-        neurons={props.neurons.slice(0,4)}/>
+        neurons={props.neurons.slice(start,start + 4)}/>
       </div>
       <div className="card_row-4">
-        <NeuronCardsRow number={4}
-        neurons={props.neurons.slice(4,8)}/>
-      </div>
-      <div className="card_row-4">
-        <NeuronCardsRow number={4}
-        neurons={props.neurons.slice(8,12)}/>
-      </div>
-      <div className="card_row-4">
-        <NeuronCardsRow number={2}
-        neurons={props.neurons.slice(12,14)}/>
+        <NeuronCardsRow number={lastRowNumber}
+        neurons={props.neurons.slice(start + 4, end)}/>
       </div>
     </div>
   );
@@ -89,7 +86,9 @@ export default class NeuronStash extends Component {
         <div className='subtitle'>
           Here are the neuron collectibles that you own
         </div>
-        <NeuronCardsComponent neurons={this.state.neurons}/>
+        <NeuronCardsComponent
+        neurons={this.state.neurons}
+        page={this.state.selectedPage}/>
         <PagingBar selectFunction={this.SetSelectedPage}/>
       </div>
     );
