@@ -1,1 +1,32 @@
 @import "../../../constants/constants.scss";
+
+.exchange__container {
+  overflow: hidden;
+  >div.title{
+    //border: 1px solid black;
+    display: inline;
+    float:left;
+    width: 75vw;
+    padding-left: 2.25vw;
+
+    color: $text_color_blackish;
+    font-family: $font_family_3;
+    font-size: 4.5vw;
+    font-weight: 600;
+  }
+  >div.description{
+    //border: 1px solid black;
+    display: inline;
+    float:left;
+    width: 75vw;
+    padding-left: 2.25vw;
+    padding-right: 4vw;
+    margin-top: 1vw;
+
+    text-align: justify;
+    color: $text_color_cream;
+    font-family: $font_family_1;
+    font-size: 2vw;
+    font-weight: 400;
+  }
+}
