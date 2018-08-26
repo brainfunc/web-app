@@ -107,7 +107,13 @@ export default class BrainpartStash extends Component {
               <div className="text">
                 {description}
               </div>
-              
+              <div className="neurons">
+                <img src="/style/images/icons/neurons_qty.png"/>
+                <div className="lbl"> Neurons Available</div>
+                <div className="qty">
+                  You have {this.state.selectedBrainpart.neuronQuantity} neurons of this type 
+                </div>
+              </div>
             </div>
           </div>
         </div>

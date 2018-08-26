@@ -90,6 +90,7 @@ export const Data = {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Left)",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/leftfrontal.png",
       description: `Performs core cognition function - Most important part, that
       controls important cognitive skills in humans, such as emotional expression,
@@ -100,6 +101,7 @@ export const Data = {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Right)",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/rightfrontal.png",
       description: `Performs core cognition function - Most important part, that
       controls important cognitive skills in humans, such as emotional expression,
@@ -110,6 +112,7 @@ export const Data = {
       category:"Cerebrum",
       subcategory:"Pareital Lobe",
       strength:"5",
+      neuronQuantity: "8",
       image: "/style/images/collectibles/brainparts/pareital.png",
       description: `Involved in time keeping - The parietal lobes can be divided
       into two functional regions. One involves sensation and perception and the
@@ -122,6 +125,7 @@ export const Data = {
       category:"Cerebrum",
       subcategory:"Temporal Lobe",
       strength:"5",
+      neuronQuantity: "16",
       image: "/style/images/collectibles/brainparts/temporal.png",
       description: `Auditory / Hearing functions - The temporal lobe is involved
       in primary auditory perception, such as hearing, and holds the primary auditory
@@ -133,6 +137,7 @@ export const Data = {
       category:"Cerebrum",
       subcategory:"Occipital Lobe",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/occipital.png",
       description: `Visual processing function - The occipital lobe is one of the
       four major lobes of the cerebral cortex in the brain of mammals. The occipital
@@ -143,6 +148,7 @@ export const Data = {
       category:"Cerebellum",
       subcategory:"Anterior Lobe",
       strength:"0",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/anteriorlobe.png",
       description: `Regulates posture - The hemispheres are separated from one
       another by a thin structure called the vermis, or "worm." The anterior lobe,
@@ -154,6 +160,7 @@ export const Data = {
       category:"Cerebellum",
       subcategory:"Posterior Lobe",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/posteriorlobe.png",
       description: `Involved in Kidney and Urinary function - Two hormones are
       classically considered as being related to the posterior pituitary: oxytocin
@@ -165,6 +172,7 @@ export const Data = {
       category:"Cerebellum",
       subcategory:"Flocculonodular Lobe",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/flocculonodularlobe.png",
       description: `Involved in visual processing - The flocculus is a part of
       the vestibuloocular reflex system and is used to help stabilize gaze during
@@ -175,6 +183,7 @@ export const Data = {
       category:"Brainstem",
       subcategory:"Midbrain",
       strength:"0",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/midbrain.png",
       description: `Involved in Auditory Processing - Midbrain, also called mesencephalon,
       region of the developing vertebrate brain that is composed of the tectum and
@@ -185,6 +194,7 @@ export const Data = {
       category:"Brainstem",
       subcategory:"Pons",
       strength:"0",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/pons.png",
       description: `Muscle communication, balance co-ordinator - Besides the medulla oblongata,
       your brainstem also has a structure called the pons. The pons is a major structure
@@ -195,6 +205,7 @@ export const Data = {
       category:"Brainstem",
       subcategory:"Medulla",
       strength:"5",
+      neuronQuantity: "23",
       image: "/style/images/collectibles/brainparts/medulla.png",
       description: `Info carrier for body - The medulla oblongata helps regulate breathing,
       heart and blood vessel function, digestion, sneezing, and swalLow Strengthing.
@@ -205,6 +216,7 @@ export const Data = {
       category:"Arterial",
       subcategory:"Basilar Artery",
       strength:"0",
+      neuronQuantity: "3",
       image: "/style/images/collectibles/brainparts/basilarartery.png",
       description: `Cognition based blood supply. - The basilar artery carries oxygenated
       blood to the cerebellum, brainstem, and occipital lobes. The cerebellum helps with
@@ -214,6 +226,7 @@ export const Data = {
       category:"Arterial",
       subcategory:"Vertebral Artery",
       strength:"5",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/vertebralartery.png",
       description: `Dexterity based blood supply - Each vessel courses superiorly along
       each side of the neck, merging within the skull to form the single, midline basilar
@@ -225,6 +238,7 @@ export const Data = {
       category:"Unknown",
       subcategory:"uPart (Soul)",
       strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/soulpart.png",
       description: ``
     }
@@ -236,6 +250,6 @@ export const GeneralData = {
   Brainparts: {
     lockedDescription: `This part is currently locked. In order to construct this
     part and use it in battles, you will need the relevant neurons. Try buying neuron
-    packs from the store to get them and click Construct.`
+    packs from the store. Once you have some, you can click Construct.`
   }
 }

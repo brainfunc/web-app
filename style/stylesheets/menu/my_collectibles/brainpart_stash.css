@@ -45,17 +45,18 @@
     .brainpart_stash__container > div.brainpart_detail_container > div.description_container {
       display: inline;
       float: left;
-      margin-left: 1vw;
-      width: 48vw; }
+      margin-left: 1.5vw;
+      margin-right: 1vw;
+      width: 46vw; }
       .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.name {
         font-family: "Moderneratrial", sans-serif;
         font-size: 3.5vw;
         margin-top: 1.25vw;
-        margin-left: 0.5vw;
+        margin-left: 1vw;
         font-weight: 600;
         color: #4a4a4a; }
       .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details {
-        margin-left: 0.5vw; }
+        margin-left: 1vw; }
         .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level {
           overflow: hidden;
           margin-bottom: 1.5vw; }
@@ -85,9 +86,34 @@
             background-color: #ec1943; }
         .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.text {
           font-family: "Avenir", sans-serif;
-          font-size: 1.65vw;
+          font-size: 1.5vw;
           font-weight: 400;
-          color: #82817d; }
+          color: #7c7c7c;
+          margin-right: 2vw; }
+        .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.neurons {
+          overflow: hidden;
+          margin-top: 2vw; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.neurons > img {
+            width: 10%;
+            height: 10%;
+            display: inline;
+            float: left; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.neurons > div.lbl {
+            display: inline;
+            float: left;
+            width: 85%;
+            font-weight: 500;
+            font-size: 1.7vw;
+            color: #4a4a4a;
+            margin-left: 0.75vw; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.neurons > div.qty {
+            display: inline;
+            float: left;
+            width: 85%;
+            color: #7c7c7c;
+            font-weight: 400;
+            font-size: 1.35vw;
+            margin-left: 0.75vw; }
   .brainpart_stash__container > div.title {
     display: inline;
     float: left;

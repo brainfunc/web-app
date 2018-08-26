@@ -54,18 +54,19 @@
     >div.description_container {
       display: inline;
       float:left;
-      margin-left: 1vw;
-      width: 48vw;
+      margin-left: 1.5vw;
+      margin-right: 1vw;
+      width: 46vw;
       >div.name{
         font-family: $font_family_3;
         font-size: 3.5vw;
         margin-top: 1.25vw;
-        margin-left: 0.5vw;
+        margin-left: 1vw;
         font-weight: 600;
         color:#4a4a4a;
       }
       >div.details {
-        margin-left: 0.5vw;
+        margin-left: 1vw;
         >div.level{
           overflow: hidden;
           margin-bottom: 1.5vw;
@@ -97,15 +98,48 @@
             background-color: $color_theme_red;
           }
         }
-
-        >div.quantity{
-
-        }
         >div.text{
           font-family: $font_family_1;
-          font-size: 1.65vw;
+          font-size: 1.5vw;
           font-weight: 400;
-          color:#82817d;
+          color:$text_color_gray;
+          margin-right: 2vw;
+        }
+        >div.neurons{
+          //border: 1px solid black;
+          overflow: hidden;
+          margin-top: 2vw;
+          >img{
+            width: 10%;
+            height: 10%;
+            display: inline;
+            float: left;
+          }
+          >div.lbl{
+            display: inline;
+            float: left;
+            width: 85%;
+
+            // border: 1px solid black;
+            font-weight: 500;
+            font-size: 1.7vw;
+            color: $text_color_blackish;
+
+            margin-left: 0.75vw;
+          }
+          >div.qty{
+            display: inline;
+            float: left;
+            width: 85%;
+
+            color: $text_color_gray;
+            // border:1px solid black;
+
+            font-weight: 400;
+            font-size: 1.35vw;
+
+            margin-left: 0.75vw;
+          }
         }
       }
 
