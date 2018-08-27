@@ -20,6 +20,7 @@ export default class BrainpartCard extends Component {
   handleBoostClick() {
     console.log("Boost brainpart clicked!");
   }
+  
   render() {
     var imageSrc = "";
     if (this.props.part.strength == 0) {
