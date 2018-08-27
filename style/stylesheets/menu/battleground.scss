@@ -45,19 +45,37 @@
     }
   }
   >div.start-footer{
+    border: 1px solid black;
+    overflow: hidden;
     >div.footer-image-container{
+      border: 1px solid black;
+      display: inline;
+      float:left;
+      width: 7%;
+      padding: 1vw;
       >img.footer-image{
-
+        display: inline;
+        float: left;
+        max-width: 100%;
       }
     }
     >div.footer-image-container.left{
-
+      margin-left: 13%;
     }
     >div.footer-image-container.right{
-      
+      float: right;
+      margin-right:13%;
     }
     >div.start-button-wrapper{
+      border: 1px solid black;
+      display: inline;
+      float:left;
+      text-align: center;
+      width: 60%;
+      padding-top: 2%;
+      padding-bottom: 2%;
       >button.start-button{
+        // border: 1px solid black;
 
       }
     }

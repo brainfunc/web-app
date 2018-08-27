@@ -19,3 +19,29 @@
       color: #4a4a4a;
       font-weight: 600;
       font-size: 6vw; }
+  .battleground__container > div.start-footer {
+    border: 1px solid black;
+    overflow: hidden; }
+    .battleground__container > div.start-footer > div.footer-image-container {
+      border: 1px solid black;
+      display: inline;
+      float: left;
+      width: 7%;
+      padding: 1vw; }
+      .battleground__container > div.start-footer > div.footer-image-container > img.footer-image {
+        display: inline;
+        float: left;
+        max-width: 100%; }
+    .battleground__container > div.start-footer > div.footer-image-container.left {
+      margin-left: 13%; }
+    .battleground__container > div.start-footer > div.footer-image-container.right {
+      float: right;
+      margin-right: 13%; }
+    .battleground__container > div.start-footer > div.start-button-wrapper {
+      border: 1px solid black;
+      display: inline;
+      float: left;
+      text-align: center;
+      width: 60%;
+      padding-top: 2%;
+      padding-bottom: 2%; }
