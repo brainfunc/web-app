@@ -11,7 +11,11 @@ export default class Battleground extends Component {
   render() {
     return (
       <div className="battleground__container">
-        Battleground
+        <div className="header">
+        <img src={`/style/images/menu/battles/battle_icon.png`}/>
+        <div className='title'> Battleground </div>
+        <img src={`/style/images/menu/battles/battle_icon.png`}/>
+        </div>
       </div>
     );
   }
