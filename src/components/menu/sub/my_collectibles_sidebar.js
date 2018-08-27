@@ -34,7 +34,7 @@ export default class SideBar extends Component {
           className={`exchange_button sidebar-button
           ${this.buttonSelection("exchange")}`}
           onClick={this.props.displayExchange}>
-        Universe
+        Game Universe
         </div>
       </div>
     );

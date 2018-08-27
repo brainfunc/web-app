@@ -23,7 +23,6 @@
     font-weight: 400; }
   .exchange__container div.item_exchanger__container {
     margin-top: 2vw;
-    border: 1px solid black;
     display: inline;
     float: left;
     width: 100%;
@@ -49,3 +48,10 @@
         display: inline;
         float: left;
         text-align: center; }
+
+div.game_stash__container {
+  margin-top: 2vw;
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 2%; }
