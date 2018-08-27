@@ -31,4 +31,35 @@
       font-size: 6vw;
     }
   }
+
+  >div.instructions{
+    >div.instruction-item{
+      >div.instruction-bullet-image-wrapper{
+        >img.instruction-bullet-image{
+
+        }
+      }
+      >div.instruction-text{
+
+      }
+    }
+  }
+  >div.start-footer{
+    >div.footer-image-container{
+      >img.footer-image{
+
+      }
+    }
+    >div.footer-image-container.left{
+
+    }
+    >div.footer-image-container.right{
+      
+    }
+    >div.start-button-wrapper{
+      >button.start-button{
+
+      }
+    }
+  }
 }
