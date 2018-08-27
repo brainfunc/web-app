@@ -5,6 +5,7 @@ import Header from '../common/header';
 import Footer from '../common/footer';
 
 import * as Constants from '../../utils/data';
+import * as Instructions from '../../utils/data/battles/instructions';
 
 export default class Battleground extends Component {
 
@@ -21,28 +22,35 @@ export default class Battleground extends Component {
             <div className='instruction-bullet-image-wrapper'>
               <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
             </div>
-            <div className='instruction-text'> Text...
+            <div className='instruction-text'> {Instructions.Data.Instructions[0].text}
             </div>
           </div>
           <div className='instruction-item'>
             <div className='instruction-bullet-image-wrapper'>
               <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
             </div>
-            <div className='instruction-text'> Text...
+            <div className='instruction-text'> {Instructions.Data.Instructions[1].text}
             </div>
           </div>
           <div className='instruction-item'>
             <div className='instruction-bullet-image-wrapper'>
               <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
             </div>
-            <div className='instruction-text'> Text...
+            <div className='instruction-text'> {Instructions.Data.Instructions[2].text}
             </div>
           </div>
           <div className='instruction-item'>
             <div className='instruction-bullet-image-wrapper'>
               <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
             </div>
-            <div className='instruction-text'> Text...
+            <div className='instruction-text'> {Instructions.Data.Instructions[3].text}
+            </div>
+          </div>
+          <div className='instruction-item'>
+            <div className='instruction-bullet-image-wrapper'>
+              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
+            </div>
+            <div className='instruction-text'> {Instructions.Data.Instructions[4].text}
             </div>
           </div>
         </div>
