@@ -1,0 +1,9 @@
+.battleground__container > div.body > div.battle_core {
+  overflow: hidden; }
+  .battleground__container > div.body > div.battle_core > div.battle-task {
+    display: inline;
+    float: left;
+    width: 40%; }
+  .battleground__container > div.body > div.battle_core > div.part-chooser {
+    display: inline;
+    float: left; }

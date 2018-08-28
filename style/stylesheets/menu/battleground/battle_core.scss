@@ -1,0 +1,25 @@
+@import "../../../constants/constants.scss";
+
+.battleground__container {
+  >div.body {
+    >div.battle_core{
+      overflow: hidden;
+      >div.battle-task{
+        display: inline;
+        float: left;
+        width: 40%;
+      }
+      >div.part-chooser{
+        display: inline;
+        float: left;
+        wid
+        >div.parts-container{
+
+        }
+        >div.submit-container{
+
+        }
+      }
+    }
+  }
+}
