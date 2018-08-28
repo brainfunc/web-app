@@ -9,7 +9,7 @@ export const Data = {
       brainfunc_item : {
         title: `Posterior Lobe`,
         substitle: ``,
-        image: `/style/images/brainparts/posteriorlobe.png`
+        image: `/style/images/collectibles/brainparts/posteriorlobe.png`
       },
       alto_item: {
         title: `Alchemical Mug`,
@@ -20,7 +20,7 @@ export const Data = {
       brainfunc_item : {
         title: `Occipital Lobe`,
         substitle: ``,
-        image: `/style/images/brainparts/occipital.png`
+        image: `/style/images/collectibles/brainparts/occipital.png`
       },
       alto_item: {
         title: `Amulet of Dreams`,
@@ -29,9 +29,9 @@ export const Data = {
     },
     {
       brainfunc_item : {
-        title: `Frontal Lobe(Right)`,
+        title: `Frontal Lobe(left)`,
         substitle: ``,
-        image: `/style/images/brainparts/leftfrontal.png`
+        image: `/style/images/collectibles/brainparts/leftfrontal.png`
       },
       alto_item: {
         title: `Arcanist's Tome of Spells`,
@@ -42,7 +42,7 @@ export const Data = {
       brainfunc_item : {
         title: `Temporal Lobe`,
         substitle: ``,
-        image: `/style/images/brainparts/temporal.png`
+        image: `/style/images/collectibles/brainparts/temporal.png`
       },
       alto_item: {
         title: `Haste Drums`,
@@ -53,7 +53,7 @@ export const Data = {
       brainfunc_item : {
         title: `Medulla`,
         substitle: ``,
-        image: `/style/images/brainparts/medulla.png`
+        image: `/style/images/collectibles/brainparts/medulla.png`
       },
       alto_item: {
         title: `Scroll of the Light's Watch`,

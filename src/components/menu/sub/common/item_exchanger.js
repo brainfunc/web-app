@@ -38,7 +38,20 @@ export const BrainFuncItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     itemsArr.push(
       <div className='brainfunc_item_container' key={i}>
-        {LootMapping.Data.LootItemMappings[i].brainfunc_item.title}
+        <div className='image-container'>
+          <img className='image'
+            src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
+        </div>
+        <div className='caption'>
+          <div className='description'>
+            {LootMapping.Data.LootItemMappings[i].brainfunc_item.title}
+          </div>
+          <div className='status'>
+            <img className='lock-image' src={`/style/images/template/lock.png`}/>
+            <div className='lock-text'> Locked </div>
+          </div>
+        </div>
+
       </div>
     );
   }
