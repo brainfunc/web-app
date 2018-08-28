@@ -4,77 +4,98 @@
   >div.body {
     >div.battle_core{
       margin-top: 4%;
-      border: 1px solid black;
+      //border: 1px solid black;
       overflow: hidden;
       >div.battle-task{
-        border: 1px solid black;
+        //border: 1px solid black;
         display: inline;
         float: left;
         width: 40%;
       }
       >div.part-chooser{
-        border: 1px solid black;
+        //border: 1px solid black;
         display: inline;
         float: left;
         width: 60%;
         >div.title {
-          border: 1px solid black;
+          //border: 1px solid black;
           display: inline;
           float:left;
           width: 100%;
-          padding-left: 2.25vw;
-
+          padding-left: 2.5%;
+          margin-bottom: 4%;
           color: $text_color_blackish;
           //opacity: 0.85;
           font-family: $font_family_3;
           font-size: 3.5vw;
           font-weight: 600;
         }
+        >div.subtitle{
+          display: inline;
+          float:left;
+          width: 100%;
+          padding-left: 3%;
+          padding-right: 6%;
+          margin-bottom: 8%;
+
+          color: $text_color_cream;
+          //opacity: 0.85;
+          font-family: $font_family_1;
+          font-size: 1.75vw;
+          font-weight: 400;
+        }
         >div.parts-container{
-          border: 1px solid black;
+          //border: 1px solid black;
           display: inline;
           float: left;
           width: 100%;
+          overflow: hidden;
+          margin-bottom: 8%;
           >div.cards_container-4{
             //border: 2px solid $background_color_cream;
-            border-radius: 24px;
+            //border-radius: 24px;
             // margin: 0px;
-            width:75vw;
+            width:100%;
             // margin-top:3vw;
             //border-top: 2px solid $background_color_cream;
             //padding: 24px;
             display:inline;
             float:left;
             text-align: center;
+            overflow: hidden;
             >div.card_row-4 {
+              //border: 1px solid black;
               display:inline;
               float:left;
-              margin-bottom: 3vw;
+              width: 100%;
+              overflow: hidden;
               >div.card-4{
                 //border: 2px solid $background_color_cream;
-                border-radius: 8px;
-                width: 18.5vw;
+                // border: 1px solid black;
+                border-radius: 18.75%;
+                width: 25%;
                 display:inline;
                 float:left;
+                padding: 2%;
 
                 >img.image{
-                  width: 15vw;
-                  height: 15vw;
-                  border-radius: 2.8125vw;
+                  width: 80%;
+                  border-radius: 18%;
                   box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,0.05);
                   cursor: pointer;
+                  margin-bottom: 20%;
                 }
                 >div.title{
-                  margin-top: 1vw;
+                  margin-top: 1%;
                   font-family: $font_family_1;
-                  font-size: 1.30vw;
+                  font-size: 90%;
                   font-weight: 500;
                   color: $text_color_blackish;
                   text-align: center;
                 }
                 >div.description{
                   font-family: $font_family_1;
-                  font-size: 1.2vw;
+                  font-size: 90%;
                   font-weight: 400;
                   color:$text_color_cream;
                   text-align: center;

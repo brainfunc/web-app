@@ -20,21 +20,31 @@ export const BrainpartCardsRow = function(props) {
 }
 
 export const BrainpartCardsComponent = function(props) {
-  const start = (props.page-1) * 8;
-  const end = props.brainparts.length <
-  (start + 8) ? (props.brainparts.length) : (start + 8);
-  const lastRowNumber = end - start - 4;
-  console.log(start, end);
+  // const start = (props.page-1) * 8;
+  // const end = props.brainparts.length <
+  // (start + 8) ? (props.brainparts.length) : (start + 8);
+  // const lastRowNumber = end - start - 4;
+  // console.log(start, end);
   return(
     <div className="cards_container-4">
       <div className="card_row-4">
         <BrainpartCardsRow number={4}
-        brainparts={props.brainparts.slice(start, start + 4)}
+        brainparts={props.brainparts.slice(0, 4)}
         selectFunction={props.selectFunction}/>
       </div>
       <div className="card_row-4">
-        <BrainpartCardsRow number={lastRowNumber}
-        brainparts={props.brainparts.slice(start + 4, end)}
+        <BrainpartCardsRow number={4}
+        brainparts={props.brainparts.slice(4, 8)}
+        selectFunction={props.selectFunction}/>
+      </div>
+      <div className="card_row-4">
+        <BrainpartCardsRow number={4}
+        brainparts={props.brainparts.slice(8, 12)}
+        selectFunction={props.selectFunction}/>
+      </div>
+      <div className="card_row-4">
+        <BrainpartCardsRow number={2}
+        brainparts={props.brainparts.slice(12, 14)}
         selectFunction={props.selectFunction}/>
       </div>
     </div>
@@ -71,6 +81,12 @@ export default class BattleCoreComponent extends Component {
           <div className='part-chooser'>
             <div className='title'>
               Choose Parts
+            </div>
+            <div className='subtitle'>
+              {`These are the parts available in your stash. Click on a part to
+                select it. Once you're confident about the combination you have
+                selected, click on submit.
+              `}
             </div>
             <div className='parts-container'>
               <BrainpartCardsComponent
