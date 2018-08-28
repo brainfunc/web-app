@@ -4,17 +4,30 @@
   .battleground__container > div.body > div.battle_core > div.battle-task {
     display: inline;
     float: left;
-    width: 40%; }
+    width: 32%; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.title {
+      display: inline;
+      float: left;
+      width: 100%;
+      padding-left: 0%;
+      padding-right: 8%;
+      margin-bottom: 4%;
+      margin-top: 4%;
+      color: #4a4a4a;
+      font-family: "Moderneratrial", sans-serif;
+      font-size: 2.75vw;
+      font-weight: 600; }
   .battleground__container > div.body > div.battle_core > div.part-chooser {
     display: inline;
     float: left;
-    width: 60%; }
+    width: 68%;
+    padding-left: 4%; }
     .battleground__container > div.body > div.battle_core > div.part-chooser > div.title {
       display: inline;
       float: left;
       width: 100%;
       padding-left: 2.5%;
-      margin-bottom: 4%;
+      margin-bottom: 2.5%;
       color: #4a4a4a;
       font-family: "Moderneratrial", sans-serif;
       font-size: 3.5vw;
@@ -25,7 +38,7 @@
       width: 100%;
       padding-left: 3%;
       padding-right: 6%;
-      margin-bottom: 8%;
+      margin-bottom: 6%;
       color: #82817d;
       font-family: "Avenir", sans-serif;
       font-size: 1.75vw;

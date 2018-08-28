@@ -4,26 +4,41 @@
   >div.body {
     >div.battle_core{
       margin-top: 4%;
-      //border: 1px solid black;
+      // border: 1px solid black;
       overflow: hidden;
       >div.battle-task{
-        //border: 1px solid black;
+        // border: 1px solid black;
         display: inline;
         float: left;
-        width: 40%;
+        width: 32%;
+        >div.title {
+          display: inline;
+          float:left;
+          width: 100%;
+          padding-left: 0%;
+          padding-right: 8%;
+          margin-bottom: 4%;
+          margin-top: 4%;
+          color: $text_color_blackish;
+          //opacity: 0.85;
+          font-family: $font_family_3;
+          font-size: 2.75vw;
+          font-weight: 600;
+        }
       }
       >div.part-chooser{
-        //border: 1px solid black;
+        // border: 1px solid black;
         display: inline;
         float: left;
-        width: 60%;
+        width: 68%;
+        padding-left: 4%;
         >div.title {
           //border: 1px solid black;
           display: inline;
           float:left;
           width: 100%;
           padding-left: 2.5%;
-          margin-bottom: 4%;
+          margin-bottom: 2.5%;
           color: $text_color_blackish;
           //opacity: 0.85;
           font-family: $font_family_3;
@@ -36,7 +51,7 @@
           width: 100%;
           padding-left: 3%;
           padding-right: 6%;
-          margin-bottom: 8%;
+          margin-bottom: 6%;
 
           color: $text_color_cream;
           //opacity: 0.85;

@@ -76,7 +76,9 @@ export default class BattleCoreComponent extends Component {
       <div className='body'>
         <div className='battle_core'>
           <div className='battle-task'>
-            Battle Task
+            <div className='title'>
+              Which parts can be involved in this activity?
+            </div>
           </div>
           <div className='part-chooser'>
             <div className='title'>
