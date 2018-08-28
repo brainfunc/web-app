@@ -7,24 +7,13 @@ export const Data = {
   LootItemMappings: [
     {
       brainfunc_item : {
-        title: `Posterior Lobe`,
+        title: `Medulla`,
         substitle: ``,
-        image: `/style/images/collectibles/brainparts/posteriorlobe.png`
+        image: `/style/images/collectibles/brainparts/medulla.png`
       },
       alto_item: {
-        title: `Alchemical Mug`,
-        image: `/style/images/alto/alchemicalmug.png`
-      }
-    },
-    {
-      brainfunc_item : {
-        title: `Occipital Lobe`,
-        substitle: ``,
-        image: `/style/images/collectibles/brainparts/occipital.png`
-      },
-      alto_item: {
-        title: `Amulet of Dreams`,
-        image: `/style/images/alto/amulet.png`
+        title: `Scroll of the Light's Watch`,
+        image: `/style/images/collectibles/alto/scroll.png`
       }
     },
     {
@@ -35,7 +24,29 @@ export const Data = {
       },
       alto_item: {
         title: `Arcanist's Tome of Spells`,
-        image: `/style/images/alto/arcanist.png`
+        image: `/style/images/collectibles/alto/arcanist.png`
+      }
+    },
+    {
+      brainfunc_item : {
+        title: `Occipital Lobe`,
+        substitle: ``,
+        image: `/style/images/collectibles/brainparts/occipital.png`
+      },
+      alto_item: {
+        title: `Amulet of Dreams`,
+        image: `/style/images/collectibles/alto/amulet.png`
+      }
+    },
+    {
+      brainfunc_item : {
+        title: `Posterior Lobe`,
+        substitle: ``,
+        image: `/style/images/collectibles/brainparts/posteriorlobe.png`
+      },
+      alto_item: {
+        title: `Alchemical Mug`,
+        image: `/style/images/collectibles/alto/alchemialmug.png`
       }
     },
     {
@@ -46,19 +57,8 @@ export const Data = {
       },
       alto_item: {
         title: `Haste Drums`,
-        image: `/style/images/alto/hastedrums.png`
+        image: `/style/images/collectibles/alto/hastedrums.png`
       }
-    },
-    {
-      brainfunc_item : {
-        title: `Medulla`,
-        substitle: ``,
-        image: `/style/images/collectibles/brainparts/medulla.png`
-      },
-      alto_item: {
-        title: `Scroll of the Light's Watch`,
-        image: `/style/images/alto/scroll.png`
-      }
-    },
+    }
   ]
 };
