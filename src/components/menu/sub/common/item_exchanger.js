@@ -1,5 +1,15 @@
+// <div className='title'> LootMapping.Data.LootItemMappings[i].brainfunc_item.title </div>
+// <img className='card_image'
+//   src={`/style/images/cross-game/alto_loot.png`}/>
+// <div className='card_description'>
+//   <div className='number'> Items Owned </div>
+//   <div className='price'> 15 </div>
+// </div>
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
+import GameStashCard from './game_stash_card';
+import * as LootMapping from '../../../../utils/data/my_collectibles/exchanger/alto_mapping';
 
 export const ExchangeButtonsRow = function(props) {
   console.log(props);
@@ -28,7 +38,7 @@ export const BrainFuncItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     itemsArr.push(
       <div className='brainfunc_item_container' key={i}>
-        BrainFunc Item
+        {LootMapping.Data.LootItemMappings[i].brainfunc_item.title}
       </div>
     );
   }
@@ -49,7 +59,7 @@ export const AltoItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     itemsArr.push(
       <div className='alto_item_container' key={i}>
-        Alto Item
+        {LootMapping.Data.LootItemMappings[i].alto_item.title}
       </div>
     );
   }
