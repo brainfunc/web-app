@@ -4,7 +4,28 @@ import ReactDOM from 'react-dom';
 import * as Collectibles from '../../../utils/data/collectibles';
 import * as Utils from '../../../utils/utils';
 
+import * as Tasks from '../../../utils/data/battles/tasks';
+
 import BrainpartCard from '../sub/my_collectibles_brainpart_stash_brainpart_card';
+
+export const BattleTaskComponent = function(props) {
+  return(
+    <div className='battle-task'>
+      <div className='title'>
+        Which parts could be involved in this activity?
+      </div>
+      <div className='task-image-container'>
+        <img className='task-image' src={Tasks.Data.tasks[0].image}/>
+      </div>
+      <div className='task-title'>
+        {Tasks.Data.tasks[0].title}
+      </div>
+      <div className='task-description'>
+        {Tasks.Data.tasks[0].description}
+      </div>
+    </div>
+  );
+}
 
 export const BrainpartCardsRow = function(props) {
   console.log(props);
@@ -75,11 +96,7 @@ export default class BattleCoreComponent extends Component {
     return(
       <div className='body'>
         <div className='battle_core'>
-          <div className='battle-task'>
-            <div className='title'>
-              Which parts can be involved in this activity?
-            </div>
-          </div>
+          <BattleTaskComponent/>
           <div className='part-chooser'>
             <div className='title'>
               Choose Parts
