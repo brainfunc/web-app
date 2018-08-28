@@ -4,10 +4,53 @@ import ReactDOM from 'react-dom';
 import Header from '../common/header';
 import Footer from '../common/footer';
 
+import InstructionsComponent from './battleground/instructions';
+import BattleCoreComponent from './battleground/battle_core';
+import ResultsComponent from './battleground/results';
+
 import * as Constants from '../../utils/data';
 import * as Instructions from '../../utils/data/battles/instructions';
 
 export default class Battleground extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentBattleState: "ready"
+    }
+
+    this.StartBattle = this.StartBattle.bind(this);
+    this.EndBattle = this.EndBattle.bind(this);
+    this.StartNewBattle = this.StartNewBattle.bind(this);
+
+    this.RenderBody = this.RenderBody.bind(this);
+  }
+
+  StartBattle() {
+    this.setState({currentBattleState: "started"});
+  }
+
+  EndBattle() {
+    this.setState({currentBattleState: "ended"});
+  }
+
+  StartNewBattle() {
+    this.setState({currentBattleState: "ready"});
+  }
+
+  RenderBody() {
+    if(this.state.currentBattleState == "ready") {
+      return(<InstructionsComponent
+              StartBattleFunction={this.StartBattle}/>)
+    } else  if(this.state.currentBattleState == "started") {
+      return(<BattleCoreComponent
+              EndBattleFunction={this.EndBattle}/>);
+    } else if(this.state.currentBattleState == "ended") {
+      return(<ResultsComponent
+              StartNewBattleFunction={this.StartNewBattle}/>);
+    }
+  }
 
   render() {
     return (
@@ -17,56 +60,7 @@ export default class Battleground extends Component {
           <div className='title'> Battleground </div>
           <img src={`/style/images/menu/battles/battle_icon.png`}/>
         </div>
-        <div className='instructions'>
-          <div className='instruction-item'>
-            <div className='instruction-bullet-image-wrapper'>
-              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
-            </div>
-            <div className='instruction-text'> {Instructions.Data.Instructions[0].text}
-            </div>
-          </div>
-          <div className='instruction-item'>
-            <div className='instruction-bullet-image-wrapper'>
-              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
-            </div>
-            <div className='instruction-text'> {Instructions.Data.Instructions[1].text}
-            </div>
-          </div>
-          <div className='instruction-item'>
-            <div className='instruction-bullet-image-wrapper'>
-              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
-            </div>
-            <div className='instruction-text'> {Instructions.Data.Instructions[2].text}
-            </div>
-          </div>
-          <div className='instruction-item'>
-            <div className='instruction-bullet-image-wrapper'>
-              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
-            </div>
-            <div className='instruction-text'> {Instructions.Data.Instructions[3].text}
-            </div>
-          </div>
-          <div className='instruction-item'>
-            <div className='instruction-bullet-image-wrapper'>
-              <img className='instruction-bullet-image' src={`/style/images/template/tick.png`}/>
-            </div>
-            <div className='instruction-text'> {Instructions.Data.Instructions[4].text}
-            </div>
-          </div>
-        </div>
-        <div className='start-footer'>
-          <div className='footer-image-container left'>
-            <img className='footer-image' src={`/style/images/icons/submission_footer.png`}/>
-          </div>
-          <div className='start-button-wrapper'>
-            <button className='start-button'>
-              Start
-            </button>
-          </div>
-          <div className='footer-image-container right'>
-            <img className='footer-image' src={`/style/images/icons/submission_footer.png`}/>
-          </div>
-        </div>
+        {this.RenderBody()}
       </div>
     );
   }
