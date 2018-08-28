@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import * as Constants from '../../../utils/data';
-
 export const ExchangeButtonsRow = function(props) {
   console.log(props);
   var buttonsArr = []

@@ -3,13 +3,34 @@ import ReactDOM from 'react-dom';
 
 import * as Constants from '../../../utils/data';
 import GameStashCard from './common/game_stash_card';
+import ItemExchanger from './common/item_exchanger';
 
+export const TitlePage = function(props) {
+  return(
+    <div className='exchange__container'>
+      <div className='title'> What is this? </div>
+      <div className='description'>
+        {`The BrainFunc Game Universe is meant to be a place where you can use
+        collectible items earned in other games inside BrainFunc. Right now, you can
+        create Brainparts using collectibles earned in other games. Exciting isn't it?
+        We know, we're excited too! For now, we support the Alto Cryptochallenge Loot
+        (5 items, can be used to construct or boost associated brain parts), but plan
+        to support other games in the future! Select the Alto Challenge Loot from
+        below to get started.`}
+      </div>
+      <div className='game_stash__container'>
+        <GameStashCard SelectCard={props.SelectCard}/>
+      </div>
+    </div>
+  );
+}
 export default class Exchange extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
+      currentPage: "title",
       selectedCard: "none"
     }
 
@@ -17,26 +38,28 @@ export default class Exchange extends Component {
   }
 
   SelectCard() {
-    this.setState({ selectedCard: "alto" });
+    console.log("Alto loot selected!");
+    this.setState({
+      currentPage: "exchanger",
+      selectedCard: "alto" });
   }
 
   render() {
-    return (
-      <div className='exchange__container'>
-        <div className='title'> What is this? </div>
-        <div className='description'>
-          {`The BrainFunc Game Universe is meant to be a place where you can use
-          collectible items earned in other games inside BrainFunc. Right now, you can 
-          create Brainparts using collectibles earned in other games. Exciting isn't it?
-          We know, we're excited too! For now, we support the Alto Cryptochallenge Loot
-          (5 items, can be used to construct or boost associated brain parts), but plan
-          to support other games in the future! Select the Alto Challenge Loot from
-          below to get started.`}
+    if(this.state.currentPage == "title") {
+      return <TitlePage SelectCard={this.SelectCard}/>
+    } else if(this.state.currentPage == "exchanger") {
+      return(
+        <div className='exchange__container'>
+          <div className='title'> Transmorgification Chamber </div>
+          <div className='description'>
+            {`You can transmorgify the 5 parts from the challenge loot shown below
+              in exchange for the associated brainparts. Click on the transmorgify
+              button to transmorgify these loot items to brain parts.`}
+          </div>
+          <ItemExchanger/>
         </div>
-        <div className='game_stash__container'>
-          <GameStashCard SelectCard={this.SelectCard}/>
-        </div>
-      </div>
-    );
+      );
+    }
+
   }
 }
