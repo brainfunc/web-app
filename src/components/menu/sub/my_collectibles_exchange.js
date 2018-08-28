@@ -12,7 +12,7 @@ export const BackButton = function(props) {
         <img className='footer-image' src={`/style/images/icons/submission_footer.png`}/>
       </div>
       <div className='action-button-wrapper'>
-        <button className='action-button'>
+        <button className='action-button' onClick={() => {props.selectFunction()}}>
           Back to Universe
         </button>
       </div>
@@ -54,6 +54,7 @@ export default class Exchange extends Component {
     }
 
     this.SelectCard = this.SelectCard.bind(this);
+    this.SwitchToTitlePage = this.SwitchToTitlePage.bind(this);
   }
 
   SelectCard() {
@@ -61,6 +62,13 @@ export default class Exchange extends Component {
     this.setState({
       currentPage: "exchanger",
       selectedCard: "alto" });
+  }
+
+  SwitchToTitlePage() {
+    this.setState({
+      currentPage: "title",
+      selectedCard: "none"
+    })
   }
 
   render() {
@@ -76,7 +84,7 @@ export default class Exchange extends Component {
               button to transmorgify these loot items to brain parts.`}
           </div>
           <ItemExchanger/>
-          <BackButton/>
+          <BackButton selectFunction={this.SwitchToTitlePage}/>
         </div>
       );
     }

@@ -4,26 +4,44 @@ import ReactDOM from 'react-dom';
 import GameStashCard from './game_stash_card';
 import * as LootMapping from '../../../../utils/data/my_collectibles/exchanger/alto_mapping';
 
-export const ExchangeButtonsRow = function(props) {
-  console.log(props);
-  var buttonsArr = []
-  for(var i = 0; i < props["number"]; i++) {
-    buttonsArr.push(
-      <div className='button_container' key={i}>
-        <div className="exchange_button_wrapper">
-          <img className='exchange_button'
-          src={"/style/images/icons/transmorgify.png"}/>
-        </div>
-      </div>
-    );
-  }
-  return (buttonsArr);
-}
-
 export const ExchangeButtonsComponent = function(props) {
   return(
     <div className='exchange_buttons_container'>
-      <ExchangeButtonsRow number={5}/>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(0)} }/>
+        </div>
+      </div>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(1)} }/>
+        </div>
+      </div>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(2)} }/>
+        </div>
+      </div>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(3)} }/>
+        </div>
+      </div>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(4)} }/>
+        </div>
+      </div>
     </div>
   );
 }
@@ -99,13 +117,22 @@ export default class ItemExchanger extends Component {
 
   constructor(props) {
     super(props);
+    this.ExchangeClicked = this.ExchangeClicked.bind(this);
+  }
+
+  ExchangeClicked(value) {
+    console.log("Exchange clicked!");
+    console.log(value);
+    //console.log(event.target.custom_index);
+    //console.log(event.target.id);
   }
 
   render() {
     return (
       <div className='item_exchanger__container'>
         <AltoItemsComponent/>
-        <ExchangeButtonsComponent/>
+        <ExchangeButtonsComponent
+        selectFunction={this.ExchangeClicked}/>
         <BrainFuncItemsComponent/>
       </div>
     );
