@@ -1,6 +1,7 @@
 //var ROOT_SERVER_URL = 'http://localhost:3000';
 import {NEURON_CONTRACT_ABI} from "./abi/neuron";
 
+export const NETWORK_ID = "4";
 export const ROOT_SERVER_URL = 'https://brainfunc-landing-page-server.herokuapp.com';
 export const CONTRACTS = {
   NEURON: {

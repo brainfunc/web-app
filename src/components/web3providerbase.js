@@ -11,6 +11,7 @@ import Battleground from './menu/battleground';
 import Library from './menu/library';
 
 import * as Constants from '../utils/data';
+import * as CONFIG from "../config/config";
 
 const RouteSpecificComponent = ({route}) => {
   if(route == '/library') {
@@ -72,7 +73,7 @@ export default class Web3ProviderBase extends Component {
     const { web3 } = window;
     web3.version.getNetwork((err, netId) => {
       switch (netId) {
-       case "4":
+       case CONFIG.NETWORK_ID:
          callback(null);
          return true;
        default:

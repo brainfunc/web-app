@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import * as Constants from '../../../utils/data';
 import GameStashCard from './common/game_stash_card';
 import ItemExchanger from './common/item_exchanger';
+import * as OwnershipContract from '../../../contracts/Ownership';
+import * as CONFIG from "../../../config/config";
 
 export const BackButton = function(props) {
   return(
@@ -55,6 +57,38 @@ export default class Exchange extends Component {
 
     this.SelectCard = this.SelectCard.bind(this);
     this.SwitchToTitlePage = this.SwitchToTitlePage.bind(this);
+
+    this.StartListeningForEvents = this.StartListeningForEvents.bind(this);
+  }
+
+  componentDidMount() {
+    console.log("Component Mounted");
+    this.StartListeningForEvents();
+  }
+
+  StartListeningForEvents() {
+    console.log("Starting to listen for events...");
+    const data = OwnershipContract.Data;
+    const networkID = CONFIG.NETWORK_ID; // "4 for Rinkeby Network"
+    // Instantiating ownership contract
+    const {web3} = window;
+    const ownershipInstance = web3.eth.contract(data.abi)
+    .at(data.networks[networkID].address);
+    console.log(ownershipInstance);
+    //const neuronContract = web3.eth.contract(
+    //   CONFIG.CONTRACTS.NEURON.ABI);
+    // const neuronContractInstance = neuronContract.at(
+    //   CONFIG.CONTRACTS.NEURON.ADDRESS);
+    // // Or pass a callback to start watching immediately
+    // var currentComponent = this;
+    // var events = neuronContractInstance.allEvents(function(error, log) {
+    //   if (!error) {
+    //     console.log(log);
+    //     if(log.event == "Transfer") {
+    //       currentComponent.setState({currentState: "bought"});
+    //     }
+    //   }
+    // });
   }
 
   SelectCard() {

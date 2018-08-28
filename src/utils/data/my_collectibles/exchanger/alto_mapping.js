@@ -12,6 +12,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/medulla.png`
       },
       alto_item: {
+        id: `8`,
         title: `Scroll of the Light's Watch`,
         image: `/style/images/collectibles/alto/scroll.png`
       }
@@ -23,6 +24,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/leftfrontal.png`
       },
       alto_item: {
+        id: `2`,
         title: `Arcanist's Tome of Spells`,
         image: `/style/images/collectibles/alto/arcanist.png`
       }
@@ -34,6 +36,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/occipital.png`
       },
       alto_item: {
+        id: `19`,
         title: `Amulet of Dreams`,
         image: `/style/images/collectibles/alto/amulet.png`
       }
@@ -45,6 +48,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/posteriorlobe.png`
       },
       alto_item: {
+        id: `46`,
         title: `Alchemical Mug`,
         image: `/style/images/collectibles/alto/alchemialmug.png`
       }
@@ -56,6 +60,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/temporal.png`
       },
       alto_item: {
+        id: `25`,
         title: `Haste \nDrums`,
         image: `/style/images/collectibles/alto/hastedrums.png`
       }
