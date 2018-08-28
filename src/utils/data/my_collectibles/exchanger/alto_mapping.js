@@ -56,7 +56,7 @@ export const Data = {
         image: `/style/images/collectibles/brainparts/temporal.png`
       },
       alto_item: {
-        title: `Haste Drums`,
+        title: `Haste \nDrums`,
         image: `/style/images/collectibles/alto/hastedrums.png`
       }
     }

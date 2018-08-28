@@ -5,6 +5,25 @@ import * as Constants from '../../../utils/data';
 import GameStashCard from './common/game_stash_card';
 import ItemExchanger from './common/item_exchanger';
 
+export const BackButton = function(props) {
+  return(
+    <div className='action-button-footer'>
+      <div className='footer-image-container left'>
+        <img className='footer-image' src={`/style/images/icons/submission_footer.png`}/>
+      </div>
+      <div className='action-button-wrapper'>
+        <button className='action-button'>
+          Back to Universe
+        </button>
+      </div>
+      <div className='footer-image-container right'>
+        <img className='footer-image'
+        src={`/style/images/icons/submission_footer.png`}/>
+      </div>
+    </div>
+  );
+}
+
 export const TitlePage = function(props) {
   return(
     <div className='exchange__container'>
@@ -57,6 +76,7 @@ export default class Exchange extends Component {
               button to transmorgify these loot items to brain parts.`}
           </div>
           <ItemExchanger/>
+          <BackButton/>
         </div>
       );
     }

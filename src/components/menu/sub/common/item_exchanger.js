@@ -10,7 +10,10 @@ export const ExchangeButtonsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     buttonsArr.push(
       <div className='button_container' key={i}>
-        <button className='exchange_button'> btn </button>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}/>
+        </div>
       </div>
     );
   }
@@ -31,6 +34,10 @@ export const BrainFuncItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     itemsArr.push(
       <div className='brainfunc_item_container' key={i}>
+        <div className='status'>
+          <img className='lock-image' src={`/style/images/template/lock.png`}/>
+          <div className='lock-text'> Locked </div>
+        </div>
         <div className='image-container'>
           <img className='image'
             src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
@@ -38,10 +45,6 @@ export const BrainFuncItemsRow = function(props) {
         <div className='caption'>
           <div className='description'>
             {LootMapping.Data.LootItemMappings[i].brainfunc_item.title}
-          </div>
-          <div className='status'>
-            <img className='lock-image' src={`/style/images/template/lock.png`}/>
-            <div className='lock-text'> Locked </div>
           </div>
         </div>
       </div>
@@ -64,6 +67,10 @@ export const AltoItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     itemsArr.push(
       <div className='alto_item_container' key={i}>
+        <div className='status'>
+          <img className='lock-image' src={`/style/images/template/lock.png`}/>
+          <div className='lock-text'> Locked </div>
+        </div>
         <div className='image-container'>
           <img className='image'
             src={LootMapping.Data.LootItemMappings[i].alto_item.image}/>
@@ -71,10 +78,6 @@ export const AltoItemsRow = function(props) {
         <div className='caption'>
           <div className='description'>
             {LootMapping.Data.LootItemMappings[i].alto_item.title}
-          </div>
-          <div className='status'>
-            <img className='lock-image' src={`/style/images/template/lock.png`}/>
-            <div className='lock-text'> Locked </div>
           </div>
         </div>
       </div>

@@ -37,6 +37,7 @@
     float:left;
     width: 100%;
     padding: 2%;
+
     >div.brainfunc_items_container,
     >div.exchange_buttons_container,
     >div.alto_items_container {
@@ -70,6 +71,27 @@
           font-weight: 600;
           text-align: left;
         }
+        >div.status{
+          font-family: $font_family_1;
+          font-size: 1.3vw;
+          color: $text_color_blackish;
+          font-weight: 600;
+          width: 100%;
+          margin-left: 4%;
+          >img.lock-image {
+            display: inline;
+            float: left;
+            width: 20%;
+          }
+          >div.lock-text {
+            display: inline;
+            float: left;
+            width: 70%;
+            margin-left: 6%;
+            margin-top: 2%;
+            text-align: left;
+          }
+        }
         >div.image-container{
           padding: 4%;
           >img.image{
@@ -87,27 +109,9 @@
           text-align: left;
           >div.description{
             font-family: $font_family_1;
-            font-size: 100%;
+            font-size: 1.3vw;
             color: $text_color_blackish;
             font-weight: 600;
-          }
-          >div.status{
-            font-family: $font_family_1;
-            font-size: 100%;
-            color: $text_color_blackish;
-            font-weight: 400;
-            >img.lock-image {
-              display: inline;
-              float: left;
-              width: 20%;
-            }
-            >div.lock-text {
-              display: inline;
-              float: left;
-              width: 70%;
-              margin-left: 6%;
-              margin-top: 2%;
-            }
           }
         }
       }
@@ -125,6 +129,24 @@
 
     >div.exchange_buttons_container {
       >div.button_container{
+        //border: 1px solid black;
+        text-align: center;
+        >div.exchange_button_wrapper{
+          //border: 1px solid black;
+          width: 4vw;
+          height: 4vw;
+          margin-left: 35%;
+          border-radius: 2vw;
+          box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,0.1);
+          >img.exchange_button{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        >div.exchange_button_wrapper:hover{
+          cursor: pointer;
+          opacity: 0.75;
+        }
       }
     }
 
