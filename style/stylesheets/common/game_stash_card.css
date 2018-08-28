@@ -60,6 +60,7 @@
     .game_stash_card > div.card-details > div.description {
       display: inline;
       float: left;
+      overflow: hidden;
       width: 100%;
       padding-left: 2.25vw;
       margin-bottom: 3vw;
@@ -69,3 +70,24 @@
       font-weight: 300;
       color: #7c7c7c;
       text-align: justify; }
+      .game_stash_card > div.card-details > div.description > a {
+        overflow: hidden; }
+        .game_stash_card > div.card-details > div.description > a > button {
+          width: 35%;
+          margin-top: 3vw;
+          margin-right: 5vw;
+          padding-top: 0.75vw;
+          padding-bottom: 0.75vw;
+          color: white;
+          background-color: #ec1943;
+          border: 2px solid #bc1a39;
+          border-radius: 1vw;
+          box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.1);
+          display: inline;
+          float: left;
+          font-family: "Avenir next", sans-serif;
+          font-size: 1.45vw;
+          font-weight: 400;
+          outline: none; }
+        .game_stash_card > div.card-details > div.description > a > button:hover {
+          opacity: 0.75; }

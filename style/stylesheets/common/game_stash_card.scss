@@ -72,6 +72,7 @@
     >div.description{
       display: inline;
       float:left;
+      overflow: hidden;
       width: 100%;
       padding-left: 2.25vw;
       margin-bottom: 3vw;
@@ -82,6 +83,30 @@
 			font-weight: 300;
 			color: $section_content_color_result;
 			text-align: justify;
+      >a{
+        overflow: hidden;
+        >button{
+          width: 35%;
+          margin-top: 3vw;
+          margin-right: 5vw;
+          padding-top: 0.75vw;
+          padding-bottom:0.75vw;
+          color:white;
+          background-color: $color_theme_red;
+          border: 2px solid $border_color_dark_red;
+          border-radius: 1vw;
+          box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,0.1);
+          display: inline;
+          float:left;
+          font-family: $font_family_2;
+          font-size: 1.45vw;
+          font-weight: 400;
+          outline:none;
+        }
+        >button:hover{
+          opacity: 0.75;
+        }
+      }
     }
   }
 }

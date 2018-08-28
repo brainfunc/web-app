@@ -67,10 +67,13 @@ export default class GameStashCard extends Component {
               Haste Drums
               Scroll of the Light's Watch
               . You can buy the challenge loot items offered by alto`}
-              <a href='https://rinkeby-loot.alto.io/store'> here </a>
-            <br/><br/>
-            {`If you already have some,
-              click on the card along side to start constructing brain parts!`}
+
+              <a href='https://rinkeby-loot.alto.io/store' target='_blank'>
+                <button className='loot-explorer'>
+                  Alto Challenge Loot
+                </button>
+              </a>
+
           </div>
         </div>
       </div>
