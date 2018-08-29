@@ -51,8 +51,8 @@ export default class GameStashCard extends Component {
           <img className='card_image'
             src={`/style/images/cross-game/alto_loot.png`}/>
           <div className='card_description'>
-            <div className='number'> Items Owned </div>
-            <div className='price'> 15 </div>
+            <div className='number'> Types Owned </div>
+            <div className='price'> {this.props.items} </div>
           </div>
         </Card>
         <div className='card-details'>
@@ -66,7 +66,7 @@ export default class GameStashCard extends Component {
               Arcanist's Tome of Spells
               Haste Drums
               Scroll of the Light's Watch
-              . You can buy the challenge loot items offered by alto`}
+              .You can buy the challenge loot items offered by alto by clicking the button below`}
 
               <a href='https://rinkeby-loot.alto.io/store' target='_blank'>
                 <button className='loot-explorer'>

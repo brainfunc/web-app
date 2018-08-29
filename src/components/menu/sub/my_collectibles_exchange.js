@@ -27,6 +27,7 @@ export const BackButton = function(props) {
 }
 
 export const TitlePage = function(props) {
+
   return(
     <div className='exchange__container'>
       <div className='title'> What is this? </div>
@@ -40,7 +41,7 @@ export const TitlePage = function(props) {
         below to get started.`}
       </div>
       <div className='game_stash__container'>
-        <GameStashCard SelectCard={props.SelectCard}/>
+        <GameStashCard SelectCard={props.SelectCard} items={props.altoTypesOwned}/>
       </div>
     </div>
   );
@@ -52,8 +53,12 @@ export default class Exchange extends Component {
 
     this.state = {
       currentPage: "title",
-      selectedCard: "none"
+      selectedCard: "none",
+      altoStashMap: []
     }
+
+    this.ComputeAltoStash = this.ComputeAltoStash.bind(this);
+    this.ComputeAltoTypesOwned = this.ComputeAltoTypesOwned.bind(this);
 
     this.SelectCard = this.SelectCard.bind(this);
     this.SwitchToTitlePage = this.SwitchToTitlePage.bind(this);
@@ -83,7 +88,7 @@ export default class Exchange extends Component {
       }
       // item def id of ith owned crypto asset
       // console.log(res[0][i].c[0]);
-      console.log(res[0][0].c[0]);
+      this.ComputeAltoStash(res[0]);
     })
     // console.log(userWalletID);
     // var getItemsOwned = (walletID) => new Promise((resolve, reject) => {
@@ -109,6 +114,32 @@ export default class Exchange extends Component {
     // });
   }
 
+  ComputeAltoTypesOwned(stashMap) {
+    var types = 0;
+    for(var i = 1; i < 50;i++){
+      if(stashMap[i] > 0) {
+        types += 1
+      }
+    }
+    return types;
+  }
+
+  ComputeAltoStash(itemsArr) {
+    var altoStashMap = [];
+    // 49 items in alto stash
+    for(var i = 0; i< 50; i++) {
+      altoStashMap[i] = 0;
+    }
+    altoStashMap[0] = -1;
+
+    for(var i = 0;i < itemsArr.length; i++){
+      const item = itemsArr[i];
+      const itemDefinitionID = item.c[0];
+      altoStashMap[itemDefinitionID] += 1;
+    }
+    this.setState({altoStashMap})
+  }
+
   SelectCard() {
     console.log("Alto loot selected!");
     this.setState({
@@ -125,7 +156,8 @@ export default class Exchange extends Component {
 
   render() {
     if(this.state.currentPage == "title") {
-      return <TitlePage SelectCard={this.SelectCard}/>
+      return <TitlePage SelectCard={this.SelectCard}
+      altoTypesOwned={this.ComputeAltoTypesOwned(this.state.altoStashMap)}/>
     } else if(this.state.currentPage == "exchanger") {
       return(
         <div className='exchange__container'>
@@ -137,7 +169,7 @@ export default class Exchange extends Component {
               part to fight in battles. Remember, you need to own at least one alto
               item of a kind in order to unlock the associated brain part.`}
           </div>
-          <ItemExchanger/>
+          <ItemExchanger altoStashMap={this.state.altoStashMap}/>
           <BackButton selectFunction={this.SwitchToTitlePage}/>
         </div>
       );
