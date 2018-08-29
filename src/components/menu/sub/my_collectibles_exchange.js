@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import * as Constants from '../../../utils/data';
 import GameStashCard from './common/game_stash_card';
 import ItemExchanger from './common/item_exchanger';
+import Divider from './common/divider';
 import * as OwnershipContract from '../../../contracts/Ownership';
 import * as CONFIG from "../../../config/config";
+
 
 export const BackButton = function(props) {
   return(
@@ -34,12 +36,11 @@ export const TitlePage = function(props) {
       <div className='description'>
         {`The BrainFunc Game Universe is meant to be a place where you can use
         collectible items earned in other games inside BrainFunc. Right now, you can
-        create Brainparts using collectibles earned in other games. Exciting isn't it?
-        We know, we're excited too! For now, we support the Alto Cryptochallenge Loot
-        (5 items, can be used to construct or boost associated brain parts), but plan
-        to support other games in the future! Select the Alto Challenge Loot from
-        below to get started.`}
+        construct Brainparts (if you don't have them already) using the Alto Challenge Loot.
+        For now, we support 5 items from the Loot. Sound exciting? Select the card
+        to get started!`}
       </div>
+      <Divider/>
       <div className='game_stash__container'>
         <GameStashCard SelectCard={props.SelectCard} items={props.altoTypesOwned}/>
       </div>
@@ -116,8 +117,11 @@ export default class Exchange extends Component {
 
   ComputeAltoTypesOwned(stashMap) {
     var types = 0;
+    const integratedChallengeLoot = [2,8,19,25,46];
     for(var i = 1; i < 50;i++){
-      if(stashMap[i] > 0) {
+      // array is incorporated challenge loot
+
+      if(stashMap[i] > 0 && (i in integratedChallengeLoot)) {
         types += 1
       }
     }

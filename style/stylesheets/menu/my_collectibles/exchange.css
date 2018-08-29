@@ -125,8 +125,6 @@
         opacity: 0.75; }
 
 div.game_stash__container {
-  margin-top: 2vw;
   display: inline;
   float: left;
-  width: 100%;
-  padding: 2%; }
+  width: 100%; }
