@@ -74,21 +74,22 @@ export default class NeuronStash extends Component {
       itemsOwned:[]
     }
 
-    this.SetNeurons = this.SetNeurons.bind(this);
-    this.SetItemsOwned = this.SetItemsOwned.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
     this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
     this.FetchItemsOwned = this.FetchItemsOwned.bind(this);
     this.FetchItemOwners = this.FetchItemOwners.bind(this);
-    this.FetchNeuronsOwnedByUser = this.FetchNeuronsOwnedByUser.bind(this);
+    this.FetchItemTokenIds = this.FetchItemTokenIds.bind(this);
+    this.FetchItemsData = this.FetchItemsData.bind(this);
+
+    this.FetchAndSetNeurons = this.FetchAndSetNeurons.bind(this);
   }
 
   componentDidMount() {
-    this.FetchNeuronsOwnedByUser()
+    this.FetchAndSetNeurons()
   }
 
-  FetchNeuronsOwnedByUser() {
+  FetchAndSetNeurons() {
     console.log("Fetching Neurons...");
     // Fetch neurons owned using smart contracts
     // use total supply and owner of
@@ -148,7 +149,7 @@ export default class NeuronStash extends Component {
           neuronOwnershipMap[i] = res;
           counter += 1;
           if(counter == totalSupply) {
-            instance.SetItemsOwned(
+            instance.FetchItemTokenIds(
               neuronOwnershipMap, web3.eth.defaultAccount)
           }
         }// end of callback
@@ -156,19 +157,19 @@ export default class NeuronStash extends Component {
     } // end of for loop
   }
 
-  SetNeurons() {
-    console.log("Creating and Setting Neuron Objects for User");
-  }
-
-  SetItemsOwned(map, accountID) {
+  FetchItemTokenIds(map, accountID) {
     // Logic to compute items owned by current address
-    var itemsOwned = [];
+    var itemTokenIds = [];
     for(var i = 0; i < map.length; i++) {
       if(map[i] == accountID) {
-        itemsOwned.push(i);
+        itemTokenIds.push(i);
       }
     }
-    this.setState({itemsOwned});
+    this.FetchItemsData(itemTokenIds);
+  }
+
+  FetchItemsData(neuronTokenIds) {
+    console.log("Owned Neuron Ids", neuronTokenIds);
   }
 
   SetSelectedPage(page) {
