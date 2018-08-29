@@ -5,7 +5,7 @@ export const Data = {
       subcategory:"Frontal Lobe(Left)",
       categoryIndex: 0,
       subcategoryIndex: 0,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/leftfrontal.png",
     },
     {
@@ -13,7 +13,7 @@ export const Data = {
       subcategory:"Frontal Lobe(Right)",
       categoryIndex: 0,
       subcategoryIndex: 1,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/rightfrontal.png",
     },
     {
@@ -21,7 +21,7 @@ export const Data = {
       subcategory:"Pareital Lobe",
       categoryIndex: 0,
       subcategoryIndex: 2,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/pareital.png",
     },
     {
@@ -29,7 +29,7 @@ export const Data = {
       subcategory:"Temporal Lobe",
       categoryIndex: 0,
       subcategoryIndex: 3,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/temporal.png",
     },
     {
@@ -37,7 +37,7 @@ export const Data = {
       subcategory:"Occipital Lobe",
       categoryIndex: 0,
       subcategoryIndex: 4,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/occipital.png",
     },
     {
@@ -53,7 +53,7 @@ export const Data = {
       subcategory:"Posterior Lobe",
       categoryIndex: 1,
       subcategoryIndex: 6,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/posteriorlobe.png",
     },
     {
@@ -61,7 +61,7 @@ export const Data = {
       subcategory:"Flocculonodular Lobe",
       categoryIndex: 1,
       subcategoryIndex: 7,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/flocculonodularlobe.png",
     },
     {
@@ -85,7 +85,7 @@ export const Data = {
       subcategory:"Medulla",
       categoryIndex: 2,
       subcategoryIndex: 10,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/medulla.png",
     },
     {
@@ -101,7 +101,7 @@ export const Data = {
       subcategory:"Vertebral Artery",
       categoryIndex: 3,
       subcategoryIndex: 12,
-      quantity:23,
+      quantity:0,
       image: "/style/images/collectibles/neurons/vertebralartery.png",
     },
     {
@@ -117,8 +117,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Left)",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/leftfrontal.png",
       description: `Performs core cognition function - Most important part, that
       controls important cognitive skills in humans, such as emotional expression,
@@ -128,8 +128,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Right)",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/rightfrontal.png",
       description: `Performs core cognition function - Most important part, that
       controls important cognitive skills in humans, such as emotional expression,
@@ -139,8 +139,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Pareital Lobe",
-      strength:"5",
-      neuronQuantity: "8",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/pareital.png",
       description: `Involved in time keeping - The parietal lobes can be divided
       into two functional regions. One involves sensation and perception and the
@@ -152,8 +152,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Temporal Lobe",
-      strength:"5",
-      neuronQuantity: "16",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/temporal.png",
       description: `Auditory / Hearing functions - The temporal lobe is involved
       in primary auditory perception, such as hearing, and holds the primary auditory
@@ -164,8 +164,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Occipital Lobe",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/occipital.png",
       description: `Visual processing function - The occipital lobe is one of the
       four major lobes of the cerebral cortex in the brain of mammals. The occipital
@@ -176,7 +176,7 @@ export const Data = {
       category:"Cerebellum",
       subcategory:"Anterior Lobe",
       strength:"0",
-      neuronQuantity: "23",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/anteriorlobe.png",
       description: `Regulates posture - The hemispheres are separated from one
       another by a thin structure called the vermis, or "worm." The anterior lobe,
@@ -187,8 +187,8 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Posterior Lobe",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/posteriorlobe.png",
       description: `Involved in Kidney and Urinary function - Two hormones are
       classically considered as being related to the posterior pituitary: oxytocin
@@ -199,8 +199,8 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Flocculonodular Lobe",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/flocculonodularlobe.png",
       description: `Involved in visual processing - The flocculus is a part of
       the vestibuloocular reflex system and is used to help stabilize gaze during
@@ -211,7 +211,7 @@ export const Data = {
       category:"Brainstem",
       subcategory:"Midbrain",
       strength:"0",
-      neuronQuantity: "23",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/midbrain.png",
       description: `Involved in Auditory Processing - Midbrain, also called mesencephalon,
       region of the developing vertebrate brain that is composed of the tectum and
@@ -222,7 +222,7 @@ export const Data = {
       category:"Brainstem",
       subcategory:"Pons",
       strength:"0",
-      neuronQuantity: "23",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/pons.png",
       description: `Muscle communication, balance co-ordinator - Besides the medulla oblongata,
       your brainstem also has a structure called the pons. The pons is a major structure
@@ -232,8 +232,8 @@ export const Data = {
     {
       category:"Brainstem",
       subcategory:"Medulla",
-      strength:"5",
-      neuronQuantity: "23",
+      strength:"0",
+      neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/medulla.png",
       description: `Info carrier for body - The medulla oblongata helps regulate breathing,
       heart and blood vessel function, digestion, sneezing, and swalLow Strengthing.
@@ -253,7 +253,7 @@ export const Data = {
     {
       category:"Arterial",
       subcategory:"Vertebral Artery",
-      strength:"5",
+      strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/vertebralartery.png",
       description: `Dexterity based blood supply - Each vessel courses superiorly along
