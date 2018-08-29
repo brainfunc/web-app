@@ -47,6 +47,9 @@ export const ExchangeButtonsComponent = function(props) {
 }
 
 export const BrainFuncItemsRow = function(props) {
+  // <img className='image'
+  //   src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
+  
   console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
@@ -58,7 +61,7 @@ export const BrainFuncItemsRow = function(props) {
         </div>
         <div className='image-container'>
           <img className='image'
-            src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
+            src={LootMapping.Data.General.brainfunc_item.locked_image}/>
         </div>
         <div className='caption'>
           <div className='description'>
@@ -86,12 +89,11 @@ export const AltoItemsRow = function(props) {
     itemsArr.push(
       <div className='alto_item_container' key={i}>
         <div className='status'>
-          <img className='lock-image' src={`/style/images/template/lock.png`}/>
-          <div className='lock-text'> Locked </div>
+          <div className='lock-text'> Not Owned </div>
         </div>
         <div className='image-container'>
           <img className='image'
-            src={LootMapping.Data.LootItemMappings[i].alto_item.image}/>
+            src={LootMapping.Data.LootItemMappings[i].alto_item.gray_scale}/>
         </div>
         <div className='caption'>
           <div className='description'>

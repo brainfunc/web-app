@@ -4,6 +4,11 @@
 // Haste Drums
 // Scroll of the Light's Watch
 export const Data = {
+  General: {
+    brainfunc_item: {
+      locked_image: `/style/images/collectibles/brainparts/lockedBrainpart5.png`
+    }
+  },
   LootItemMappings: [
     {
       brainfunc_item : {
@@ -14,7 +19,8 @@ export const Data = {
       alto_item: {
         id: `8`,
         title: `Scroll of the Light's Watch`,
-        image: `/style/images/collectibles/alto/scroll.png`
+        image: `/style/images/collectibles/alto/scroll.png`,
+        gray_scale: `/style/images/collectibles/alto/scroll_gray.png`
       }
     },
     {
@@ -26,7 +32,8 @@ export const Data = {
       alto_item: {
         id: `2`,
         title: `Arcanist's Tome of Spells`,
-        image: `/style/images/collectibles/alto/arcanist.png`
+        image: `/style/images/collectibles/alto/arcanist.png`,
+        gray_scale: `/style/images/collectibles/alto/arcanist_gray.png`
       }
     },
     {
@@ -38,7 +45,8 @@ export const Data = {
       alto_item: {
         id: `19`,
         title: `Amulet of Dreams`,
-        image: `/style/images/collectibles/alto/amulet.png`
+        image: `/style/images/collectibles/alto/amulet.png`,
+        gray_scale: `/style/images/collectibles/alto/amulet_gray.png`
       }
     },
     {
@@ -50,7 +58,8 @@ export const Data = {
       alto_item: {
         id: `46`,
         title: `Alchemical Mug`,
-        image: `/style/images/collectibles/alto/alchemialmug.png`
+        image: `/style/images/collectibles/alto/alchemialmug.png`,
+        gray_scale: `/style/images/collectibles/alto/alchemialmug_gray.png`
       }
     },
     {
@@ -62,7 +71,8 @@ export const Data = {
       alto_item: {
         id: `25`,
         title: `Haste \nDrums`,
-        image: `/style/images/collectibles/alto/hastedrums.png`
+        image: `/style/images/collectibles/alto/hastedrums.png`,
+        gray_scale: `/style/images/collectibles/alto/hastedrums_gray.png`
       }
     }
   ]

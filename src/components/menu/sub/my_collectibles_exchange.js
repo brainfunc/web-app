@@ -132,8 +132,10 @@ export default class Exchange extends Component {
           <div className='title'> Transmorgification Chamber </div>
           <div className='description'>
             {`You can transmorgify the 5 parts from the challenge loot shown below
-              in exchange for the associated brainparts. Click on the transmorgify
-              button to transmorgify these loot items to brain parts.`}
+              in order to unlock the associated brainparts. After you do, you will
+              get a freshly minted brainpart of Strength Level 1. You can use this
+              part to fight in battles. Remember, you need to own at least one alto
+              item of a kind in order to unlock the associated brain part.`}
           </div>
           <ItemExchanger/>
           <BackButton selectFunction={this.SwitchToTitlePage}/>

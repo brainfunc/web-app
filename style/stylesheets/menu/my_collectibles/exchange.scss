@@ -119,7 +119,18 @@
 
     >div.alto_items_container {
       >div.alto_item_container{
-
+        >div.status{
+          >div.lock-text{
+            width:80%;
+            background-color: $text_color_blackish;
+            color: white;
+            font-weight: 500;
+            border-radius: 1vw;
+            padding: 0.5vw;
+            text-align:center;
+            margin-bottom: 0.75vw;
+          }
+        }
         >div.caption{
           width:85%;
 
