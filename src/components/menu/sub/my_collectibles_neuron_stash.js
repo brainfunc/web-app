@@ -6,6 +6,8 @@ import * as Utils from '../../../utils/utils';
 import StashBase from "./common/stash_base";
 import PagingBar from "./common/paging_bar";
 
+import * as CONFIG from "../../../contracts/config";
+
 export const NeuronCard = function(props) {
   var imageSrc = "";
   if (props.quantity == "0") {
@@ -25,7 +27,7 @@ export const NeuronCard = function(props) {
 }
 
 export const NeuronCardsRow = function(props) {
-  console.log(props);
+  // console.log(props);
   var cardsArr = []
   for(var i = 0; i < props["number"]; i++) {
     cardsArr.push(
@@ -44,7 +46,7 @@ export const NeuronCardsComponent = function(props) {
   const end = props.neurons.length <
   (start + 8) ? (props.neurons.length) : (start + 8);
   const lastRowNumber = end - start - 4;
-  console.log(start, end);
+  // console.log(start, end);
   return(
     <div className="cards_container-4">
       <div className="card_row-4">
@@ -68,10 +70,100 @@ export default class NeuronStash extends Component {
       selectedPage: 1,
       neurons: Collectibles.Data.Neurons
       .sort(Utils.GetSortOrder("quantity"))
-      .reverse()
+      .reverse(),
+      itemsOwned:[]
     }
 
+    this.SetItemsOwned = this.SetItemsOwned.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
+
+    this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
+    this.FetchItemsOwned = this.FetchItemsOwned.bind(this);
+    this.FetchItemOwners = this.FetchItemOwners.bind(this);
+    this.FetchNeuronsOwnedByUser = this.FetchNeuronsOwnedByUser.bind(this);
+  }
+
+  componentDidMount() {
+    this.FetchNeuronsOwnedByUser()
+  }
+
+  FetchTotalSupply(neuronContractInstance, callback) {
+    neuronContractInstance.totalSupply(function(err, res) {
+      if(err) { callback(err, null); return;}
+      const totalSupply = res.c[0];
+      callback(null, totalSupply);
+    });
+  }
+
+  FetchItemsOwned(neuronContractInstance, totalSupply) {
+    console.log("Fetching Items Owned by User...");
+    console.log("Total Supply", totalSupply);
+
+    var neuronOwnershipMap = [];
+    for(var i = 0;i < totalSupply; i++) {
+      neuronOwnershipMap.push("");
+    }
+
+    this.FetchItemOwners(
+      neuronOwnershipMap, neuronContractInstance, totalSupply);
+
+    console.log(neuronOwnershipMap);
+  }
+
+  FetchItemOwners(
+    neuronOwnershipMap, neuronContractInstance, totalSupply) {
+    const {web3} = window;
+    var counter = 0;
+    var instance = this;
+    // Usage of let is important here!
+    for(let i = 0; i < totalSupply; i++){
+      neuronContractInstance.ownerOf(i,
+        function(err, res) {
+          if(err) {console.log(err); return;}
+          console.log("Owner", i, res);
+          neuronOwnershipMap[i] = res;
+          counter += 1;
+          if(counter == totalSupply) {
+            instance.SetItemsOwned(
+              neuronOwnershipMap, web3.eth.defaultAccount)
+          }
+        }// end of callback
+      );//end of ownerOf
+    } // end of for loop
+  }
+
+  FetchNeuronsOwnedByUser() {
+    console.log("Fetching Neurons...");
+    // Fetch neurons owned using smart contracts
+    // use total supply and owner of
+    const {web3} = window;
+    const neuronContract = web3.eth.contract(
+      CONFIG.CONTRACTS.NEURON.ABI);
+    const neuronContractInstance = neuronContract.at(
+      CONFIG.CONTRACTS.NEURON.ADDRESS);
+    // console.log(neuronContractInstance);
+    // console.log(web3.eth.defaultAccount);
+
+    var fetchItemsOwnedCallback = function(err, totalSupply) {
+      if(err) { console.log(err); return; }
+      // console.log("Total Supply", totalSupply);
+      this.FetchItemsOwned(neuronContractInstance, totalSupply);
+    }
+    fetchItemsOwnedCallback = fetchItemsOwnedCallback.bind(this);
+
+    this.FetchTotalSupply(neuronContractInstance,fetchItemsOwnedCallback);
+    // set the state
+  }
+
+  SetItemsOwned(map, accountID) {
+    // Logic to compute items owned by current address
+    var itemsOwned = [];
+    for(var i = 0; i < map.length; i++) {
+      if(map[i] == accountID) {
+        itemsOwned.push(i);
+      }
+    }
+    this.setState({itemsOwned});
   }
 
   SetSelectedPage(page) {
@@ -80,6 +172,8 @@ export default class NeuronStash extends Component {
   }
 
   render() {
+    // Logging the state
+    console.log(this.state);
     return (
       <div className='neuron_stash__container'>
         <div className='title'> Neuron Collectibles </div>
