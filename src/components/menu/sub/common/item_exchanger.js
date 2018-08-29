@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import GameStashCard from './game_stash_card';
 import * as LootMapping from '../../../../utils/data/my_collectibles/exchanger/alto_mapping';
+import * as CONFIG from "../../../../config/config";
 
 export const ExchangeButtonsComponent = function(props) {
   return(
@@ -134,14 +135,47 @@ export default class ItemExchanger extends Component {
 
   constructor(props) {
     super(props);
+
+    this.GetBrainpartUri = this.GetBrainpartUri.bind(this);
     this.ExchangeClicked = this.ExchangeClicked.bind(this);
+  }
+
+  GetBrainpartUri = () => {
+    return `{
+      'owner':'something',
+      'dna':'something',
+      'category': 'something',
+      'subcategory': 'something',
+      'strength': 'something',
+      'image': 'something'
+    }`;
   }
 
   ExchangeClicked(value) {
     console.log("Exchange clicked!");
     console.log(value);
-    //console.log(event.target.custom_index);
-    //console.log(event.target.id);
+    // Instantiating brainpart contract
+    const {web3} = window;
+    const brainpartContract = web3.eth.contract(
+      CONFIG.CONTRACTS.BRAINPART.ABI);
+    const brainpartContractInstance = brainpartContract.at(
+      CONFIG.CONTRACTS.BRAINPART.ADDRESS);
+    // console.log(brainpartContractInstance);
+    // console.log(web3.eth.defaultAccount);
+    brainpartContractInstance.createBrainpart(
+      "ts", "cerebrum", "leftFrontal", "1", this.GetBrainpartUri(),
+      web3.eth.defaultAccount,
+      {
+        from:CONFIG.CONTRACTS.BRAINPART.CREATOR
+      },
+      (err,res) => {
+      if(err) {
+        console.log("Error:", err);
+        return;
+      }
+      console.log("Transaction Hash: ", res);
+      // this.setState({currentState: "buying"});
+    });
   }
 
   render() {
