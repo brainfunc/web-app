@@ -70,11 +70,29 @@ export default class Exchange extends Component {
     console.log("Starting to listen for events...");
     const data = OwnershipContract.Data;
     const networkID = CONFIG.NETWORK_ID; // "4 for Rinkeby Network"
+
     // Instantiating ownership contract
     const {web3} = window;
     const ownershipInstance = web3.eth.contract(data.abi)
     .at(data.networks[networkID].address);
-    console.log(ownershipInstance);
+    const userWalletID = web3.eth.defaultAccount;
+    ownershipInstance.itemsOf(userWalletID, (err, res) => {
+      if(err){
+        console.log(err);
+        return;
+      }
+      // item def id of ith owned crypto asset
+      // console.log(res[0][i].c[0]);
+      console.log(res[0][0].c[0]);
+    })
+    // console.log(userWalletID);
+    // var getItemsOwned = (walletID) => new Promise((resolve, reject) => {
+    //   ownershipInstance.itemsOf(walletID, async (err, result) => {
+    //     if (err) return reject(err);
+    //     return resolve(result);
+    //   });
+    // });
+    // console.log(ownershipInstance);
     //const neuronContract = web3.eth.contract(
     //   CONFIG.CONTRACTS.NEURON.ABI);
     // const neuronContractInstance = neuronContract.at(
