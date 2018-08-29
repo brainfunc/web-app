@@ -10,7 +10,18 @@ import MarketplaceStash from './sub/marketplace_stash';
 import MarketplacePacks from './sub/marketplace_packs';
 
 import * as CONFIG from "../../contracts/config";
+import * as Utils from '../../utils/utils';
 
+const CATEGORY_INDEX_MAPPING = {
+  "cerebrum": 0,
+  "cerebellum": 1,
+  "brainstem": 2,
+  "arterial": 3
+}
+
+// const subcategoryIndexMapping = {
+//   ""
+// }
 export default class Marketplace extends Component {
   constructor(props) {
     super(props);
@@ -67,12 +78,13 @@ export default class Marketplace extends Component {
   }
 
   GetNeuronUri = () => {
+    //TODO:- Migrate Proper URI later ON including category and sub category index
     return `{
-      'owner':'something',
-      'dna':'something',
-      'category': 'something',
-      'subcategory': 'something',
-      'image': 'something'
+      'owner':'<SampleOwner>',
+      'dna':'<SampleDna>',
+      'category': '<SampleCategoryIndex>',
+      'subcategory': '<SampleSubcategoryIndex>',
+      'image': '<SampleImageUri>'
     }`;
   }
 
@@ -86,8 +98,13 @@ export default class Marketplace extends Component {
       CONFIG.CONTRACTS.NEURON.ADDRESS);
     // console.log(neuronContractInstance);
     // console.log(web3.eth.defaultAccount);
+    const categoryIndex = CATEGORY_INDEX_MAPPING[this.state.selectedPack];
+    const subcategoryIndex = Utils.GenerateSubCategoryIndex(categoryIndex);
+    console.log("categoryIndex", categoryIndex);
+    console.log("subcategoryIndex", subcategoryIndex);
     neuronContractInstance.createNeuron(
-      "ts", "cerebrum", "leftFrontal", this.GetNeuronUri(),
+      "<SampleTimestamp>", `${categoryIndex}`, `${subcategoryIndex}`,
+      this.GetNeuronUri(),
       web3.eth.defaultAccount,
       {
         from:CONFIG.CONTRACTS.NEURON.CREATOR,

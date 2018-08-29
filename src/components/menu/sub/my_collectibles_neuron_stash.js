@@ -150,14 +150,14 @@ export default class NeuronStash extends Component {
           counter += 1;
           if(counter == totalSupply) {
             instance.FetchItemTokenIds(
-              neuronOwnershipMap, web3.eth.defaultAccount)
+              neuronOwnershipMap, web3.eth.defaultAccount, neuronContractInstance)
           }
         }// end of callback
       );//end of ownerOf
     } // end of for loop
   }
 
-  FetchItemTokenIds(map, accountID) {
+  FetchItemTokenIds(map, accountID, neuronContractInstance) {
     // Logic to compute items owned by current address
     var itemTokenIds = [];
     for(var i = 0; i < map.length; i++) {
@@ -165,11 +165,19 @@ export default class NeuronStash extends Component {
         itemTokenIds.push(i);
       }
     }
-    this.FetchItemsData(itemTokenIds);
+    this.FetchItemsData(itemTokenIds, neuronContractInstance);
   }
 
-  FetchItemsData(neuronTokenIds) {
+  FetchItemsData(neuronTokenIds, neuronContractInstance) {
     console.log("Owned Neuron Ids", neuronTokenIds);
+    var neuronFetchCallback = function(err, res) {
+      if(err) {console.log(err); return;}
+      console.log("Neuron Data", res);
+    }
+
+    for(var i = 0; i < neuronTokenIds.length; i++) {
+      neuronContractInstance.neurons(neuronTokenIds[i], neuronFetchCallback);
+    }
   }
 
   SetSelectedPage(page) {
