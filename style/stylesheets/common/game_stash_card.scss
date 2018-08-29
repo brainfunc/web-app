@@ -11,14 +11,14 @@
     border: 2px solid $background_color_cream;
     border-radius: 16px;
     margin-right: 2.5%;
-    padding: 16px;
+    padding: 0.8vw;
     cursor:pointer;
     text-align: center;
     >div.title {
-      margin-left: 16px;
+      margin-left: 0.8vw;
       font-family: $font_family_3;
       font-weight: 600;
-      font-size: 1.5em;
+      font-size: 1.9vw;
       color: $font_color_heading;
     }
     >img.card_image {
@@ -26,7 +26,7 @@
       max-height: 100%;
     }
     >div.card_description {
-      margin-left: 16px;
+      margin-left: 0.8vw;
       overflow: hidden;
       font-family: $font_family_1;
       font-weight: 400;
@@ -36,6 +36,7 @@
         display: inline;
         float: left;
         width: 50%;
+        font-size: 1.5vw;
       }
       >div.price {
         background-color: #ffbb58;
@@ -43,13 +44,15 @@
         border-radius: 8px;
         //width: 30%;
         margin-right: 10%;
+        margin-top: 0.4vw;
         text-align: center;
-        padding-top:8px;
-        padding-bottom: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-top:0.4vw;
+        padding-bottom: 0.4vw;
+        padding-left: 0.6vw;
+        padding-right: 0.6vw;
         display: inline;
         float: right;
+        font-size: 1.35vw;
       }
     }
   }
@@ -79,16 +82,19 @@
       margin-top: 2vw;
 
       font-family: $font_family_1;
-			font-size: 1.4em;
+			font-size: 2vw;
 			font-weight: 300;
 			color: $section_content_color_result;
 			text-align: justify;
       >a{
+        display: inline;
+        float: left;
+        width: 100%;
         overflow: hidden;
         >button{
           width: 35%;
-          margin-top: 3.5vw;
-          margin-right: 5vw;
+          margin-top: 2vw;
+          margin-right: 4vw;
           padding-top: 0.75vw;
           padding-bottom:0.75vw;
           color:white;
@@ -99,7 +105,7 @@
           display: inline;
           float:left;
           font-family: $font_family_2;
-          font-size: 1.45vw;
+          font-size: 1.35vw;
           font-weight: 400;
           outline:none;
         }

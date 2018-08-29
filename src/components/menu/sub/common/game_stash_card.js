@@ -52,7 +52,7 @@ export default class GameStashCard extends Component {
             src={`/style/images/cross-game/alto_loot.png`}/>
           <div className='card_description'>
             <div className='number'> Types Owned </div>
-            <div className='price'> {this.props.items} </div>
+            <div className='price'> {this.props.items}/5 </div>
           </div>
         </Card>
         <div className='card-details'>
