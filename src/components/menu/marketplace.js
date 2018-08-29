@@ -90,7 +90,7 @@ export default class Marketplace extends Component {
       "ts", "cerebrum", "leftFrontal", this.GetNeuronUri(),
       web3.eth.defaultAccount,
       {
-        from:web3.eth.defaultAccount,
+        from:CONFIG.CONTRACTS.NEURON.CREATOR,
         value:web3.toWei(
           `${this.GetTotalAmountToPay()}`,
           "ether")
