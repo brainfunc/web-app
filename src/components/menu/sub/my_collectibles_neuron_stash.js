@@ -74,6 +74,7 @@ export default class NeuronStash extends Component {
       itemsOwned:[]
     }
 
+    this.SetNeurons = this.SetNeurons.bind(this);
     this.SetItemsOwned = this.SetItemsOwned.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
@@ -85,6 +86,29 @@ export default class NeuronStash extends Component {
 
   componentDidMount() {
     this.FetchNeuronsOwnedByUser()
+  }
+
+  FetchNeuronsOwnedByUser() {
+    console.log("Fetching Neurons...");
+    // Fetch neurons owned using smart contracts
+    // use total supply and owner of
+    const {web3} = window;
+    const neuronContract = web3.eth.contract(
+      CONFIG.CONTRACTS.NEURON.ABI);
+    const neuronContractInstance = neuronContract.at(
+      CONFIG.CONTRACTS.NEURON.ADDRESS);
+    // console.log(neuronContractInstance);
+    // console.log(web3.eth.defaultAccount);
+
+    var fetchItemsOwnedCallback = function(err, totalSupply) {
+      if(err) { console.log(err); return; }
+      // console.log("Total Supply", totalSupply);
+      this.FetchItemsOwned(neuronContractInstance, totalSupply);
+    }
+    fetchItemsOwnedCallback = fetchItemsOwnedCallback.bind(this);
+
+    this.FetchTotalSupply(neuronContractInstance,fetchItemsOwnedCallback);
+    // set the state
   }
 
   FetchTotalSupply(neuronContractInstance, callback) {
@@ -132,27 +156,8 @@ export default class NeuronStash extends Component {
     } // end of for loop
   }
 
-  FetchNeuronsOwnedByUser() {
-    console.log("Fetching Neurons...");
-    // Fetch neurons owned using smart contracts
-    // use total supply and owner of
-    const {web3} = window;
-    const neuronContract = web3.eth.contract(
-      CONFIG.CONTRACTS.NEURON.ABI);
-    const neuronContractInstance = neuronContract.at(
-      CONFIG.CONTRACTS.NEURON.ADDRESS);
-    // console.log(neuronContractInstance);
-    // console.log(web3.eth.defaultAccount);
-
-    var fetchItemsOwnedCallback = function(err, totalSupply) {
-      if(err) { console.log(err); return; }
-      // console.log("Total Supply", totalSupply);
-      this.FetchItemsOwned(neuronContractInstance, totalSupply);
-    }
-    fetchItemsOwnedCallback = fetchItemsOwnedCallback.bind(this);
-
-    this.FetchTotalSupply(neuronContractInstance,fetchItemsOwnedCallback);
-    // set the state
+  SetNeurons() {
+    console.log("Creating and Setting Neuron Objects for User");
   }
 
   SetItemsOwned(map, accountID) {
