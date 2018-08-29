@@ -68,9 +68,7 @@ export default class NeuronStash extends Component {
 
     this.state = {
       selectedPage: 1,
-      neurons: Collectibles.Data.Neurons
-      .sort(Utils.GetSortOrder("quantity"))
-      .reverse(),
+      neurons: Collectibles.Data.Neurons,
       itemsOwned:[]
     }
 
@@ -170,15 +168,29 @@ export default class NeuronStash extends Component {
 
   FetchItemsData(neuronTokenIds, neuronContractInstance) {
     console.log("Owned Neuron Ids", neuronTokenIds);
+
+    var counter = 0;
+    var neurons = Collectibles.Data.Neurons;
     var neuronFetchCallback = function(err, res) {
       if(err) {console.log(err); return;}
       console.log("Neuron Data", res);
+      const cIndex = res[1]; const scIndex = res[2];
+      // error handling for bad sub categories
+      if(scIndex == "" || Number(scIndex) == undefined ||
+      !Utils.NeuronSubCategoryCheck(cIndex, scIndex)) { return; }
+      neurons[scIndex].quantity += 1;
+      counter += 1;
+      if(counter == neuronTokenIds.length) {
+        this.setState({neurons});
+      }
     }
+    neuronFetchCallback.bind(this);
 
-    for(var i = 0; i < neuronTokenIds.length; i++) {
+    for(let i = 0; i < neuronTokenIds.length; i++) {
       neuronContractInstance.neurons(neuronTokenIds[i], neuronFetchCallback);
     }
   }
+
 
   SetSelectedPage(page) {
     console.log("Page Switched!", page);
