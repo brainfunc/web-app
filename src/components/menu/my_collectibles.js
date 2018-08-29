@@ -7,14 +7,23 @@ import Exchange from "./sub/my_collectibles_exchange";
 
 import SideBar from "./sub/my_collectibles_sidebar";
 
+import * as CONFIG from "../../contracts/config";
+
 export default class MyCollectibles extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      activeComponent: "neuron_stash"
+      activeComponent: "neuron_stash",
+      walletAddress: "Loading...",
+      neuronBalance: "Loading...",
+      brainpartBalance: "Loading..."
     }
+
+    this.setWalletAddressForProfile = this.setWalletAddressForProfile.bind(this);
+    this.setNeuronBalanceForProfile = this.setNeuronBalanceForProfile.bind(this);
+    this.setBrainpartBalanceForProfile = this.setBrainpartBalanceForProfile.bind(this);
 
     this.getImageForProfile = this.getImageForProfile.bind(this);
     this.getWalletAddressForProfile = this.getWalletAddressForProfile.bind(this);
@@ -25,14 +34,68 @@ export default class MyCollectibles extends Component {
     this.displayExchange = this.displayExchange.bind(this);
 
     this.renderActiveComponent = this.renderActiveComponent.bind(this);
+
+    this.InitializeWallet = this.InitializeWallet.bind(this);
+  }
+
+  componentDidMount() {
+    this.InitializeWallet()
+  }
+
+  InitializeWallet() {
+    const {web3} = window;
+    const neuronContract = web3.eth.contract(
+      CONFIG.CONTRACTS.NEURON.ABI);
+    const neuronContractInstance = neuronContract.at(
+      CONFIG.CONTRACTS.NEURON.ADDRESS);
+    const brainpartContract = web3.eth.contract(
+      CONFIG.CONTRACTS.BRAINPART.ABI);
+    const brainpartContractInstance = neuronContract.at(
+      CONFIG.CONTRACTS.BRAINPART.ADDRESS);
+
+    var neuronBalanceCallback = function(err, res) {
+      if(err) { console.log(err); return; }
+      console.log("Neuron Balance of User", res.c[0]);
+      const neuronBalance = res.c[0];
+      this.setState({neuronBalance});
+    }
+    neuronBalanceCallback = neuronBalanceCallback.bind(this);
+
+    var brainpartBalanceCallback = function(err, res) {
+      if(err) { console.log(err); return; }
+      console.log("Brainpart Balance of User", res.c[0]);
+      const brainpartBalance = res.c[0];
+      this.setState({brainpartBalance})
+    }
+    brainpartBalanceCallback = brainpartBalanceCallback.bind(this);
+
+    const walletAddress = web3.eth.defaultAccount;
+    this.setWalletAddressForProfile(walletAddress);
+    this.setNeuronBalanceForProfile(walletAddress, neuronContractInstance, neuronBalanceCallback);
+    this.setBrainpartBalanceForProfile(walletAddress, brainpartContractInstance, brainpartBalanceCallback);
+  }
+
+  setWalletAddressForProfile(walletAddress) {
+    console.log("Setting wallet address");
+    this.setState({walletAddress})
+  }
+
+  setNeuronBalanceForProfile(walletAddress, neuronContractInstance, callback) {
+    neuronContractInstance.balanceOf(walletAddress, callback);
+  }
+
+  setBrainpartBalanceForProfile(walletAddress, brainpartContractInstance, callback) {
+    brainpartContractInstance.balanceOf(walletAddress, callback);
+  }
+
+  getWalletAddressForProfile(){
+    return this.state.walletAddress
   }
 
   getImageForProfile() {
     return "/style/images/template/wallet5.png";
   }
-  getWalletAddressForProfile(){
-    return "0x75c088e1935468c0178b1e9733f250e9ad8d14f2"
-  }
+
   getBalanceForProfile() {
     return "14.36 Ether";
   }
@@ -82,12 +145,12 @@ export default class MyCollectibles extends Component {
             <div className="neurons">
               <img src={"/style/images/icons/neurons_qty.png"}/>
               <div className='lbl'>Neurons</div>
-              <div className='qty'>24 Total</div>
+              <div className='qty'>{this.state.neuronBalance} Total</div>
             </div>
             <div className="brainparts">
               <img src={"/style/images/icons/brainparts_qty.png"}/>
               <div className='lbl'>Brainparts</div>
-              <div className='qty'>7 Unlocked</div>
+              <div className='qty'>{this.state.brainpartBalance} Unlocked</div>
             </div>
           </div>
           <div className="action_container">
