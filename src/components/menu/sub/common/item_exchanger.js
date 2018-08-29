@@ -49,7 +49,7 @@ export const ExchangeButtonsComponent = function(props) {
 export const BrainFuncItemsRow = function(props) {
   // <img className='image'
   //   src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
-  
+
   console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
@@ -83,17 +83,32 @@ export const BrainFuncItemsComponent = function(props) {
 }
 
 export const AltoItemsRow = function(props) {
+
   console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
+    var imgSrc="";
+    var lockText = "";
+    var lockClass = "";
+    const itemId = LootMapping.Data.LootItemMappings[i].alto_item.id;
+    if(props.altoStashMap[itemId] > 0) {
+      imgSrc= LootMapping.Data.LootItemMappings[i].alto_item.image;
+      lockText = `Owned (${props.altoStashMap[itemId]})`;
+      lockClass  = "owned";
+    } else {
+      imgSrc= LootMapping.Data.LootItemMappings[i].alto_item.gray_scale;
+      lockText = "Not Owned";
+      lockClass  = "not-owned";
+    }
+
     itemsArr.push(
       <div className='alto_item_container' key={i}>
         <div className='status'>
-          <div className='lock-text'> Not Owned </div>
+          <div className={`lock-text ${lockClass}`}> {lockText} </div>
         </div>
         <div className='image-container'>
           <img className='image'
-            src={LootMapping.Data.LootItemMappings[i].alto_item.gray_scale}/>
+            src={imgSrc}/>
         </div>
         <div className='caption'>
           <div className='description'>
@@ -110,7 +125,7 @@ export const AltoItemsRow = function(props) {
 export const AltoItemsComponent = function(props) {
   return(
     <div className='alto_items_container'>
-      <AltoItemsRow number={5}/>
+      <AltoItemsRow number={5} altoStashMap={props.altoStashMap}/>
     </div>
   );
 }
@@ -130,9 +145,11 @@ export default class ItemExchanger extends Component {
   }
 
   render() {
+
     return (
       <div className='item_exchanger__container'>
-        <AltoItemsComponent/>
+        <AltoItemsComponent
+        altoStashMap={this.props.altoStashMap}/>
         <ExchangeButtonsComponent
         selectFunction={this.ExchangeClicked}/>
         <BrainFuncItemsComponent/>

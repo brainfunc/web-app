@@ -130,6 +130,10 @@
             text-align:center;
             margin-bottom: 0.75vw;
           }
+          >div.lock-text.owned{
+            background-color: $button_color_yellow;
+            border: 2px solid $border_color_dark_yellow;
+          }
         }
         >div.caption{
           width:85%;

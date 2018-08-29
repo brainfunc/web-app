@@ -104,6 +104,9 @@
       padding: 0.5vw;
       text-align: center;
       margin-bottom: 0.75vw; }
+    .exchange__container div.item_exchanger__container > div.alto_items_container > div.alto_item_container > div.status > div.lock-text.owned {
+      background-color: #ffbb58;
+      border: 2px solid #d99f49; }
     .exchange__container div.item_exchanger__container > div.alto_items_container > div.alto_item_container > div.caption {
       width: 85%; }
     .exchange__container div.item_exchanger__container > div.exchange_buttons_container > div.button_container {
