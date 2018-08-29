@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ROOT_SERVER_URL from '../config/config';
+import ROOT_SERVER_URL from '../contracts/config';
 
 export const ACTION_SIGNUP = 'SIGNUP';
 

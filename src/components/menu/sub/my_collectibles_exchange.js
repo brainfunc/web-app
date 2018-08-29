@@ -5,8 +5,8 @@ import * as Constants from '../../../utils/data';
 import GameStashCard from './common/game_stash_card';
 import ItemExchanger from './common/item_exchanger';
 import Divider from './common/divider';
-import * as OwnershipContract from '../../../contracts/Ownership';
-import * as CONFIG from "../../../config/config";
+import * as OwnershipContract from '../../../contracts/contracts/Ownership';
+import * as CONFIG from "../../../contracts/config";
 
 
 export const BackButton = function(props) {
@@ -29,7 +29,7 @@ export const BackButton = function(props) {
 }
 
 export const TitlePage = function(props) {
-
+  const typesOwned = props.typesOwnedComputer(props.altoStashMap);
   return(
     <div className='exchange__container'>
       <div className='title'> What is this? </div>
@@ -42,7 +42,7 @@ export const TitlePage = function(props) {
       </div>
       <Divider/>
       <div className='game_stash__container'>
-        <GameStashCard SelectCard={props.SelectCard} items={props.altoTypesOwned}/>
+        <GameStashCard SelectCard={props.SelectCard} items={typesOwned}/>
       </div>
     </div>
   );
@@ -117,11 +117,15 @@ export default class Exchange extends Component {
 
   ComputeAltoTypesOwned(stashMap) {
     var types = 0;
+    // console.log("Computing Alto Types Owned");
+    // console.log(stashMap);
     const integratedChallengeLoot = [2,8,19,25,46];
     for(var i = 1; i < 50;i++){
       // array is incorporated challenge loot
-
-      if(stashMap[i] > 0 && (i in integratedChallengeLoot)) {
+      // console.log(i);
+      // console.log(stashMap[i]);
+      // console.log(integratedChallengeLoot);
+      if(stashMap[i] > 0 && (integratedChallengeLoot.includes(i))) {
         types += 1
       }
     }
@@ -161,7 +165,8 @@ export default class Exchange extends Component {
   render() {
     if(this.state.currentPage == "title") {
       return <TitlePage SelectCard={this.SelectCard}
-      altoTypesOwned={this.ComputeAltoTypesOwned(this.state.altoStashMap)}/>
+      altoStashMap={this.state.altoStashMap}
+      typesOwnedComputer={this.ComputeAltoTypesOwned}/>
     } else if(this.state.currentPage == "exchanger") {
       return(
         <div className='exchange__container'>

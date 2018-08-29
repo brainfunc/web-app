@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import GameStashCard from './game_stash_card';
 import * as LootMapping from '../../../../utils/data/my_collectibles/exchanger/alto_mapping';
-import * as CONFIG from "../../../../config/config";
+import * as CONFIG from "../../../../contracts/config";
 
 export const ExchangeButtonsComponent = function(props) {
   return(

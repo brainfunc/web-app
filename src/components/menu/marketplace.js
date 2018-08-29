@@ -9,7 +9,7 @@ import MarketplaceDetails from './sub/marketplace_details';
 import MarketplaceStash from './sub/marketplace_stash';
 import MarketplacePacks from './sub/marketplace_packs';
 
-import * as CONFIG from "../../config/config";
+import * as CONFIG from "../../contracts/config";
 
 export default class Marketplace extends Component {
   constructor(props) {

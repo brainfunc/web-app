@@ -11,7 +11,7 @@ import Battleground from './menu/battleground';
 import Library from './menu/library';
 
 import * as Constants from '../utils/data';
-import * as CONFIG from "../config/config";
+import * as CONFIG from "../contracts/config";
 
 const RouteSpecificComponent = ({route}) => {
   if(route == '/library') {
