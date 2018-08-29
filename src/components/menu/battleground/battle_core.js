@@ -7,7 +7,6 @@ import * as Utils from '../../../utils/utils';
 import * as Tasks from '../../../utils/data/battles/tasks';
 
 import BrainpartCard from '../sub/my_collectibles_brainpart_stash_brainpart_card';
-
 export const BattleTaskComponent = function(props) {
   return(
     <div className='battle-task'>
@@ -95,9 +94,11 @@ export default class BattleCoreComponent extends Component {
   render(){
     return(
       <div className='body'>
+
         <div className='battle_core'>
           <BattleTaskComponent/>
           <div className='part-chooser'>
+
             <div className='title'>
               Choose Parts
             </div>

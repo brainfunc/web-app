@@ -10,6 +10,7 @@ import ResultsComponent from './battleground/results';
 
 import * as Constants from '../../utils/data';
 import * as Instructions from '../../utils/data/battles/instructions';
+import Divider from './sub/common/divider';
 
 export default class Battleground extends Component {
 
@@ -59,7 +60,9 @@ export default class Battleground extends Component {
           <img src={`/style/images/menu/battles/battle_icon.png`}/>
           <div className='title'> Battleground </div>
           <img src={`/style/images/menu/battles/battle_icon.png`}/>
+          <Divider/>
         </div>
+
         {this.RenderBody()}
       </div>
     );
