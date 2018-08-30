@@ -12,7 +12,7 @@ export const CONTRACTS = {
   },
   BRAINPART : {
     "CREATOR": "0xe0e8ae3c99784bdaac966ae0a0f1e0ac87d43384",
-    "ADDRESS": "0xc92ae87880fd5dbf047f17e338575ebbe0bf9049",
+    "ADDRESS": "0x93b433cdbc5ea314a143ce8ee97f064b8da0b19c",
     "ABI": BRAINPART_CONTRACT_ABI
 
   }
