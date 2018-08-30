@@ -6,7 +6,7 @@ import * as Utils from '../../../utils/utils';
 
 import * as Tasks from '../../../utils/data/battles/tasks';
 
-import BrainpartCard from '../sub/my_collectibles_brainpart_stash_brainpart_card';
+import BrainpartCard from '../my_collectibles/my_collectibles_brainpart_stash_brainpart_card';
 export const BattleTaskComponent = function(props) {
   return(
     <div className='battle-task'>

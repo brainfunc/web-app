@@ -10,7 +10,7 @@ import ResultsComponent from './battleground/results';
 
 import * as Constants from '../../utils/data';
 import * as Instructions from '../../utils/data/battles/instructions';
-import Divider from './sub/common/divider';
+import Divider from './my_collectibles/common/divider';
 
 export default class Battleground extends Component {
 

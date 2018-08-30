@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import NeuronStash from "./sub/my_collectibles_neuron_stash";
-import BrainpartStash from "./sub/my_collectibles_brainpart_stash";
-import Exchange from "./sub/my_collectibles_exchange";
+import NeuronStash from "./my_collectibles/my_collectibles_neuron_stash";
+import BrainpartStash from "./my_collectibles/my_collectibles_brainpart_stash";
+import Exchange from "./my_collectibles/my_collectibles_exchange";
 
-import SideBar from "./sub/my_collectibles_sidebar";
+import SideBar from "./my_collectibles/my_collectibles_sidebar";
 
 import * as Collectibles from '../../utils/data/collectibles';
 
