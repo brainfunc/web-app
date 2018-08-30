@@ -29,7 +29,7 @@ export const Data = {
       brainfunc_item : {
         title: `Frontal Lobe(left)`,
         index: 0,
-        status: "unlocked",
+        status: "locked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/leftfrontal.png`
       },
@@ -44,7 +44,7 @@ export const Data = {
       brainfunc_item : {
         title: `Occipital Lobe`,
         index: 4,
-        status: "locked",
+        status: "unlocked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/occipital.png`
       },
