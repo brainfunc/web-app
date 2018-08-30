@@ -50,23 +50,40 @@ export const ExchangeButtonsComponent = function(props) {
 export const BrainFuncItemsRow = function(props) {
   // <img className='image'
   //   src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
-
+  const exchangeableBrainparts = [2,8]
   console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
+    var currentItem = LootMapping.Data.LootItemMappings[i].brainfunc_item;
+    var title = LootMapping.Data.LootItemMappings[i].brainfunc_item.title;
+    var imgSrc, imgClass, lockSrc, lockText, lockClass;
+    if(currentItem.status == "locked") {
+      imgSrc= LootMapping.Data.General.brainfunc_item.locked_image;
+      imgClass = `locked`;
+      lockText = `Locked`;
+      lockClass  = "locked";
+      lockSrc = `/style/images/icons/lock_gray.png`;
+    } else if(currentItem.status == "unlocked"){
+      imgSrc = LootMapping.Data.LootItemMappings[i].brainfunc_item.image;
+      imgClass = `unlocked`;
+      lockText = `Unlocked`;
+      lockClass  = "unlocked";
+      lockSrc = `/style/images/icons/unlock_left.png`;
+
+    }
     itemsArr.push(
       <div className='brainfunc_item_container' key={i}>
         <div className='status'>
-          <img className='lock-image' src={`/style/images/template/lock.png`}/>
-          <div className='lock-text'> Locked </div>
+          <img className={`lock-image ${imgClass}`} src={lockSrc}/>
+          <div className={`lock-text ${lockClass}`}>{lockText} </div>
         </div>
         <div className='image-container'>
           <img className='image'
-            src={LootMapping.Data.General.brainfunc_item.locked_image}/>
+            src={imgSrc}/>
         </div>
         <div className='caption'>
           <div className='description'>
-            {LootMapping.Data.LootItemMappings[i].brainfunc_item.title}
+            {title}
           </div>
         </div>
       </div>
@@ -77,7 +94,8 @@ export const BrainFuncItemsRow = function(props) {
 
 export const BrainFuncItemsComponent = function(props) {
   return(
-    <div className='brainfunc_items_container'>
+    <div className='brainfunc_items_container'
+    brainparts={props.brainparts}>
       <BrainFuncItemsRow number={5}/>
     </div>
   );
@@ -186,7 +204,8 @@ export default class ItemExchanger extends Component {
         altoStashMap={this.props.altoStashMap}/>
         <ExchangeButtonsComponent
         selectFunction={this.ExchangeClicked}/>
-        <BrainFuncItemsComponent/>
+        <BrainFuncItemsComponent
+        brainparts={this.props.brainparts}/>
       </div>
     );
   }

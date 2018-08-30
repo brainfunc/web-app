@@ -97,17 +97,47 @@
           font-weight: 600; }
     .exchange__container div.item_exchanger__container > div.alto_items_container > div.alto_item_container > div.status > div.lock-text {
       width: 80%;
-      background-color: #4a4a4a;
+      background-color: #7c7c7c;
       color: white;
       font-weight: 500;
       border-radius: 1vw;
-      padding: 0.5vw;
+      padding: 0.25vw;
       text-align: center;
-      margin-bottom: 0.75vw; }
+      margin-bottom: 0.75vw;
+      border: 2px solid #4a4a4a; }
     .exchange__container div.item_exchanger__container > div.alto_items_container > div.alto_item_container > div.status > div.lock-text.owned {
       background-color: #ffbb58;
       border: 2px solid #d99f49; }
     .exchange__container div.item_exchanger__container > div.alto_items_container > div.alto_item_container > div.caption {
+      width: 85%; }
+    .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status {
+      text-align: center; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > img {
+        margin-top: 0.35vw;
+        border-radius: 0.5vw; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > img.lock-image.locked {
+        width: 0%; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > img.lock-image.unlocked {
+        width: 0%; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > div.lock-text {
+        width: 80%;
+        margin-left: 10%;
+        background-color: #4a4a4a;
+        color: white;
+        font-weight: 500;
+        font-size: 1.35vw;
+        border-radius: 1vw;
+        padding: 0.25vw;
+        text-align: center;
+        margin-bottom: 1vw; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > div.lock-text.locked {
+        background-color: white;
+        color: #4a4a4a;
+        border: 2px solid #4a4a4a; }
+      .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.status > div.lock-text.unlocked {
+        background-color: #5bb75b;
+        border: 2px solid #16a05d; }
+    .exchange__container div.item_exchanger__container > div.brainfunc_items_container > div.brainfunc_item_container > div.caption {
       width: 85%; }
     .exchange__container div.item_exchanger__container > div.exchange_buttons_container > div.button_container {
       text-align: center; }

@@ -68,7 +68,7 @@ export default class Exchange extends Component {
   }
 
   componentDidMount() {
-    console.log("Component Mounted");
+    // console.log("Component Mounted");
     if(!this.props.isAltoStashMapSet) {
       this.StartListeningForEvents();
     }

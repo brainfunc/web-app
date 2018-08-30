@@ -122,17 +122,61 @@
         >div.status{
           >div.lock-text{
             width:80%;
-            background-color: $text_color_blackish;
+            background-color: $button_color_gray;
             color: white;
             font-weight: 500;
             border-radius: 1vw;
-            padding: 0.5vw;
+            padding: 0.25vw;
             text-align:center;
             margin-bottom: 0.75vw;
+            border: 2px solid $border_color_dark_gray;
           }
           >div.lock-text.owned{
             background-color: $button_color_yellow;
             border: 2px solid $border_color_dark_yellow;
+          }
+        }
+        >div.caption{
+          width:85%;
+
+        }
+      }
+    }
+
+    >div.brainfunc_items_container {
+      >div.brainfunc_item_container{
+        >div.status{
+          text-align: center;
+          >img{
+            margin-top: 0.35vw;
+            border-radius: 0.5vw;
+          }
+          >img.lock-image.locked{
+            width: 0%;
+          }
+          >img.lock-image.unlocked{
+            width: 0%;
+          }
+          >div.lock-text {
+            width:80%;
+            margin-left: 10%;
+            background-color: $text_color_blackish;
+            color: white;
+            font-weight: 500;
+            font-size: 1.35vw;
+            border-radius: 1vw;
+            padding: 0.25vw;
+            text-align:center;
+            margin-bottom: 1vw;
+          }
+          >div.lock-text.locked{
+            background-color: white;
+            color: $text_color_blackish;
+            border: 2px solid $border_color_dark_gray;
+          }
+          >div.lock-text.unlocked{
+            background-color: $button_color_green;
+            border: 2px solid $border_color_dark_green;
           }
         }
         >div.caption{
