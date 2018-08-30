@@ -156,6 +156,7 @@ export default class ItemExchanger extends Component {
 
     this.GetBrainpartUri = this.GetBrainpartUri.bind(this);
     this.ExchangeClicked = this.ExchangeClicked.bind(this);
+    this.IsValidExchange = this.IsValidExchange.bind(this);
   }
 
   GetBrainpartUri = () => {
@@ -171,7 +172,12 @@ export default class ItemExchanger extends Component {
 
   ExchangeClicked(value) {
     console.log("Exchange clicked!");
-    console.log(value);
+    if(!this.IsValidExchange(value)) {
+      console.log("Exchange Invalid!");
+      // Show error dialog
+      return;
+    }
+
     // Instantiating brainpart contract
     const {web3} = window;
     const brainpartContract = web3.eth.contract(
@@ -180,21 +186,32 @@ export default class ItemExchanger extends Component {
       CONFIG.CONTRACTS.BRAINPART.ADDRESS);
     // console.log(brainpartContractInstance);
     // console.log(web3.eth.defaultAccount);
-    brainpartContractInstance.createBrainpart(
-      "ts", "cerebrum", "leftFrontal", "1", this.GetBrainpartUri(),
-      web3.eth.defaultAccount,
-      {
-        from:CONFIG.CONTRACTS.BRAINPART.CREATOR
-      },
-      (err,res) => {
-      if(err) {
-        console.log("Error:", err);
-        return;
-      }
-      console.log("Transaction Hash: ", res);
-      // this.setState({currentState: "buying"});
-    });
+    // brainpartContractInstance.createBrainpart(
+    //   "ts", "cerebrum", "leftFrontal", "1", this.GetBrainpartUri(),
+    //   web3.eth.defaultAccount,
+    //   {
+    //     from:CONFIG.CONTRACTS.BRAINPART.CREATOR
+    //   },
+    //   (err,res) => {
+    //   if(err) {
+    //     console.log("Error:", err);
+    //     return;
+    //   }
+    //   console.log("Transaction Hash: ", res);
+    //   // this.setState({currentState: "buying"});
+    // });
   }
+
+  IsValidExchange(i) {
+    const altoItemId = LootMapping.Data.LootItemMappings[i].alto_item.id;
+    const altoItemOwned = this.props.altoStashMap[altoItemId] > 0;
+    const brainpartItemId = LootMapping.Data.LootItemMappings[i].brainfunc_item.index;
+    const brainpartItemOwned = this.props.brainparts[brainpartItemId].strength > 0;
+
+    console.log("Alto Brainpart");
+    console.log(altoItemOwned, brainpartItemOwned);
+  }
+
 
   render() {
 
