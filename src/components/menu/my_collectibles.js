@@ -23,7 +23,10 @@ export default class MyCollectibles extends Component {
       brainpartBalance: "Loading...",
       neurons: Collectibles.Data.Neurons,
       brainparts: Collectibles.Data.Brainparts,
-      altoStashMap: []
+      altoStashMap: [],
+      isNeuronsSet: false,
+      isBrainpartsSet: false,
+      isAltoStashMapSet: false
     }
 
     this.setNeuronsOwnedByUser = this.setNeuronsOwnedByUser.bind(this);
@@ -97,15 +100,15 @@ export default class MyCollectibles extends Component {
   }
 
   setNeuronsOwnedByUser(neurons) {
-    this.setState({neurons})
+    this.setState({neurons, isNeuronsSet: true})
   }
 
   setBrainpartsOwnedByUser(brainparts) {
-    this.setState({brainparts})
+    this.setState({brainparts, isBrainpartsSet: true})
   }
 
   setAltoStashMapOwnedByUser(altoStashMap) {
-    this.setState({altoStashMap})
+    this.setState({altoStashMap, isAltoStashMapSet: true})
   }
 
   getWalletAddressForProfile(){
@@ -139,13 +142,20 @@ export default class MyCollectibles extends Component {
 
   renderActiveComponent() {
     if(this.state.activeComponent == "neuron_stash") {
-      return <NeuronStash SetNeurons={this.setNeuronsOwnedByUser}/>
+      return <NeuronStash
+      neurons={this.state.neurons}
+      isNeuronsSet={this.state.isNeuronsSet}
+      SetNeurons={this.setNeuronsOwnedByUser}/>
     } else if(this.state.activeComponent == "brainpart_stash") {
       return <BrainpartStash
+      brainparts={this.state.brainparts}
+      isBrainpartsSet={this.state.isBrainpartsSet}
       SetNeurons={this.setNeuronsOwnedByUser}
       SetBrainparts={this.setBrainpartsOwnedByUser}/>
     } else if(this.state.activeComponent == "exchange") {
       return <Exchange
+      altoStashMap={this.state.altoStashMap}
+      isAltoStashMapSet={this.state.isAltoStashMapSet}
       SetBrainparts={this.setBrainpartsOwnedByUser}
       SetAltoStashMap={this.setAltoStashMapOwnedByUser}/>
     }

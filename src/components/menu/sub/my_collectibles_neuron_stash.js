@@ -72,7 +72,6 @@ export default class NeuronStash extends Component {
       itemsOwned:[]
     }
 
-    this.SetNeurons = this.SetNeurons.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
     this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
@@ -85,7 +84,9 @@ export default class NeuronStash extends Component {
   }
 
   componentDidMount() {
-    this.FetchAndSetNeurons()
+    if(!this.props.isNeuronsSet){
+      this.FetchAndSetNeurons()
+    }
   }
 
   FetchAndSetNeurons() {
@@ -185,7 +186,9 @@ export default class NeuronStash extends Component {
       neurons[scIndex].quantity += 1;
 
       if(counter == neuronTokenIds.length) {
-        self.SetNeurons(neurons);
+        console.log("Loading finished!");
+        self.props.SetNeurons(
+          neurons.sort(Utils.GetSortOrder("quantity")).reverse());
         // console.log(this);
         // console.log("Loading finished!");
       }
@@ -197,11 +200,11 @@ export default class NeuronStash extends Component {
     }
   }
 
-  SetNeurons(neurons) {
-    console.log("Loading finished!");
-    this.setState({
-      neurons: neurons.sort(Utils.GetSortOrder("quantity")).reverse()})
-  }
+  // SetNeurons(neurons) {
+  //   console.log("Loading finished!");
+  //   this.setState({
+  //     neurons: neurons.sort(Utils.GetSortOrder("quantity")).reverse()})
+  // }
 
   SetSelectedPage(page) {
     console.log("Page Switched!", page);
@@ -218,7 +221,7 @@ export default class NeuronStash extends Component {
           Here are the neuron collectibles that you own
         </div>
         <NeuronCardsComponent
-        neurons={this.state.neurons}
+        neurons={this.props.neurons}
         page={this.state.selectedPage}/>
         <PagingBar selectFunction={this.SetSelectedPage}/>
       </div>
