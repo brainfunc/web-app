@@ -7,6 +7,8 @@ import Exchange from "./sub/my_collectibles_exchange";
 
 import SideBar from "./sub/my_collectibles_sidebar";
 
+import * as Collectibles from '../../utils/data/collectibles';
+
 import * as CONFIG from "../../contracts/config";
 
 export default class MyCollectibles extends Component {
@@ -18,7 +20,10 @@ export default class MyCollectibles extends Component {
       activeComponent: "neuron_stash",
       walletAddress: "Loading...",
       neuronBalance: "Loading...",
-      brainpartBalance: "Loading..."
+      brainpartBalance: "Loading...",
+      neurons: Collectibles.Data.Neurons,
+      brainparts: Collectibles.Data.Brainparts,
+      altoStashMap: []
     }
 
     this.setWalletAddressForProfile = this.setWalletAddressForProfile.bind(this);
