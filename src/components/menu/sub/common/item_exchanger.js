@@ -50,26 +50,27 @@ export const ExchangeButtonsComponent = function(props) {
 export const BrainFuncItemsRow = function(props) {
   // <img className='image'
   //   src={LootMapping.Data.LootItemMappings[i].brainfunc_item.image}/>
-  const exchangeableBrainparts = [2,8]
-  console.log(props);
+  // const exchangeableBrainparts = [2,8]
+  // console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
     var currentItem = LootMapping.Data.LootItemMappings[i].brainfunc_item;
+    var currentItemIndex = currentItem.index;
     var title = LootMapping.Data.LootItemMappings[i].brainfunc_item.title;
+    var status = props.brainparts[currentItemIndex].strength == 0 ? "locked": "unlocked";
     var imgSrc, imgClass, lockSrc, lockText, lockClass;
-    if(currentItem.status == "locked") {
+    if(status == "locked") {
       imgSrc= LootMapping.Data.General.brainfunc_item.locked_image;
       imgClass = `locked`;
       lockText = `Locked`;
       lockClass  = "locked";
       lockSrc = `/style/images/icons/lock_gray.png`;
-    } else if(currentItem.status == "unlocked"){
+    } else if(status == "unlocked"){
       imgSrc = LootMapping.Data.LootItemMappings[i].brainfunc_item.image;
       imgClass = `unlocked`;
       lockText = `Unlocked`;
       lockClass  = "unlocked";
       lockSrc = `/style/images/icons/unlock_left.png`;
-
     }
     itemsArr.push(
       <div className='brainfunc_item_container' key={i}>
@@ -94,9 +95,8 @@ export const BrainFuncItemsRow = function(props) {
 
 export const BrainFuncItemsComponent = function(props) {
   return(
-    <div className='brainfunc_items_container'
-    brainparts={props.brainparts}>
-      <BrainFuncItemsRow number={5}/>
+    <div className='brainfunc_items_container'>
+      <BrainFuncItemsRow number={5} brainparts={props.brainparts}/>
     </div>
   );
 }

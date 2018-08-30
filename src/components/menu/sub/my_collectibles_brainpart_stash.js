@@ -69,7 +69,9 @@ export default class BrainpartStash extends Component {
   }
 
   componentDidMount() {
-    this.FetchAndSetBrainparts()
+    if(!this.props.isBrainpartsSet){
+      this.FetchAndSetBrainparts()
+    }
   }
 
   FetchAndSetBrainparts() {
