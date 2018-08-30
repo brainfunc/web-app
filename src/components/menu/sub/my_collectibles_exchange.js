@@ -69,7 +69,9 @@ export default class Exchange extends Component {
 
   componentDidMount() {
     console.log("Component Mounted");
-    this.StartListeningForEvents();
+    if(!this.props.isAltoStashMapSet) {
+      this.StartListeningForEvents();
+    }
   }
 
   StartListeningForEvents() {
@@ -145,7 +147,7 @@ export default class Exchange extends Component {
       const itemDefinitionID = item.c[0];
       altoStashMap[itemDefinitionID] += 1;
     }
-    this.setState({altoStashMap})
+    this.props.SetAltoStashMap(altoStashMap);
   }
 
   SelectCard() {
@@ -165,7 +167,7 @@ export default class Exchange extends Component {
   render() {
     if(this.state.currentPage == "title") {
       return <TitlePage SelectCard={this.SelectCard}
-      altoStashMap={this.state.altoStashMap}
+      altoStashMap={this.props.altoStashMap}
       typesOwnedComputer={this.ComputeAltoTypesOwned}/>
     } else if(this.state.currentPage == "exchanger") {
       return(
@@ -178,7 +180,11 @@ export default class Exchange extends Component {
               part to fight in battles. Remember, you need to own at least one alto
               item of a kind in order to unlock the associated brain part.`}
           </div>
-          <ItemExchanger altoStashMap={this.state.altoStashMap}/>
+          <ItemExchanger
+          altoStashMap={this.props.altoStashMap}
+          brainparts={this.props.brainparts}
+          isBrainpartsSet={this.props.isBrainpartsSet}
+          SetBrainparts={this.props.SetBrainparts}/>
           <BackButton selectFunction={this.SwitchToTitlePage}/>
         </div>
       );

@@ -156,6 +156,8 @@ export default class MyCollectibles extends Component {
       return <Exchange
       altoStashMap={this.state.altoStashMap}
       isAltoStashMapSet={this.state.isAltoStashMapSet}
+      brainparts={this.state.brainparts}
+      isBrainpartsSet={this.state.isBrainpartsSet}
       SetBrainparts={this.setBrainpartsOwnedByUser}
       SetAltoStashMap={this.setAltoStashMapOwnedByUser}/>
     }
