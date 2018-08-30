@@ -72,6 +72,7 @@ export default class NeuronStash extends Component {
       itemsOwned:[]
     }
 
+    this.SetNeurons = this.SetNeurons.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
     this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
@@ -88,7 +89,7 @@ export default class NeuronStash extends Component {
   }
 
   FetchAndSetNeurons() {
-    console.log("Fetching Neurons...");
+    console.log("Loading...");
     // Fetch neurons owned using smart contracts
     // use total supply and owner of
     const {web3} = window;
@@ -119,8 +120,8 @@ export default class NeuronStash extends Component {
   }
 
   FetchItemsOwned(neuronContractInstance, totalSupply) {
-    console.log("Fetching Items Owned by User...");
-    console.log("Total Supply", totalSupply);
+    // console.log("Fetching Items Owned by User...");
+    // console.log("Total Supply", totalSupply);
 
     var neuronOwnershipMap = [];
     for(var i = 0;i < totalSupply; i++) {
@@ -130,7 +131,7 @@ export default class NeuronStash extends Component {
     this.FetchItemOwners(
       neuronOwnershipMap, neuronContractInstance, totalSupply);
 
-    console.log(neuronOwnershipMap);
+    //console.log(neuronOwnershipMap);
   }
 
   FetchItemOwners(
@@ -143,7 +144,7 @@ export default class NeuronStash extends Component {
       neuronContractInstance.ownerOf(i,
         function(err, res) {
           if(err) {console.log(err); return;}
-          console.log("Owner", i, res);
+          //console.log("Owner", i, res);
           neuronOwnershipMap[i] = res;
           counter += 1;
           if(counter == totalSupply) {
@@ -167,21 +168,26 @@ export default class NeuronStash extends Component {
   }
 
   FetchItemsData(neuronTokenIds, neuronContractInstance) {
-    console.log("Owned Neuron Ids", neuronTokenIds);
+    //console.log("Owned Neuron Ids", neuronTokenIds);
 
     var counter = 0;
     var neurons = Collectibles.Data.Neurons;
+    var self = this;
+    console.log(self);
     var neuronFetchCallback = function(err, res) {
       if(err) {console.log(err); return;}
-      console.log("Neuron Data", res);
+      // console.log("Neuron Data", res, counter);
       const cIndex = res[1]; const scIndex = res[2];
       // error handling for bad sub categories
+      counter += 1;
       if(scIndex == "" || Number(scIndex) == undefined ||
       !Utils.NeuronSubCategoryCheck(cIndex, scIndex)) { return; }
       neurons[scIndex].quantity += 1;
-      counter += 1;
+
       if(counter == neuronTokenIds.length) {
-        this.setState({neurons});
+        self.SetNeurons(neurons);
+        // console.log(this);
+        // console.log("Loading finished!");
       }
     }
     neuronFetchCallback.bind(this);
@@ -191,6 +197,11 @@ export default class NeuronStash extends Component {
     }
   }
 
+  SetNeurons(neurons) {
+    console.log("Loading finished!");
+    this.setState({
+      neurons: neurons.sort(Utils.GetSortOrder("quantity")).reverse()})
+  }
 
   SetSelectedPage(page) {
     console.log("Page Switched!", page);
@@ -199,7 +210,7 @@ export default class NeuronStash extends Component {
 
   render() {
     // Logging the state
-    console.log(this.state);
+
     return (
       <div className='neuron_stash__container'>
         <div className='title'> Neuron Collectibles </div>

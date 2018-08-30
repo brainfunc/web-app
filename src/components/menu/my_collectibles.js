@@ -55,7 +55,7 @@ export default class MyCollectibles extends Component {
 
     var neuronBalanceCallback = function(err, res) {
       if(err) { console.log(err); return; }
-      console.log("Neuron Balance of User", res.c[0]);
+      //console.log("Neuron Balance of User", res.c[0]);
       const neuronBalance = res.c[0];
       this.setState({neuronBalance});
     }
@@ -63,7 +63,7 @@ export default class MyCollectibles extends Component {
 
     var brainpartBalanceCallback = function(err, res) {
       if(err) { console.log(err); return; }
-      console.log("Brainpart Balance of User", res.c[0]);
+      //console.log("Brainpart Balance of User", res.c[0]);
       const brainpartBalance = res.c[0];
       this.setState({brainpartBalance})
     }
@@ -76,7 +76,7 @@ export default class MyCollectibles extends Component {
   }
 
   setWalletAddressForProfile(walletAddress) {
-    console.log("Setting wallet address");
+    //console.log("Setting wallet address");
     this.setState({walletAddress})
   }
 
@@ -132,7 +132,7 @@ export default class MyCollectibles extends Component {
   }
 
   render() {
-    console.log(this.state);
+    //console.log(this.state);
     return (
       <div className="my_collectibles__container">
         <div className="profile_container">
