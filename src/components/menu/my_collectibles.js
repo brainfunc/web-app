@@ -141,9 +141,13 @@ export default class MyCollectibles extends Component {
     if(this.state.activeComponent == "neuron_stash") {
       return <NeuronStash SetNeurons={this.setNeuronsOwnedByUser}/>
     } else if(this.state.activeComponent == "brainpart_stash") {
-      return <BrainpartStash SetBrainparts={this.setBrainpartsOwnedByUser}/>
+      return <BrainpartStash
+      SetNeurons={this.setNeuronsOwnedByUser}
+      SetBrainparts={this.setBrainpartsOwnedByUser}/>
     } else if(this.state.activeComponent == "exchange") {
-      return <Exchange SetAltoStashMap={this.setAltoStashMapOwnedByUser}/>
+      return <Exchange
+      SetBrainparts={this.setBrainpartsOwnedByUser}
+      SetAltoStashMap={this.setAltoStashMapOwnedByUser}/>
     }
   }
 
