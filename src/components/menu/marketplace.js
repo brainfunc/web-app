@@ -5,9 +5,9 @@ import Header from '../common/header';
 import Footer from '../common/footer';
 
 import * as Constants from '../../utils/data';
-import MarketplaceDetails from './sub/marketplace_details';
-import MarketplaceStash from './sub/marketplace_stash';
-import MarketplacePacks from './sub/marketplace_packs';
+import MarketplaceDetails from './marketplace/marketplace_details';
+import MarketplaceStash from './marketplace/marketplace_stash';
+import MarketplacePacks from './marketplace/marketplace_packs';
 
 import * as CONFIG from "../../contracts/config";
 import * as Utils from '../../utils/utils';
