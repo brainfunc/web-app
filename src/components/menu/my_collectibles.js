@@ -32,8 +32,7 @@ export default class MyCollectibles extends Component {
 
     this.getImageForProfile = this.getImageForProfile.bind(this);
     this.getWalletAddressForProfile = this.getWalletAddressForProfile.bind(this);
-    this.getBalanceForProfile = this.getBalanceForProfile.bind(this);
-
+    
     this.displayNeuronStash = this.displayNeuronStash.bind(this);
     this.displayBrainpartStash = this.displayBrainpartStash.bind(this);
     this.displayExchange = this.displayExchange.bind(this);
@@ -99,10 +98,6 @@ export default class MyCollectibles extends Component {
 
   getImageForProfile() {
     return "/style/images/template/wallet5.png";
-  }
-
-  getBalanceForProfile() {
-    return "14.36 Ether";
   }
 
   displayNeuronStash() {
