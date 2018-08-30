@@ -26,13 +26,17 @@ export default class MyCollectibles extends Component {
       altoStashMap: []
     }
 
+    this.setNeuronsOwnedByUser = this.setNeuronsOwnedByUser.bind(this);
+    this.setBrainpartsOwnedByUser = this.setBrainpartsOwnedByUser.bind(this);
+    this.setAltoStashMapOwnedByUser = this.setAltoStashMapOwnedByUser.bind(this);
+
     this.setWalletAddressForProfile = this.setWalletAddressForProfile.bind(this);
     this.setNeuronBalanceForProfile = this.setNeuronBalanceForProfile.bind(this);
     this.setBrainpartBalanceForProfile = this.setBrainpartBalanceForProfile.bind(this);
 
     this.getImageForProfile = this.getImageForProfile.bind(this);
     this.getWalletAddressForProfile = this.getWalletAddressForProfile.bind(this);
-    
+
     this.displayNeuronStash = this.displayNeuronStash.bind(this);
     this.displayBrainpartStash = this.displayBrainpartStash.bind(this);
     this.displayExchange = this.displayExchange.bind(this);
@@ -90,6 +94,18 @@ export default class MyCollectibles extends Component {
 
   setBrainpartBalanceForProfile(walletAddress, brainpartContractInstance, callback) {
     brainpartContractInstance.balanceOf(walletAddress, callback);
+  }
+
+  setNeuronsOwnedByUser(neurons) {
+    this.setState({neurons})
+  }
+
+  setBrainpartsOwnedByUser(brainparts) {
+    this.setState({brainparts})
+  }
+
+  setAltoStashMapOwnedByUser(altoStashMap) {
+    this.setState({altoStashMap})
   }
 
   getWalletAddressForProfile(){
