@@ -57,7 +57,6 @@ export default class BrainpartStash extends Component {
     }
 
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
-    this.SetSelectedBrainpart = this.SetSelectedBrainpart.bind(this);
 
     this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
     this.FetchItemsOwned = this.FetchItemsOwned.bind(this);
@@ -170,9 +169,10 @@ export default class BrainpartStash extends Component {
       brainparts[scIndex].quantity += 1;
       brainparts[scIndex].strength = strength;
       if(counter == brainpartTokenIds.length) {
-        self.SetBrainparts(brainparts);
+        self.props.SetBrainparts(
+          brainparts.sort(Utils.GetSortOrder("strength")).reverse());
         // console.log(this);
-        // console.log("Loading finished!");
+        console.log("Loading finished!");
       }
     }
     brainpartFetchCallback.bind(this);
@@ -182,11 +182,11 @@ export default class BrainpartStash extends Component {
     }
   }
 
-  SetBrainparts(brainparts) {
-    console.log("Loading finished!");
-    this.setState({
-      brainparts: brainparts.sort(Utils.GetSortOrder("strength")).reverse()})
-  }
+  // SetBrainparts(brainparts) {
+  //   console.log("Loading finished!");
+  //   this.setState({
+  //     brainparts: brainparts.sort(Utils.GetSortOrder("strength")).reverse()})
+  // }
 
   SetSelectedPage(page) {
     console.log("Page Switched!", page);
@@ -255,7 +255,7 @@ export default class BrainpartStash extends Component {
         </div>
         <BrainpartCardsComponent
           page={this.state.selectedPage}
-          brainparts={this.state.brainparts}
+          brainparts={this.props.brainparts}
           selectFunction={this.SetSelectedBrainpart}/>
         <PagingBar
           selectFunction={this.SetSelectedPage}/>

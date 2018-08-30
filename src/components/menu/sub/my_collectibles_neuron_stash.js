@@ -186,11 +186,10 @@ export default class NeuronStash extends Component {
       neurons[scIndex].quantity += 1;
 
       if(counter == neuronTokenIds.length) {
-        console.log("Loading finished!");
         self.props.SetNeurons(
           neurons.sort(Utils.GetSortOrder("quantity")).reverse());
         // console.log(this);
-        // console.log("Loading finished!");
+        console.log("Loading finished!");
       }
     }
     neuronFetchCallback.bind(this);
