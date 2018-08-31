@@ -165,10 +165,10 @@ export default class ItemExchanger extends Component {
     this.handleExchangeClicked = this.handleExchangeClicked.bind(this);
   }
 
-  // componentDidMount() {
-  //   // Start listening for any events
-  //   this.StartListeningForEvents();
-  // }
+  componentDidMount() {
+    // Start listening for any events
+    this.StartListeningForEvents();
+  }
 
   GetExchangePossibility(i) {
     const altoItemId = LootMapping.Data.LootItemMappings[i].alto_item.id;
@@ -232,7 +232,7 @@ export default class ItemExchanger extends Component {
       const subcategoryIndex =`${unlockItem.subcategory}`;
       const strength = "1"; // 1 since we are only unlocking
 
-      console.log(brainpartToUnlock);
+      console.log(unlockItem);
 
       var self = this;
       brainpartContractInstance.createBrainpart(
@@ -256,7 +256,6 @@ export default class ItemExchanger extends Component {
         <AltoItemsComponent
         altoStashMap={this.props.altoStashMap}/>
         <ExchangeButtonsComponent
-        setBrainparts={this.props.SetBrainparts}
         selectFunction={this.handleExchangeClicked}/>
         <BrainFuncItemsComponent
         brainparts={this.props.brainparts}/>
