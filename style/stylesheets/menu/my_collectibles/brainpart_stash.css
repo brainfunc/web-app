@@ -67,15 +67,15 @@
             color: #82817d;
             display: inline;
             float: left; }
-          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.locked, .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level div.owned {
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.locked, .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level div.owned, .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level div.unlockable {
             margin-right: 4vw;
             margin-top: 0.5vw;
             margin-left: 2vw;
             font-size: 1.25vw;
             font-weight: 400;
             border-radius: 12px;
-            background-color: #1fbb21;
-            border-color: #1fbb21;
+            background-color: #5bb75b;
+            border: 2px solid #16a05d;
             padding: 6px;
             padding-left: 24px;
             padding-right: 24px;
@@ -83,7 +83,11 @@
             display: inline;
             float: left; }
           .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.locked {
-            background-color: #ec1943; }
+            background-color: #ec1943;
+            border: 2px solid #bc1a39; }
+          .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.level > div.unlockable {
+            background-color: #ffbb58;
+            border: 2px solid #d99f49; }
         .brainpart_stash__container > div.brainpart_detail_container > div.description_container > div.details > div.text {
           font-family: "Avenir", sans-serif;
           font-size: 1.5vw;

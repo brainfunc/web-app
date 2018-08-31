@@ -215,6 +215,11 @@ export default class BrainpartStash extends Component {
       lockLabelClass = "locked";
       lockLabelDivText = "Locked";
       description = Collectibles.GeneralData.Brainparts.lockedDescription;
+      if(neuronItem.quantity > 0) {
+        imageSrc = "/style/images/collectibles/brainparts/unlockableBrainpart.png";
+        lockLabelClass = "unlockable";
+        lockLabelDivText = "Unlockable";
+      }
     } else {
       imageSrc = this.state.selectedBrainpart.image;
       boostOrUnlockButtonText = "Boost";

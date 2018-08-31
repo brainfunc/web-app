@@ -78,15 +78,15 @@
             display: inline;
             float:left;
           }
-          >div.locked, div.owned{
+          >div.locked, div.owned, div.unlockable{
             margin-right: 4vw;
             margin-top: 0.5vw;
             margin-left: 2vw;
             font-size: 1.25vw;
             font-weight: 400;
             border-radius: 12px;
-            background-color: $btn_color_green;
-            border-color: $btn_color_green;
+            background-color: $button_color_green;
+            border:2px solid $border_color_dark_green;
             padding: 6px;
             padding-left:24px;
             padding-right:24px;
@@ -95,7 +95,12 @@
             float:left;
           }
           >div.locked{
-            background-color: $color_theme_red;
+            background-color: $button_color_red;
+            border: 2px solid $border_color_dark_red;
+          }
+          >div.unlockable{
+            background-color: $button_color_yellow;
+            border: 2px solid $border_color_dark_yellow;
           }
         }
         >div.text{
