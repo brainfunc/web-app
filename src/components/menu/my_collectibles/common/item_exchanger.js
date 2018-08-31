@@ -13,6 +13,13 @@ export const ExchangeButtonsComponent = function(props) {
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
+          onClick={() => {props.selectFunction(10)} }/>
+        </div>
+      </div>
+      <div className='button_container'>
+        <div className="exchange_button_wrapper">
+          <img className='exchange_button'
+          src={"/style/images/icons/transmorgify.png"}
           onClick={() => {props.selectFunction(0)} }/>
         </div>
       </div>
@@ -20,14 +27,14 @@ export const ExchangeButtonsComponent = function(props) {
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(1)} }/>
+          onClick={() => {props.selectFunction(4)} }/>
         </div>
       </div>
       <div className='button_container'>
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(2)} }/>
+          onClick={() => {props.selectFunction(6)} }/>
         </div>
       </div>
       <div className='button_container'>
@@ -35,13 +42,6 @@ export const ExchangeButtonsComponent = function(props) {
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
           onClick={() => {props.selectFunction(3)} }/>
-        </div>
-      </div>
-      <div className='button_container'>
-        <div className="exchange_button_wrapper">
-          <img className='exchange_button'
-          src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(4)} }/>
         </div>
       </div>
     </div>
@@ -55,10 +55,11 @@ export const BrainFuncItemsRow = function(props) {
   // console.log(props);
   var itemsArr = []
   for(var i = 0; i < props["number"]; i++) {
-    var currentItem = LootMapping.Data.LootItemMappings[i].brainfunc_item;
-    var currentItemIndex = currentItem.index;
-    var title = LootMapping.Data.LootItemMappings[i].brainfunc_item.title;
-    var status = props.brainparts[currentItemIndex].strength == 0 ? "locked": "unlocked";
+    const subcategoryIndex
+    = LootMapping.Data.LootItemMappings[i].brainfunc_item.subcategoryIndex;
+    const item = props.brainparts[subcategoryIndex];
+    var title = item.subcategory;
+    var status = item.strength == 0 ? "locked": "unlocked";
     var imgSrc, imgClass, lockSrc, lockText, lockClass;
     if(status == "locked") {
       imgSrc= LootMapping.Data.General.brainfunc_item.locked_image;
@@ -67,7 +68,7 @@ export const BrainFuncItemsRow = function(props) {
       lockClass  = "locked";
       lockSrc = `/style/images/icons/lock_gray.png`;
     } else if(status == "unlocked"){
-      imgSrc = LootMapping.Data.LootItemMappings[i].brainfunc_item.image;
+      imgSrc = item.image;
       imgClass = `unlocked`;
       lockText = `Unlocked`;
       lockClass  = "unlocked";
@@ -227,9 +228,9 @@ export default class ItemExchanger extends Component {
         CONFIG.CONTRACTS.BRAINPART.ADDRESS);
 
       const unlockItem
-      = LootMapping.Data.LootItemMappings[value].brainfunc_item;
-      const categoryIndex = `${unlockItem.category}`;
-      const subcategoryIndex =`${unlockItem.subcategory}`;
+      = this.props.brainparts[value];
+      const categoryIndex = `${unlockItem.categoryIndex}`;
+      const subcategoryIndex =`${unlockItem.subcategoryIndex}`;
       const strength = "1"; // 1 since we are only unlocking
 
       console.log(unlockItem);

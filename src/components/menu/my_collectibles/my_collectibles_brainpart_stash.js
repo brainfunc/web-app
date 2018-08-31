@@ -56,6 +56,7 @@ export default class BrainpartStash extends Component {
       brainparts: Collectibles.Data.Brainparts
     }
 
+    this.SetSelectedBrainpart = this.SetSelectedBrainpart.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
     this.FetchTotalSupply = this.FetchTotalSupply.bind(this);
@@ -260,6 +261,7 @@ export default class BrainpartStash extends Component {
         <BrainpartCardsComponent
           page={this.state.selectedPage}
           brainparts={this.props.brainparts}
+          selectedBrainpart = {this.props.selectedBrainpart}
           selectFunction={this.SetSelectedBrainpart}/>
         <PagingBar
           selectFunction={this.SetSelectedPage}/>
