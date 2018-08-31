@@ -101,7 +101,7 @@ export default class Exchange extends Component {
     // console.log(web3.eth.defaultAccount);
 
     var fetchItemsOwnedCallback = function(err, totalSupply) {
-      if(err) { console.log(err); return; }
+      if(err) { console.log(err); console.log("Loading failed."); return; }
       // console.log("Total Supply", totalSupply);
       this.FetchItemsOwned(brainpartContractInstance, totalSupply);
     }
@@ -113,7 +113,7 @@ export default class Exchange extends Component {
 
   FetchTotalSupply(brainpartContractInstance, callback) {
     brainpartContractInstance.totalSupply(function(err, res) {
-      if(err) { callback(err, null); return;}
+      if(err) { callback(err, null); console.log("Loading failed."); return;}
       const totalSupply = res.c[0];
       callback(null, totalSupply);
     });
@@ -143,7 +143,7 @@ export default class Exchange extends Component {
     for(let i = 0; i < totalSupply; i++){
       brainpartContractInstance.ownerOf(i,
         function(err, res) {
-          if(err) {console.log(err); return;}
+          if(err) {console.log(err);  console.log("Loading failed."); return;}
           //console.log("Owner", i, res);
           brainpartOwnershipMap[i] = res;
           counter += 1;
@@ -164,6 +164,7 @@ export default class Exchange extends Component {
         itemTokenIds.push(i);
       }
     }
+    if(itemTokenIds.length == 0) { console.log("Loading finished!"); return; }
     this.FetchItemsData(itemTokenIds, brainpartContractInstance);
   }
 
@@ -175,7 +176,7 @@ export default class Exchange extends Component {
     var self = this;
     console.log(self);
     var brainpartFetchCallback = function(err, res) {
-      if(err) {console.log(err); return;}
+      if(err) {console.log(err); console.log("Loading failed."); return;}
       console.log("brainpart Data", res, counter);
       const cIndex = res[1]; const scIndex = res[2]; const strength = res[3];
       // error handling for bad sub categories
@@ -209,10 +210,7 @@ export default class Exchange extends Component {
     .at(data.networks[networkID].address);
     const userWalletID = web3.eth.defaultAccount;
     ownershipInstance.itemsOf(userWalletID, (err, res) => {
-      if(err){
-        console.log(err);
-        return;
-      }
+      if(err){ console.log(err); console.log("Alto fetching failed."); return; }
       // item def id of ith owned crypto asset
       // console.log(res[0][i].c[0]);
       this.ComputeAltoStash(res[0]);

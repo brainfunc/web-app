@@ -10,7 +10,7 @@ import PagingBar from "./common/paging_bar";
 import * as CONFIG from "../../../contracts/config";
 
 export const BrainpartCardsRow = function(props) {
-  console.log(props);
+  // console.log(props);
   var cardsArr = []
   for(var i = 0; i < props["number"]; i++) {
     cardsArr.push(
@@ -87,7 +87,7 @@ export default class BrainpartStash extends Component {
     // console.log(web3.eth.defaultAccount);
 
     var fetchItemsOwnedCallback = function(err, totalSupply) {
-      if(err) { console.log(err); return; }
+      if(err) { console.log(err); console.log("Loading failed.") ;return; }
       // console.log("Total Supply", totalSupply);
       this.FetchItemsOwned(brainpartContractInstance, totalSupply);
     }
@@ -99,7 +99,7 @@ export default class BrainpartStash extends Component {
 
   FetchTotalSupply(brainpartContractInstance, callback) {
     brainpartContractInstance.totalSupply(function(err, res) {
-      if(err) { callback(err, null); return;}
+      if(err) { callback(err, null); console.log("Loading failed."); return;}
       const totalSupply = res.c[0];
       callback(null, totalSupply);
     });
@@ -129,7 +129,7 @@ export default class BrainpartStash extends Component {
     for(let i = 0; i < totalSupply; i++){
       brainpartContractInstance.ownerOf(i,
         function(err, res) {
-          if(err) {console.log(err); return;}
+          if(err) {console.log(err); console.log("Loading failed."); return;}
           //console.log("Owner", i, res);
           brainpartOwnershipMap[i] = res;
           counter += 1;
@@ -150,6 +150,7 @@ export default class BrainpartStash extends Component {
         itemTokenIds.push(i);
       }
     }
+    if(itemTokenIds.length == 0) { console.log("Loading finished!"); return; }
     this.FetchItemsData(itemTokenIds, brainpartContractInstance);
   }
 
@@ -161,7 +162,7 @@ export default class BrainpartStash extends Component {
     var self = this;
     console.log(self);
     var brainpartFetchCallback = function(err, res) {
-      if(err) {console.log(err); return;}
+      if(err) {console.log(err); console.log("Loading failed."); return;}
       console.log("brainpart Data", res, counter);
       const cIndex = res[1]; const scIndex = res[2]; const strength = res[3];
       // error handling for bad sub categories
@@ -201,6 +202,7 @@ export default class BrainpartStash extends Component {
   }
 
   render() {
+    console.log(this.props);
     var imageSrc, boostOrUnlockButtonText,description,
     lockLabelClass, lockLabelDivText;
     if (this.state.selectedBrainpart.strength == "0") {

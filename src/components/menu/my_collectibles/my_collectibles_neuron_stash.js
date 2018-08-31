@@ -102,7 +102,7 @@ export default class NeuronStash extends Component {
     // console.log(web3.eth.defaultAccount);
 
     var fetchItemsOwnedCallback = function(err, totalSupply) {
-      if(err) { console.log(err); return; }
+      if(err) { console.log(err); console.log("Loading failed.") ;return; }
       // console.log("Total Supply", totalSupply);
       this.FetchItemsOwned(neuronContractInstance, totalSupply);
     }
@@ -114,7 +114,7 @@ export default class NeuronStash extends Component {
 
   FetchTotalSupply(neuronContractInstance, callback) {
     neuronContractInstance.totalSupply(function(err, res) {
-      if(err) { callback(err, null); return;}
+      if(err) { callback(err, null); console.log("Loading failed.") ;return;}
       const totalSupply = res.c[0];
       callback(null, totalSupply);
     });
@@ -144,7 +144,7 @@ export default class NeuronStash extends Component {
     for(let i = 0; i < totalSupply; i++){
       neuronContractInstance.ownerOf(i,
         function(err, res) {
-          if(err) {console.log(err); return;}
+          if(err) {console.log(err); console.log("Loading failed.") ;return;}
           //console.log("Owner", i, res);
           neuronOwnershipMap[i] = res;
           counter += 1;
@@ -165,6 +165,7 @@ export default class NeuronStash extends Component {
         itemTokenIds.push(i);
       }
     }
+    if(itemTokenIds.length == 0) { console.log("Loading finished!"); return; }
     this.FetchItemsData(itemTokenIds, neuronContractInstance);
   }
 
@@ -174,9 +175,9 @@ export default class NeuronStash extends Component {
     var counter = 0;
     var neurons = Collectibles.Data.Neurons;
     var self = this;
-    console.log(self);
+    // console.log(self);
     var neuronFetchCallback = function(err, res) {
-      if(err) {console.log(err); return;}
+      if(err) {console.log(err); console.log("Loading failed.") ;return;}
       // console.log("Neuron Data", res, counter);
       const cIndex = res[1]; const scIndex = res[2];
       // error handling for bad sub categories

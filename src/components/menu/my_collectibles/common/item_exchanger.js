@@ -155,10 +155,20 @@ export default class ItemExchanger extends Component {
   constructor(props) {
     super(props);
 
+    // this.state = {
+    //   currentState: "default"
+    // }
+
     this.GetExchangePossibility = this.GetExchangePossibility.bind(this);
+    this.StartListeningForEvents = this.StartListeningForEvents.bind(this);
 
     this.handleExchangeClicked = this.handleExchangeClicked.bind(this);
   }
+
+  // componentDidMount() {
+  //   // Start listening for any events
+  //   this.StartListeningForEvents();
+  // }
 
   GetExchangePossibility(i) {
     const altoItemId = LootMapping.Data.LootItemMappings[i].alto_item.id;
@@ -171,6 +181,27 @@ export default class ItemExchanger extends Component {
     if(!altoItemOwned) { return "impossible"; }
     if(altoItemOwned && brainpartItemOwned) { return "alreadyDone"; }
     if(altoItemOwned && !brainpartItemOwned) { return "possible"; }
+  }
+
+  StartListeningForEvents() {
+    console.log("Starting to listen for events...");
+    // Instantiating neuron contract
+    const {web3} = window;
+    const brainpartContract = web3.eth.contract(
+      CONFIG.CONTRACTS.BRAINPART.ABI);
+    const brainpartContractInstance = brainpartContract.at(
+      CONFIG.CONTRACTS.BRAINPART.ADDRESS);
+    // Or pass a callback to start watching immediately
+    var self = this;
+    var events = brainpartContractInstance.allEvents(function(error, log) {
+      if (!error) {
+        console.log(log);
+        if(log.event == "Transfer") {
+          // self.props.SetBrainparts();
+          console.log("Exchanged!");
+        }
+      }
+    });
   }
 
   handleExchangeClicked(value) {
@@ -186,7 +217,8 @@ export default class ItemExchanger extends Component {
     }
 
     if(exchangeStatus == "possible") {
-      console.log("Exchange possible. Exchanging...");
+      console.log("Exchange possible");
+      console.log("Trying to initiate exchange");
       // Instantiating brainpart contract
       const {web3} = window;
       const brainpartContract = web3.eth.contract(
@@ -194,12 +226,15 @@ export default class ItemExchanger extends Component {
       const brainpartContractInstance = brainpartContract.at(
         CONFIG.CONTRACTS.BRAINPART.ADDRESS);
 
-      const unlockIndex
-      = LootMapping.Data.LootItemMappings[value].brainfunc_item.index;
-      const brainpartToUnlock = Collectibles.Data.Brainparts[unlockIndex];
-      const categoryIndex = `${brainpartToUnlock.categoryIndex}`;
-      const subcategoryIndex =`${brainpartToUnlock.subcategoryIndex}`;
+      const unlockItem
+      = LootMapping.Data.LootItemMappings[value].brainfunc_item;
+      const categoryIndex = `${unlockItem.category}`;
+      const subcategoryIndex =`${unlockItem.subcategory}`;
       const strength = "1"; // 1 since we are only unlocking
+
+      console.log(brainpartToUnlock);
+
+      var self = this;
       brainpartContractInstance.createBrainpart(
         "ts",categoryIndex,subcategoryIndex,strength,
         "<SampleUri>"
@@ -207,19 +242,21 @@ export default class ItemExchanger extends Component {
         { from: CONFIG.CONTRACTS.BRAINPART.CREATOR },
         function(err, res) {
           if(err) { console.log(err); return; }
-          console.log(res);
+          // self.setState({currentState: "unlocking"})
+          console.log("Initiated exchange...");
+          console.log("Transaction hash:", res);
         })
     }
   }
 
 
   render() {
-
     return (
       <div className='item_exchanger__container'>
         <AltoItemsComponent
         altoStashMap={this.props.altoStashMap}/>
         <ExchangeButtonsComponent
+        setBrainparts={this.props.SetBrainparts}
         selectFunction={this.handleExchangeClicked}/>
         <BrainFuncItemsComponent
         brainparts={this.props.brainparts}/>

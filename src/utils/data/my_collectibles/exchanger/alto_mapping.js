@@ -14,6 +14,7 @@ export const Data = {
       brainfunc_item : {
         title: `Medulla`,
         index: 10,
+        category: 2,
         status: "locked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/medulla.png`
@@ -29,6 +30,7 @@ export const Data = {
       brainfunc_item : {
         title: `Frontal Lobe(left)`,
         index: 0,
+        category: 0,
         status: "locked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/leftfrontal.png`
@@ -44,6 +46,7 @@ export const Data = {
       brainfunc_item : {
         title: `Occipital Lobe`,
         index: 4,
+        category: 0,
         status: "unlocked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/occipital.png`
@@ -59,6 +62,7 @@ export const Data = {
       brainfunc_item : {
         title: `Posterior Lobe`,
         index: 6,
+        category: 1,
         status: "locked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/posteriorlobe.png`
@@ -74,6 +78,7 @@ export const Data = {
       brainfunc_item : {
         title: `Temporal Lobe`,
         index: 3,
+        index: 0,
         status: "locked",
         substitle: ``,
         image: `/style/images/collectibles/brainparts/temporal.png`
