@@ -87,8 +87,9 @@ export default class BattleCoreComponent extends Component {
     this.AddToSelectedBrainparts = this.AddToSelectedBrainparts.bind(this);
   }
 
-  AddToSelectedBrainparts(index) {
-    console.log(`${index} selected`);
+  AddToSelectedBrainparts(part) {
+    console.log("Selected", part);
+    //console.log(`${index} selected`);
   }
 
   render(){
