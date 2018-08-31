@@ -70,12 +70,36 @@ export default class BrainpartStash extends Component {
     this.FetchAndSetBrainparts = this.FetchAndSetBrainparts.bind(this);
 
     this.HandleConstructClick = this.HandleConstructClick.bind(this);
+    this.UnlockSelectedBrainpart = this.UnlockSelectedBrainpart.bind(this);
+    this.StartListeningForEvents = this.StartListeningForEvents.bind(this);
   }
 
   componentDidMount() {
     if(!this.props.isBrainpartsSet){
       this.FetchAndSetBrainparts()
     }
+    this.StartListeningForEvents();
+  }
+
+  StartListeningForEvents() {
+    console.log("Starting to listen for events...");
+    // Instantiating neuron contract
+    const {web3} = window;
+    const brainpartContract = web3.eth.contract(
+      CONFIG.CONTRACTS.BRAINPART.ABI);
+    const brainpartContractInstance = brainpartContract.at(
+      CONFIG.CONTRACTS.BRAINPART.ADDRESS);
+    // Or pass a callback to start watching immediately
+    var self = this;
+    var events = brainpartContractInstance.allEvents(function(error, log) {
+      if (!error) {
+        console.log(log);
+        if(log.event == "Transfer") {
+          // self.props.SetBrainparts();
+          console.log("Unlocked!");
+        }
+      }
+    });
   }
 
   FetchAndSetBrainparts() {
@@ -215,7 +239,42 @@ export default class BrainpartStash extends Component {
 
   HandleConstructClick() {
     console.log("Construct Clicked!");
-    console.log(this.GetSelectedBrainpartState());
+    const brainpartStatus = this.GetSelectedBrainpartState();
+    if(brainpartStatus == "owned" || brainpartStatus == "locked") {
+      console.log("Locked or already owned");
+      return;
+    }
+    // Unlockable state
+    this.UnlockSelectedBrainpart();
+  }
+
+  UnlockSelectedBrainpart() {
+    const {web3} = window;
+    const brainpartContract = web3.eth.contract(
+      CONFIG.CONTRACTS.BRAINPART.ABI);
+    const brainpartContractInstance = brainpartContract.at(
+      CONFIG.CONTRACTS.BRAINPART.ADDRESS);
+
+    const unlockItem
+    = this.state.selectedBrainpart;
+    const categoryIndex = `${unlockItem.categoryIndex}`;
+    const subcategoryIndex =`${unlockItem.subcategoryIndex}`;
+    const strength = "1"; // 1 since we are only unlocking
+
+    console.log(unlockItem);
+
+    var self = this;
+    brainpartContractInstance.createBrainpart(
+      "ts",categoryIndex,subcategoryIndex,strength,
+      "<SampleUri>"
+      ,web3.eth.defaultAccount,
+      { from: CONFIG.CONTRACTS.BRAINPART.CREATOR },
+      function(err, res) {
+        if(err) { console.log(err); return; }
+        // self.setState({currentState: "unlocking"})
+        console.log("Initiated unlock using neurons...");
+        console.log("Transaction hash:", res);
+      })
   }
 
   render() {
