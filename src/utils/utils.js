@@ -40,12 +40,16 @@ export const BrainpartSubCategoryCheck = function(categoryIndex, subcategoryInde
 }
 
 export const GetNeuronItemWithSubCategoryInArray = function(scIndex, neurons) {
-  for(let i = 0;i < Collectibles.Data.Brainparts.length; i++) {
+  for(let i = 0;i < neurons.length; i++) {
     if(neurons[i].subcategoryIndex == scIndex) { return neurons[i]; }
   }
 }
 export const GetBrainPartItemWithSubcategoryInArray = function(scIndex, brainparts) {
-  for(let i = 0;i < Collectibles.Data.Brainparts.length; i++) {
+  for(let i = 0;i < brainparts.length; i++) {
     if(brainparts[i].subcategoryIndex == scIndex) { return brainparts[i]; }
   }
+}
+
+export const GetResultOfBattle = function(timeTaken, combination, correctCombination) {
+
 }

@@ -181,7 +181,8 @@ export default class ItemExchanger extends Component {
   GetExchangePossibility(exchangeIndex, scIndex) {
     const altoItemId = LootMapping.Data.LootItemMappings[exchangeIndex].alto_item.id;
     const altoItemOwned = this.props.altoStashMap[altoItemId] > 0;
-    const brainpartItemOwned = Utils.GetBrainPartItemWithSubcategory(scIndex).strength > 0;
+    const brainpartItemOwned = Utils.GetBrainPartItemWithSubcategoryInArray(
+      scIndex, Collectibles.Data.Brainparts).strength > 0;
     // console.log("Alto Brainpart");
     // console.log(altoItemOwned, brainpartItemOwned);
 
@@ -234,7 +235,8 @@ export default class ItemExchanger extends Component {
         CONFIG.CONTRACTS.BRAINPART.ADDRESS);
 
       const unlockItem
-      = Utils.GetBrainPartItemWithSubcategory(scIndex);
+      = Utils.GetBrainPartItemWithSubcategoryInArray(
+        scIndex, Collectibles.Data.Brainparts);
       const categoryIndex = `${unlockItem.categoryIndex}`;
       const subcategoryIndex =`${unlockItem.subcategoryIndex}`;
       const strength = "1"; // 1 since we are only unlocking
