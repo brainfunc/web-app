@@ -27,7 +27,7 @@ export const BrainpartCardsComponent = function(props) {
   const end = props.brainparts.length <
   (start + 8) ? (props.brainparts.length) : (start + 8);
   const lastRowNumber = end - start - 4;
-  console.log(start, end);
+  // console.log(start, end);
   return(
     <div className="cards_container-4">
       <div className="card_row-4">
@@ -206,6 +206,9 @@ export default class BrainpartStash extends Component {
     console.log(this.props);
     var imageSrc, boostOrUnlockButtonText,description,
     lockLabelClass, lockLabelDivText;
+    //console.log("BPSELEcted", this.state.selectedBrainpart);
+    const neuronItem = Utils.GetNeuronItemWithSubCategoryInArray(
+      this.state.selectedBrainpart.subcategoryIndex, this.props.neurons)
     if (this.state.selectedBrainpart.strength == "0") {
       imageSrc = "/style/images/collectibles/brainparts/lockedBrainpart5.png";
       boostOrUnlockButtonText = "Construct";
@@ -248,7 +251,7 @@ export default class BrainpartStash extends Component {
                 <img src="/style/images/icons/neurons_qty.png"/>
                 <div className="lbl"> Neurons Available</div>
                 <div className="qty">
-                  You have {this.state.selectedBrainpart.neuronQuantity} neurons of this type
+                  You have {neuronItem.quantity} neurons of this type
                 </div>
               </div>
             </div>

@@ -39,8 +39,12 @@ export const BrainpartSubCategoryCheck = function(categoryIndex, subcategoryInde
   return (subcategoryIndex >= min && subcategoryIndex <= max);
 }
 
-export const GetBrainPartItemWithSubcategory = function(scIndex) {
-  const brainparts = Collectibles.Data.Brainparts;
+export const GetNeuronItemWithSubCategoryInArray = function(scIndex, neurons) {
+  for(let i = 0;i < Collectibles.Data.Brainparts.length; i++) {
+    if(neurons[i].subcategoryIndex == scIndex) { return neurons[i]; }
+  }
+}
+export const GetBrainPartItemWithSubcategoryInArray = function(scIndex, brainparts) {
   for(let i = 0;i < Collectibles.Data.Brainparts.length; i++) {
     if(brainparts[i].subcategoryIndex == scIndex) { return brainparts[i]; }
   }

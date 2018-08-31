@@ -58,7 +58,8 @@ export const BrainFuncItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     const subcategoryIndex
     = LootMapping.Data.LootItemMappings[i].brainfunc_item.subcategoryIndex;
-    const item = Utils.GetBrainPartItemWithSubcategory(subcategoryIndex);
+    const item = Utils.GetBrainPartItemWithSubcategoryInArray(
+      subcategoryIndex, Collectibles.Data.Brainparts);
     // console.log("Brainparts", props.brainparts);
     // console.log("Subcategory Index",subcategoryIndex);
     // console.log("Item", item);

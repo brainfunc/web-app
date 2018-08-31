@@ -148,6 +148,7 @@ export default class MyCollectibles extends Component {
       SetNeurons={this.setNeuronsOwnedByUser}/>
     } else if(this.state.activeComponent == "brainpart_stash") {
       return <BrainpartStash
+      neurons={this.state.neurons}
       brainparts={this.state.brainparts}
       isBrainpartsSet={this.state.isBrainpartsSet}
       SetNeurons={this.setNeuronsOwnedByUser}
