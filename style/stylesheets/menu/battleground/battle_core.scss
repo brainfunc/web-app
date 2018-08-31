@@ -32,7 +32,7 @@
         >div.task-image-container {
           text-align: left;
           padding: 0.25vw;
-          width: 100%;        
+          width: 100%;
         }
         >div.task-title {
           font-family: $font_family_1;
@@ -137,6 +137,15 @@
                   color:$text_color_cream;
                   text-align: center;
                 }
+              }
+              >div.card-4.selected{
+                >img.image{
+                  border: 5px solid $border_color_cool_green;
+                  border-radius:30%;
+                }
+              }
+              >div.card-4.not-selected{
+
               }
               // >div.card-4:first-child{
               //   margin-left:0vw;

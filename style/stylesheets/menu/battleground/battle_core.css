@@ -102,6 +102,9 @@
               font-weight: 400;
               color: #82817d;
               text-align: center; }
+          .battleground__container > div.body > div.battle_core > div.part-chooser > div.parts-container > div.cards_container-4 > div.card_row-4 > div.card-4.selected > img.image {
+            border: 5px solid #5ee4a9;
+            border-radius: 30%; }
     .battleground__container > div.body > div.battle_core > div.part-chooser > div.submit-container {
       display: inline;
       float: left;

@@ -6,7 +6,8 @@ import * as Utils from '../../../utils/utils';
 
 import * as Tasks from '../../../utils/data/battles/tasks';
 
-import BrainpartCard from '../my_collectibles/my_collectibles_brainpart_stash_brainpart_card';
+import BrainpartCard from './common/brainpart_card';
+
 export const BattleTaskComponent = function(props) {
   return(
     <div className='battle-task'>
@@ -89,6 +90,7 @@ export default class BattleCoreComponent extends Component {
 
   AddToSelectedBrainparts(part) {
     console.log("Selected", part);
+
     //console.log(`${index} selected`);
   }
 
