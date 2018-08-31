@@ -7,7 +7,7 @@ export const Data={
       out on your way where you notice many white Jasmine flowers lying on the garden
       bench. You smell some of them. Which brain parts make you enjoy the
       refreshing fragrance?`,
-      combination: [1,2,3,4]
+      subcategoryCombination: [1,2,3,4]
     },{
       image: ``,
       title: `The joy of early spring`,
@@ -15,7 +15,7 @@ export const Data={
       out on your way where you notice many white Jasmine flowers lying on the garden
       bench. You smell some of them. Which brain parts make you enjoy the
       refreshing fragrance?`,
-      combination: [1,2,3,4]
+      subcategoryCombination: [1,2,3,4]
     },{
       image: ``,
       title: `The joy of early spring`,
@@ -23,7 +23,7 @@ export const Data={
       out on your way where you notice many white Jasmine flowers lying on the garden
       bench. You smell some of them. Which brain parts make you enjoy the
       refreshing fragrance?`,
-      combination: [1,2,3,4]
+      subcategoryCombination: [1,2,3,4]
     },{
       image: ``,
       title: `The joy of early spring`,
@@ -31,7 +31,7 @@ export const Data={
       out on your way where you notice many white Jasmine flowers lying on the garden
       bench. You smell some of them. Which brain parts make you enjoy the
       refreshing fragrance?`,
-      combination: [1,2,3,4]
+      subcategoryCombination: [1,2,3,4]
     },{
       image: ``,
       title: `The joy of early spring`,
@@ -39,7 +39,7 @@ export const Data={
       out on your way where you notice many white Jasmine flowers lying on the garden
       bench. You smell some of them. Which brain parts make you enjoy the
       refreshing fragrance?`,
-      combination: [1,2,3,4]
+      subcategoryCombination: [1,2,3,4]
     }
   ]
 }
