@@ -117,6 +117,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Left)",
+      categoryIndex:0,
+      subcategoryIndex:0,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/leftfrontal.png",
@@ -128,6 +130,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Frontal Lobe(Right)",
+      categoryIndex:0,
+      subcategoryIndex:1,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/rightfrontal.png",
@@ -139,6 +143,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Pareital Lobe",
+      categoryIndex:0,
+      subcategoryIndex:2,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/pareital.png",
@@ -152,6 +158,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Temporal Lobe",
+      categoryIndex:0,
+      subcategoryIndex:3,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/temporal.png",
@@ -164,6 +172,8 @@ export const Data = {
     {
       category:"Cerebrum",
       subcategory:"Occipital Lobe",
+      categoryIndex:0,
+      subcategoryIndex:4,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/occipital.png",
@@ -175,6 +185,8 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Anterior Lobe",
+      categoryIndex:1,
+      subcategoryIndex:5,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/anteriorlobe.png",
@@ -187,6 +199,8 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Posterior Lobe",
+      categoryIndex:1,
+      subcategoryIndex:6,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/posteriorlobe.png",
@@ -199,6 +213,8 @@ export const Data = {
     {
       category:"Cerebellum",
       subcategory:"Flocculonodular Lobe",
+      categoryIndex:1,
+      subcategoryIndex:7,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/flocculonodularlobe.png",
@@ -210,6 +226,8 @@ export const Data = {
     {
       category:"Brainstem",
       subcategory:"Midbrain",
+      categoryIndex:2,
+      subcategoryIndex:8,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/midbrain.png",
@@ -221,6 +239,8 @@ export const Data = {
     {
       category:"Brainstem",
       subcategory:"Pons",
+      categoryIndex:2,
+      subcategoryIndex:9,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/pons.png",
@@ -232,6 +252,8 @@ export const Data = {
     {
       category:"Brainstem",
       subcategory:"Medulla",
+      categoryIndex:2,
+      subcategoryIndex:10,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/medulla.png",
@@ -243,6 +265,8 @@ export const Data = {
     {
       category:"Arterial",
       subcategory:"Basilar Artery",
+      categoryIndex:3,
+      subcategoryIndex:11,
       strength:"0",
       neuronQuantity: "3",
       image: "/style/images/collectibles/brainparts/basilarartery.png",
@@ -253,6 +277,8 @@ export const Data = {
     {
       category:"Arterial",
       subcategory:"Vertebral Artery",
+      categoryIndex:3,
+      subcategoryIndex:12,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/vertebralartery.png",
@@ -265,6 +291,8 @@ export const Data = {
     {
       category:"Unknown",
       subcategory:"uPart (Soul)",
+      categoryIndex:4,
+      subcategoryIndex:13,
       strength:"0",
       neuronQuantity: "0",
       image: "/style/images/collectibles/brainparts/soulpart.png",

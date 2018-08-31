@@ -197,11 +197,11 @@ export default class ItemExchanger extends Component {
       const unlockIndex
       = LootMapping.Data.LootItemMappings[value].brainfunc_item.index;
       const brainpartToUnlock = Collectibles.Data.Brainparts[unlockIndex];
-      const category = `${brainpartToUnlock.category}`;
-      const subcategory =`${brainpartToUnlock.subcategory}`;
-      const strength = `${brainpartToUnlock.strength}`;
+      const categoryIndex = `${brainpartToUnlock.categoryIndex}`;
+      const subcategoryIndex =`${brainpartToUnlock.subcategoryIndex}`;
+      const strength = "1"; // 1 since we are only unlocking
       brainpartContractInstance.createBrainpart(
-        "ts",category,subcategory,strength,
+        "ts",categoryIndex,subcategoryIndex,strength,
         "<SampleUri>"
         ,web3.eth.defaultAccount,
         { from: CONFIG.CONTRACTS.BRAINPART.CREATOR },
