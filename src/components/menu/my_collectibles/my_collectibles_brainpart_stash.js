@@ -53,9 +53,11 @@ export default class BrainpartStash extends Component {
     this.state = {
       selectedPage: 1,
       selectedBrainpart: Collectibles.Data.Brainparts[0],
+      selectedBrainpartState: "locked",
       brainparts: Collectibles.Data.Brainparts
     }
 
+    this.GetSelectedBrainpartState = this.GetSelectedBrainpartState.bind(this);
     this.SetSelectedBrainpart = this.SetSelectedBrainpart.bind(this);
     this.SetSelectedPage = this.SetSelectedPage.bind(this);
 
@@ -67,6 +69,7 @@ export default class BrainpartStash extends Component {
 
     this.FetchAndSetBrainparts = this.FetchAndSetBrainparts.bind(this);
 
+    this.HandleConstructClick = this.HandleConstructClick.bind(this);
   }
 
   componentDidMount() {
@@ -202,6 +205,19 @@ export default class BrainpartStash extends Component {
     this.setState({ selectedBrainpart: part })
   }
 
+  GetSelectedBrainpartState() {
+    const neuronItem = Utils.GetNeuronItemWithSubCategoryInArray(
+      this.state.selectedBrainpart.subcategoryIndex, this.props.neurons);
+    if(this.state.selectedBrainpart.strength > 0) { return "owned"; }
+    else if(neuronItem.quantity > 0) { return "unlockable"; }
+    else { return "locked"; }
+  }
+
+  HandleConstructClick() {
+    console.log("Construct Clicked!");
+    console.log(this.GetSelectedBrainpartState());
+  }
+
   render() {
     console.log(this.props);
     var imageSrc, boostOrUnlockButtonText,description,
@@ -219,6 +235,7 @@ export default class BrainpartStash extends Component {
         imageSrc = "/style/images/collectibles/brainparts/unlockableBrainpart.png";
         lockLabelClass = "unlockable";
         lockLabelDivText = "Unlockable";
+
       }
     } else {
       imageSrc = this.state.selectedBrainpart.image;
@@ -234,7 +251,7 @@ export default class BrainpartStash extends Component {
           <div className="image_container">
             <img src={imageSrc}/>
             <button className="boost"
-            onClick = {this.handleBoostClick}> {boostOrUnlockButtonText} </button>
+            onClick = {this.HandleConstructClick}> {boostOrUnlockButtonText} </button>
           </div>
           <div className="description_container">
             <div className="name">
