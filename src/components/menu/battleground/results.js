@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 export const ProgressBar = function(props) {
+  // TODO:- Increase or decrase based on props
   return(
     <div className='progress-container'>
-      <div className='progress-base'>
+      <div className='progress-base increase'>
         <div className='progress-previous'>
           <div className='progress-current'>
           </div>
@@ -57,6 +58,8 @@ export default class ResultsComponent extends Component {
           </div>
           <div className='subheading'> Details </div>
           <div className='partwise-results-container'>
+            <PartResultCard/>
+            <PartResultCard/>
             <PartResultCard/>
           </div>
         </div>

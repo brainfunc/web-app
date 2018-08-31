@@ -38,9 +38,10 @@
 
       >div.partwise-results-container{
         margin-top: 3%;
+
         >div.part-result-card{
           overflow: hidden;
-
+          margin-bottom: 3%;
           div{
             display: inline;
             float:left;
@@ -98,6 +99,7 @@
 
             }
             >div.progress-container{
+
               width:100%;
               text-align: center;
               div{
@@ -105,7 +107,7 @@
                 width:100%;
                 border-radius: 1vw;
               }
-              >div.progress-base{
+              >div.progress-base.decrease{
                 width:100%;
 
                 margin-top: 2vw;
@@ -119,6 +121,24 @@
                     width:50%;
 
                     background-color: $progress_color_decrease_current;
+
+                  }
+                }
+              }
+              >div.progress-base.increase{
+                width:100%;
+
+                margin-top: 2vw;
+                background-color: $progress_color_increase_base;
+                >div.progress-previous{
+                  width:80%;
+
+                  background-color: $progress_color_increase_previous;
+
+                  >div.progress-current{
+                    width:50%;
+
+                    background-color: $progress_color_increase_current;
 
                   }
                 }
