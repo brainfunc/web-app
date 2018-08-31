@@ -4,19 +4,36 @@
   .battleground__container > div.body > div.battle_core > div.battle-task {
     display: inline;
     float: left;
-    width: 32%; }
-    .battleground__container > div.body > div.battle_core > div.battle-task > div.title {
+    width: 32%;
+    overflow: hidden; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.title, .battleground__container > div.body > div.battle_core > div.battle-task > div.task-image-container, .battleground__container > div.body > div.battle_core > div.battle-task > div.task-title, .battleground__container > div.body > div.battle_core > div.battle-task > div.task-description {
       display: inline;
       float: left;
       width: 100%;
       padding-left: 0%;
-      padding-right: 8%;
+      padding-right: 4%;
       margin-bottom: 4%;
-      margin-top: 4%;
+      margin-top: 4%; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.title {
       color: #4a4a4a;
       font-family: "Moderneratrial", sans-serif;
       font-size: 2.75vw;
       font-weight: 600; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.task-image-container {
+      text-align: left;
+      padding: 0.25vw;
+      width: 100%; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.task-title {
+      font-family: "Avenir", sans-serif;
+      font-size: 2.35vw;
+      font-weight: 400;
+      color: #4a4a4a; }
+    .battleground__container > div.body > div.battle_core > div.battle-task > div.task-description {
+      font-family: "Avenir", sans-serif;
+      font-size: 1.75vw;
+      font-weight: 400;
+      color: #7c7c7c;
+      text-align: justify; }
   .battleground__container > div.body > div.battle_core > div.part-chooser {
     display: inline;
     float: left;

@@ -11,19 +11,41 @@
         display: inline;
         float: left;
         width: 32%;
-        >div.title {
+        overflow: hidden;
+        >div.title, >div.task-image-container, >div.task-title, >div.task-description {
           display: inline;
           float:left;
           width: 100%;
           padding-left: 0%;
-          padding-right: 8%;
+          padding-right: 4%;
           margin-bottom: 4%;
           margin-top: 4%;
+          // border: 1px solid black;
+        }
+        >div.title {
           color: $text_color_blackish;
           //opacity: 0.85;
           font-family: $font_family_3;
           font-size: 2.75vw;
           font-weight: 600;
+        }
+        >div.task-image-container {
+          text-align: left;
+          padding: 0.25vw;
+          width: 100%;        
+        }
+        >div.task-title {
+          font-family: $font_family_1;
+          font-size: 2.35vw;
+          font-weight: 400;
+          color: $text_color_blackish;
+        }
+        >div.task-description{
+          font-family: $font_family_1;
+          font-size: 1.75vw;
+          font-weight: 400;
+          color: $text_color_gray;
+          text-align: justify;
         }
       }
       >div.part-chooser{
