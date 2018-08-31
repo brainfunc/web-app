@@ -5,6 +5,7 @@ import GameStashCard from './game_stash_card';
 import * as LootMapping from '../../../../utils/data/my_collectibles/exchanger/alto_mapping';
 import * as CONFIG from "../../../../contracts/config";
 import * as Collectibles from '../../../../utils/data/collectibles';
+import * as Utils from '../../../../utils/utils';
 
 export const ExchangeButtonsComponent = function(props) {
   return(
@@ -13,35 +14,35 @@ export const ExchangeButtonsComponent = function(props) {
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(10)} }/>
+          onClick={() => {props.handleExchangeClicked(0, 10)} }/>
         </div>
       </div>
       <div className='button_container'>
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(0)} }/>
+          onClick={() => {props.handleExchangeClicked(1, 0)} }/>
         </div>
       </div>
       <div className='button_container'>
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(4)} }/>
+          onClick={() => {props.handleExchangeClicked(2, 4)} }/>
         </div>
       </div>
       <div className='button_container'>
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(6)} }/>
+          onClick={() => {props.handleExchangeClicked(3, 6)} }/>
         </div>
       </div>
       <div className='button_container'>
         <div className="exchange_button_wrapper">
           <img className='exchange_button'
           src={"/style/images/icons/transmorgify.png"}
-          onClick={() => {props.selectFunction(3)} }/>
+          onClick={() => {props.handleExchangeClicked(4, 3)} }/>
         </div>
       </div>
     </div>
@@ -57,7 +58,10 @@ export const BrainFuncItemsRow = function(props) {
   for(var i = 0; i < props["number"]; i++) {
     const subcategoryIndex
     = LootMapping.Data.LootItemMappings[i].brainfunc_item.subcategoryIndex;
-    const item = props.brainparts[subcategoryIndex];
+    const item = Utils.GetBrainPartItemWithSubcategory(subcategoryIndex);
+    // console.log("Brainparts", props.brainparts);
+    // console.log("Subcategory Index",subcategoryIndex);
+    // console.log("Item", item);
     var title = item.subcategory;
     var status = item.strength == 0 ? "locked": "unlocked";
     var imgSrc, imgClass, lockSrc, lockText, lockClass;
@@ -169,13 +173,14 @@ export default class ItemExchanger extends Component {
   componentDidMount() {
     // Start listening for any events
     this.StartListeningForEvents();
+    console.log("Props", this.props);
+    console.log("State", this.state);
   }
 
-  GetExchangePossibility(i) {
-    const altoItemId = LootMapping.Data.LootItemMappings[i].alto_item.id;
+  GetExchangePossibility(exchangeIndex, scIndex) {
+    const altoItemId = LootMapping.Data.LootItemMappings[exchangeIndex].alto_item.id;
     const altoItemOwned = this.props.altoStashMap[altoItemId] > 0;
-    const brainpartItemId = LootMapping.Data.LootItemMappings[i].brainfunc_item.index;
-    const brainpartItemOwned = this.props.brainparts[brainpartItemId].strength > 0;
+    const brainpartItemOwned = Utils.GetBrainPartItemWithSubcategory(scIndex).strength > 0;
     // console.log("Alto Brainpart");
     // console.log(altoItemOwned, brainpartItemOwned);
 
@@ -205,9 +210,9 @@ export default class ItemExchanger extends Component {
     });
   }
 
-  handleExchangeClicked(value) {
+  handleExchangeClicked(exchangeIndex, scIndex) {
     console.log("Exchange clicked...");
-    const exchangeStatus = this.GetExchangePossibility(value);
+    const exchangeStatus = this.GetExchangePossibility(exchangeIndex, scIndex);
     if(exchangeStatus == "impossible") {
       console.log("Exchange impossible!");
       return;
@@ -228,7 +233,7 @@ export default class ItemExchanger extends Component {
         CONFIG.CONTRACTS.BRAINPART.ADDRESS);
 
       const unlockItem
-      = this.props.brainparts[value];
+      = Utils.GetBrainPartItemWithSubcategory(scIndex);
       const categoryIndex = `${unlockItem.categoryIndex}`;
       const subcategoryIndex =`${unlockItem.subcategoryIndex}`;
       const strength = "1"; // 1 since we are only unlocking
@@ -257,7 +262,7 @@ export default class ItemExchanger extends Component {
         <AltoItemsComponent
         altoStashMap={this.props.altoStashMap}/>
         <ExchangeButtonsComponent
-        selectFunction={this.handleExchangeClicked}/>
+        handleExchangeClicked={this.handleExchangeClicked}/>
         <BrainFuncItemsComponent
         brainparts={this.props.brainparts}/>
       </div>

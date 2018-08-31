@@ -1,3 +1,5 @@
+import * as Collectibles from "./data/collectibles";
+
 export const GetSortOrder = (prop) => {
   return function(a, b) {
       if (a[prop] > b[prop]) {
@@ -35,4 +37,11 @@ export const BrainpartSubCategoryCheck = function(categoryIndex, subcategoryInde
   else if(categoryIndex == 2) { min = 8; max = 10; }
   else if(categoryIndex == 3) { min = 11; max = 12; }
   return (subcategoryIndex >= min && subcategoryIndex <= max);
+}
+
+export const GetBrainPartItemWithSubcategory = function(scIndex) {
+  const brainparts = Collectibles.Data.Brainparts;
+  for(let i = 0;i < Collectibles.Data.Brainparts.length; i++) {
+    if(brainparts[i].subcategoryIndex == scIndex) { return brainparts[i]; }
+  }
 }
